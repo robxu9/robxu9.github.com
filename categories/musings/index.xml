@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Musings on Robert Xu</title>
+    <link>http://www.robxu9.com/categories/musings/</link>
+    <description>Recent content in Musings on Robert Xu</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>me@robxu9.com (Robert Xu)</managingEditor>
+    <webMaster>me@robxu9.com (Robert Xu)</webMaster>
+    <copyright>Copyright (c) 2014-2015 Robert Xu. All Rights Reserved.</copyright>
+    <lastBuildDate>Wed, 14 Jan 2015 22:48:42 CST</lastBuildDate>
+    <atom:link href="http://www.robxu9.com/categories/musings/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>robxu9.com, take two</title>
+      <link>http://www.robxu9.com/2015/01/robxu9.com-take-two/</link>
+      <pubDate>Wed, 14 Jan 2015 22:48:42 CST</pubDate>
+      <author>me@robxu9.com (Robert Xu)</author>
+      <guid>http://www.robxu9.com/2015/01/robxu9.com-take-two/</guid>
+      <description>&lt;p&gt;I never had the time to really blog about things in length after I left
+DigitalOcean. I guess I felt like it was time consuming and such effort could
+better be spent sleeping or coding or something along the lines of that.&lt;/p&gt;
+
+&lt;p&gt;But then school came around and I was thrown into the chaos that is the fall
+semester of university, and I never had a chance to step back from all the
+craziness that followed and put my thoughts together.&lt;/p&gt;
+
+&lt;p&gt;And now here we are. It&amp;rsquo;s 2015, almost 6 months since my last blog post.
+I&amp;rsquo;ve resolved to take more time out to reflect on what&amp;rsquo;s been happening and
+gather my thoughts.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m therefore taking bets on how quickly this will fall apart. Minimum time
+after I finish writing this post.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Hello Blog.</title>
+      <link>http://www.robxu9.com/2014/07/hello-blog./</link>
+      <pubDate>Mon, 28 Jul 2014 00:00:00 UT</pubDate>
+      <author>me@robxu9.com (Robert Xu)</author>
+      <guid>http://www.robxu9.com/2014/07/hello-blog./</guid>
+      <description>
+
+&lt;p&gt;Welp, I suppose it&amp;rsquo;s about time that I made an actual blog on my actual domain.
+Whee!&lt;/p&gt;
+
+&lt;p&gt;I made a list of projects I wanted to do in the future - kinda like my personal
+project collection. When I actually compiled the list, though, it started to
+become a bit unrealistic.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/robxu9/uitest&#34;&gt;uitest&lt;/a&gt; - UI testing via VNC connection&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/Minequest/gomq&#34;&gt;gomq&lt;/a&gt; - MineQuest, written in Go&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/robxu9/kahinah&#34;&gt;kahinah&lt;/a&gt; - OpenMandriva&amp;rsquo;s QA Bot, which
+needs a rewrite (codenamed &lt;em&gt;v4&lt;/em&gt;)&lt;/li&gt;
+&lt;li&gt;aye - a DO API client in Go (like tugboat)&lt;/li&gt;
+&lt;li&gt;gnome 3.12 updates for OpenMandriva, which are like half-finished now&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/robxu9/duplex&#34;&gt;duplex&lt;/a&gt; - message queue RPC but also
+streaming i/o and peering&lt;/li&gt;
+&lt;li&gt;a new live cd tool for OpenMandriva Lx (because livecd-creator is bleh)&lt;/li&gt;
+&lt;li&gt;zypper instead of urpmi for OpenMandriva Lx (which means I have to PR zypper
+with support for hdlists)&lt;/li&gt;
+&lt;li&gt;trying my hand at writing an automated RPM build system&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;It&amp;rsquo;s a lot. In reality, I&amp;rsquo;m only maintaining &lt;code&gt;kahinah&lt;/code&gt; and &lt;code&gt;duplex&lt;/code&gt;, and then
+splitting my time between gnome 3.12 updates and &lt;code&gt;uitest&lt;/code&gt;. The next to come
+would probably be &lt;code&gt;aye&lt;/code&gt;, &lt;code&gt;zypper&lt;/code&gt;, or &lt;code&gt;gomq&lt;/code&gt;&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;In a way, I feel like I&amp;rsquo;m the naughty child with my hand in the cookie jar
+trying to figure out which cookie to grab before mother comes back (read:
+life takes over everything again).&lt;/p&gt;
+
+&lt;p&gt;Eh. We&amp;rsquo;ll see, I guess.&lt;/p&gt;
+
+&lt;h3 id=&#34;code-snippet-of-today:97f6c50ee355e8ed2cdf4e3f738c409d&#34;&gt;Code snippet of today&lt;/h3&gt;
+
+&lt;p&gt;I finally got duplex as a shared library working, but that&amp;rsquo;s under a separate
+branch for now because I want to make sure it&amp;rsquo;s &lt;em&gt;perfect&lt;/em&gt;. So, I&amp;rsquo;m writing
+Python2 bindings!&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;from ctypes import *
+dpx = CDLL(&#39;libdpx.so&#39;)
+
+print dpx
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;^ That finally works. Thank god.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

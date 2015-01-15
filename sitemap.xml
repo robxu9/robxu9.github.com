@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>http://www.robxu9.com/</loc>
+    <lastmod>2015-01-14T22:48:42-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.robxu9.com/2015/01/robxu9.com-take-two/</loc>
+    <lastmod>2015-01-14T22:48:42-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.robxu9.com/2014/08/valgrind-is-important/</loc>
+    <lastmod>2014-08-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.robxu9.com/2014/08/stdout-is-slow/</loc>
+    <lastmod>2014-08-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.robxu9.com/2014/07/ctypes-why/</loc>
+    <lastmod>2014-07-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.robxu9.com/2014/07/hello-blog./</loc>
+    <lastmod>2014-07-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.robxu9.com/about/</loc>
+    <lastmod>0001-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+</urlset>

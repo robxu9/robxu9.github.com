@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Struggles on Robert Xu</title>
+    <link>http://www.robxu9.com/tags/struggles/</link>
+    <description>Recent content in Struggles on Robert Xu</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>me@robxu9.com (Robert Xu)</managingEditor>
+    <webMaster>me@robxu9.com (Robert Xu)</webMaster>
+    <copyright>Copyright (c) 2014-2015 Robert Xu. All Rights Reserved.</copyright>
+    <lastBuildDate>Wed, 30 Jul 2014 00:00:00 UT</lastBuildDate>
+    <atom:link href="http://www.robxu9.com/tags/struggles/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>ctypes, Why?</title>
+      <link>http://www.robxu9.com/2014/07/ctypes-why/</link>
+      <pubDate>Wed, 30 Jul 2014 00:00:00 UT</pubDate>
+      <author>me@robxu9.com (Robert Xu)</author>
+      <guid>http://www.robxu9.com/2014/07/ctypes-why/</guid>
+      <description>
+
+&lt;p&gt;I don&amp;rsquo;t claim to be a particularly good Python programmer at all. I&amp;rsquo;m probably
+one of the&amp;hellip; less useful people to program Python - I much prefer Go (and to
+be rather honest, C).&lt;/p&gt;
+
+&lt;p&gt;But I think I&amp;rsquo;ve encountered the nastiest piece of library I&amp;rsquo;ve used with
+Python - &lt;code&gt;ctypes&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h4 id=&#34;what-is-ctypes:999b5b7440fa538dd5d40514f7485df6&#34;&gt;What is &lt;code&gt;ctypes&lt;/code&gt;?&lt;/h4&gt;
+
+&lt;p&gt;It&amp;rsquo;s kind of like the psuedo &lt;code&gt;C&lt;/code&gt; package for Go - it allows direct access to
+C functions and structures and all those nice things, and lets you use C
+libraries in your Python program.&lt;/p&gt;
+
+&lt;p&gt;I thought, &amp;ldquo;Well, this sounds nice! Let&amp;rsquo;s write Python bindings for &lt;code&gt;libdpx&lt;/code&gt;! It
+can&amp;rsquo;t be too hard!&amp;rdquo; I was wrong.&lt;/p&gt;
+
+&lt;h4 id=&#34;struggling-along:999b5b7440fa538dd5d40514f7485df6&#34;&gt;Struggling along&lt;/h4&gt;
+
+&lt;p&gt;I&amp;rsquo;ve learned two major annoyances:&lt;/p&gt;
+
+&lt;h5 id=&#34;calling-a-function-is-hard:999b5b7440fa538dd5d40514f7485df6&#34;&gt;Calling a function is hard.&lt;/h5&gt;
+
+&lt;p&gt;The documentation claims that that this is possible:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;from ctypes import *
+import atexit
+
+dpx = CDLL(&#39;libdpx.so&#39;)
+
+def cleanup():
+    dpx.dpx_cleanup()
+
+dpx.dpx_init()
+atexit.Register(cleanup)
+
+peer = dpx.dpx_peer_new()
+
+# do stuff with peer here
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And it&amp;rsquo;d be all nice and dandy, right? NOPE. Nowhere in the documentation does
+ctypes seem to know what to do when you get a pointer back unless you
+explicitly say it. It does say that return values would &amp;ldquo;assume to be int&amp;rdquo;. So
+technically doing the following:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;peer = c_void_p(dpx.dpx_peer_new())
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;should work, right? Because c_void_p takes an integer argument, which comes out
+of the function thanks to ctypes. And that integer argument is probably a
+pointer, given the C return value.&lt;/p&gt;
+
+&lt;p&gt;But nooo. &lt;em&gt;segfaults everywhere&lt;/em&gt;. I had to do this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;dpn = dpx.dpx_peer_new
+dpn.argtypes = []
+dpn.restype = c_void_p
+
+# now call it
+peer = dpn()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;For &lt;em&gt;every single function&lt;/em&gt;.&lt;/p&gt;
+
+&lt;h5 id=&#34;i-apparently-cannot-work-with-pointers-nicely-with-ctypes:999b5b7440fa538dd5d40514f7485df6&#34;&gt;I apparently cannot work with pointers nicely with ctypes.&lt;/h5&gt;
+
+&lt;p&gt;Because, well.. Python seems to suck at pointer support. It&amp;rsquo;s understandable,
+so I&amp;rsquo;m not sure what I was expecting, but it&amp;rsquo;s still annoying when I do the
+following:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;dfn = dpx.dpx_frame_new
+dfn.argtypes = [c_void_p]
+dfn.restype = POINTER(CFRAME)
+# POINTER(CFRAME) means the type is a pointer to a CFRAME
+# CFRAME was a class derived from &amp;quot;Structure&amp;quot; that mimics dpx_frame in dpx.h
+
+new_frame = dfn(None)
+
+new_frame.payloadSize = 10
+new_frame.payload = payload
+
+channel.send(new_frame)
+# Sending frame: 0 bytes...
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Only to realise that payloadSize that channel gets is size &lt;strong&gt;0&lt;/strong&gt;. Why?&lt;/p&gt;
+
+&lt;p&gt;It&amp;rsquo;s because the object &lt;code&gt;new_frame&lt;/code&gt; is a pointer object. It&amp;rsquo;s like any other
+Python object, so I was actually setting the attributes &amp;lsquo;payloadSize&amp;rsquo; and
+&amp;lsquo;payload&amp;rsquo; on the object itself.&lt;/p&gt;
+
+&lt;p&gt;So then, how to get to the actual object?&lt;/p&gt;
+
+&lt;p&gt;You can&amp;rsquo;t do &lt;code&gt;new_frame.contents&lt;/code&gt; like the docs say, because the docs also say
+that Python will make a copy of the object. So that&amp;rsquo;s useless.&lt;/p&gt;
+
+&lt;p&gt;Insted, I have to treat it like an array:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;actual_new_frame = new_frame[0]
+actual_new_frame.payloadSize = 10
+actual_new_frame.payload = payload
+
+channel.send(new_frame)
+# Sending frame: 10 bytes...
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;So those problems are solved, at least.&lt;/p&gt;
+
+&lt;h4 id=&#34;so-you-re-happy-now:999b5b7440fa538dd5d40514f7485df6&#34;&gt;So you&amp;rsquo;re happy now?&lt;/h4&gt;
+
+&lt;p&gt;Nope. See that cover image? Crashes everywhere.&lt;/p&gt;
+
+&lt;p&gt;The same code that worked for the most core test case is now failing for the
+next because &lt;code&gt;ctypes&lt;/code&gt; is passing invalid pointers (or I am).&lt;/p&gt;
+
+&lt;p&gt;I think I&amp;rsquo;m going to try my hand at making a Python extension instead. At least
+I can code that in C&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;EDIT&lt;/strong&gt;: I&amp;rsquo;ve legitimately failed. It&amp;rsquo;s segfaulting because I&amp;rsquo;m cleaning up
+structures prematurely. So therefore pointers that used to point to valid stuff
+no longer do.&lt;/p&gt;
+
+&lt;p&gt;I think I need to take shots.&lt;/p&gt;
+
+&lt;h4 id=&#34;where-is-your-code-so-i-can-laugh-at-it:999b5b7440fa538dd5d40514f7485df6&#34;&gt;Where is your code so I can laugh at it&lt;/h4&gt;
+
+&lt;p&gt;By all means, please do! #ctypestruggles&lt;/p&gt;
+
+&lt;p&gt;It&amp;rsquo;s living &lt;a href=&#34;https://github.com/robxu9/duplex/tree/dev_libtask_again&#34;&gt;in a branch of duplex right now&lt;/a&gt;. Feel free to check it out.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

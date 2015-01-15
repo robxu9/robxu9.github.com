@@ -1,0 +1,261 @@
+<html lang="en">
+<head>
+
+  
+  <meta charset="utf-8">
+  <title>ctypes, Why?</title>
+  <meta name="description" content="ctypes, Why?">
+  <meta name="author" content="Robert Xu">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  
+  <link rel="stylesheet" href="http://www.robxu9.com/css/normalize.css">
+  <link rel="stylesheet" href="http://www.robxu9.com/css/skeleton.css">
+  <link rel="stylesheet" href="http://www.robxu9.com/css/custom.css">
+</head>
+<body>
+
+<header id="menu">
+  <div class="container">
+	<span class="logo">Robert Xu</span>
+	<a>&#9776;</a>
+  </div>
+</header>
+
+<nav class="navbar">
+  <div class="container">
+	<div class="row">
+	  <div class="eight columns offset-by-two">
+		<ul class="">
+		  
+		  <li class="u-pull-left"> <a href="/" class="brand" style="font-weight:bold;font-size:normal"> Robert Xu </a></li>
+		  <li class="u-pull-right cate"> <a href="http://www.robxu9.com/about/" class=""> About </a></li>
+		  
+		  <li class="u-pull-right cate"> <a href="http://www.robxu9.com/categories/musings" class=""> Musings </a></li>
+		  
+		  <li class="u-pull-right cate"> <a href="http://www.robxu9.com/categories/programming" class=""> Programming </a></li>
+		  
+		</ul>
+	  </div>
+	</div>
+  </div>
+</nav>
+
+
+<div class="container post-wrapper">
+  <div class="row">
+	<div class="eight columns offset-by-two">
+	  <div id="post-title">
+		<p class="footnote">
+		  
+          <time class="">30 Jul 2014 ~ 600 words</time>
+		  
+		  
+		  |
+		  
+		  
+		  tags:<a href="http://www.robxu9.com/tags/struggles">struggles</a> <a href="http://www.robxu9.com/tags/python">python</a> 
+		  
+
+		  
+		  categories:<a href="http://www.robxu9.com/categories/programming">programming</a> 
+		  
+
+		  
+
+		</p>
+		<h5>ctypes, Why?</h5>
+        <h6><small>is ctypes stupid or am i just dumb</small></h6>
+	  </div>
+
+	  <div class="post">
+		
+
+<p>I don&rsquo;t claim to be a particularly good Python programmer at all. I&rsquo;m probably
+one of the&hellip; less useful people to program Python - I much prefer Go (and to
+be rather honest, C).</p>
+
+<p>But I think I&rsquo;ve encountered the nastiest piece of library I&rsquo;ve used with
+Python - <code>ctypes</code>.</p>
+
+<h4 id="what-is-ctypes:999b5b7440fa538dd5d40514f7485df6">What is <code>ctypes</code>?</h4>
+
+<p>It&rsquo;s kind of like the psuedo <code>C</code> package for Go - it allows direct access to
+C functions and structures and all those nice things, and lets you use C
+libraries in your Python program.</p>
+
+<p>I thought, &ldquo;Well, this sounds nice! Let&rsquo;s write Python bindings for <code>libdpx</code>! It
+can&rsquo;t be too hard!&rdquo; I was wrong.</p>
+
+<h4 id="struggling-along:999b5b7440fa538dd5d40514f7485df6">Struggling along</h4>
+
+<p>I&rsquo;ve learned two major annoyances:</p>
+
+<h5 id="calling-a-function-is-hard:999b5b7440fa538dd5d40514f7485df6">Calling a function is hard.</h5>
+
+<p>The documentation claims that that this is possible:</p>
+
+<pre><code>from ctypes import *
+import atexit
+
+dpx = CDLL('libdpx.so')
+
+def cleanup():
+    dpx.dpx_cleanup()
+
+dpx.dpx_init()
+atexit.Register(cleanup)
+
+peer = dpx.dpx_peer_new()
+
+# do stuff with peer here
+</code></pre>
+
+<p>And it&rsquo;d be all nice and dandy, right? NOPE. Nowhere in the documentation does
+ctypes seem to know what to do when you get a pointer back unless you
+explicitly say it. It does say that return values would &ldquo;assume to be int&rdquo;. So
+technically doing the following:</p>
+
+<pre><code>peer = c_void_p(dpx.dpx_peer_new())
+</code></pre>
+
+<p>should work, right? Because c_void_p takes an integer argument, which comes out
+of the function thanks to ctypes. And that integer argument is probably a
+pointer, given the C return value.</p>
+
+<p>But nooo. <em>segfaults everywhere</em>. I had to do this:</p>
+
+<pre><code>dpn = dpx.dpx_peer_new
+dpn.argtypes = []
+dpn.restype = c_void_p
+
+# now call it
+peer = dpn()
+</code></pre>
+
+<p>For <em>every single function</em>.</p>
+
+<h5 id="i-apparently-cannot-work-with-pointers-nicely-with-ctypes:999b5b7440fa538dd5d40514f7485df6">I apparently cannot work with pointers nicely with ctypes.</h5>
+
+<p>Because, well.. Python seems to suck at pointer support. It&rsquo;s understandable,
+so I&rsquo;m not sure what I was expecting, but it&rsquo;s still annoying when I do the
+following:</p>
+
+<pre><code>dfn = dpx.dpx_frame_new
+dfn.argtypes = [c_void_p]
+dfn.restype = POINTER(CFRAME)
+# POINTER(CFRAME) means the type is a pointer to a CFRAME
+# CFRAME was a class derived from &quot;Structure&quot; that mimics dpx_frame in dpx.h
+
+new_frame = dfn(None)
+
+new_frame.payloadSize = 10
+new_frame.payload = payload
+
+channel.send(new_frame)
+# Sending frame: 0 bytes...
+</code></pre>
+
+<p>Only to realise that payloadSize that channel gets is size <strong>0</strong>. Why?</p>
+
+<p>It&rsquo;s because the object <code>new_frame</code> is a pointer object. It&rsquo;s like any other
+Python object, so I was actually setting the attributes &lsquo;payloadSize&rsquo; and
+&lsquo;payload&rsquo; on the object itself.</p>
+
+<p>So then, how to get to the actual object?</p>
+
+<p>You can&rsquo;t do <code>new_frame.contents</code> like the docs say, because the docs also say
+that Python will make a copy of the object. So that&rsquo;s useless.</p>
+
+<p>Insted, I have to treat it like an array:</p>
+
+<pre><code>actual_new_frame = new_frame[0]
+actual_new_frame.payloadSize = 10
+actual_new_frame.payload = payload
+
+channel.send(new_frame)
+# Sending frame: 10 bytes...
+</code></pre>
+
+<p>So those problems are solved, at least.</p>
+
+<h4 id="so-you-re-happy-now:999b5b7440fa538dd5d40514f7485df6">So you&rsquo;re happy now?</h4>
+
+<p>Nope. See that cover image? Crashes everywhere.</p>
+
+<p>The same code that worked for the most core test case is now failing for the
+next because <code>ctypes</code> is passing invalid pointers (or I am).</p>
+
+<p>I think I&rsquo;m going to try my hand at making a Python extension instead. At least
+I can code that in C&hellip;</p>
+
+<p><strong>EDIT</strong>: I&rsquo;ve legitimately failed. It&rsquo;s segfaulting because I&rsquo;m cleaning up
+structures prematurely. So therefore pointers that used to point to valid stuff
+no longer do.</p>
+
+<p>I think I need to take shots.</p>
+
+<h4 id="where-is-your-code-so-i-can-laugh-at-it:999b5b7440fa538dd5d40514f7485df6">Where is your code so I can laugh at it</h4>
+
+<p>By all means, please do! #ctypestruggles</p>
+
+<p>It&rsquo;s living <a href="https://github.com/robxu9/duplex/tree/dev_libtask_again">in a branch of duplex right now</a>. Feel free to check it out.</p>
+
+	  </div>
+	</div>
+  </div>
+</div>
+
+<div class="footer">
+  <div class="container">
+	<div class="row">
+	  <div class="ten columns offset-by-two">
+		<p class="footnote">Copyright: All rights reserved by <a href="mailto:me@robxu9.com">@Robert Xu</a>.
+		  
+		  Find me at
+
+		  
+		  <a href="https://github.com/robxu9" >GitHub</a>
+		  
+
+		  
+
+		  
+		  <a href="https://twitter.com/robxu9">Twitter</a>
+		  
+
+		  
+
+		  
+		</p>
+	  </div>
+	</div>
+  </div>
+</div>
+
+
+<script src="http://www.robxu9.com/js/jquery.min.js" type="text/javascript"></script>
+<script src="http://www.robxu9.com/js/jquery.timeago.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(function(){
+    $("time.timeago").timeago();
+  })
+  $("#menu").click(function(){
+    $(".brand").text("HOME");
+    $(".navbar ul li").removeClass("cate");
+    $(".navbar").toggle();
+  });
+  $(window).resize(function(){
+    if(window.innerWidth > 768) {
+      $(".navbar").removeAttr("style");
+    }
+  });
+</script>
+</body>
+</html>
+

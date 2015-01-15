@@ -1,0 +1,258 @@
+<html lang="en">
+<head>
+
+  
+  <meta charset="utf-8">
+  <title>stdout is slow</title>
+  <meta name="description" content="stdout is slow">
+  <meta name="author" content="Robert Xu">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  
+  <link rel="stylesheet" href="http://www.robxu9.com/css/normalize.css">
+  <link rel="stylesheet" href="http://www.robxu9.com/css/skeleton.css">
+  <link rel="stylesheet" href="http://www.robxu9.com/css/custom.css">
+</head>
+<body>
+
+<header id="menu">
+  <div class="container">
+	<span class="logo">Robert Xu</span>
+	<a>&#9776;</a>
+  </div>
+</header>
+
+<nav class="navbar">
+  <div class="container">
+	<div class="row">
+	  <div class="eight columns offset-by-two">
+		<ul class="">
+		  
+		  <li class="u-pull-left"> <a href="/" class="brand" style="font-weight:bold;font-size:normal"> Robert Xu </a></li>
+		  <li class="u-pull-right cate"> <a href="http://www.robxu9.com/about/" class=""> About </a></li>
+		  
+		  <li class="u-pull-right cate"> <a href="http://www.robxu9.com/categories/musings" class=""> Musings </a></li>
+		  
+		  <li class="u-pull-right cate"> <a href="http://www.robxu9.com/categories/programming" class=""> Programming </a></li>
+		  
+		</ul>
+	  </div>
+	</div>
+  </div>
+</nav>
+
+
+<div class="container post-wrapper">
+  <div class="row">
+	<div class="eight columns offset-by-two">
+	  <div id="post-title">
+		<p class="footnote">
+		  
+          <time class="">01 Aug 2014 ~ 900 words</time>
+		  
+		  
+		  |
+		  
+		  
+		  tags:<a href="http://www.robxu9.com/tags/stdout">stdout</a> <a href="http://www.robxu9.com/tags/streams">streams</a> <a href="http://www.robxu9.com/tags/slow">slow</a> <a href="http://www.robxu9.com/tags/disk-i/o">disk i/o</a> 
+		  
+
+		  
+		  categories:<a href="http://www.robxu9.com/categories/programming">programming</a> 
+		  
+
+		  
+
+		</p>
+		<h5>stdout is slow</h5>
+        <h6><small>or rather, any sort of disk i/o is slow</small></h6>
+	  </div>
+
+	  <div class="post">
+		
+
+<p>Reading or writing any sort of stream can be slow.  I cannot stress how much
+that is true.</p>
+
+<p>It&rsquo;s incredibly noticeable, especially when you have some sort of GUI program
+in debug mode and it prints out a load of stuff. Each printout, whether it&rsquo;s
+piped somewhere else or goes to the console, can add time that matters to your
+program&rsquo;s execution.</p>
+
+<h3 id="why-bring-it-up-now:8e44ed532c74307615cde872e9d5796a">Why bring it up now?</h3>
+
+<p>Take for example, <code>libdpx</code>. I haven&rsquo;t silenced any of the debug output; rather
+I use it to my advantage so that I can trace where things are going. I&rsquo;ve
+caught several rather significant bugs this way, since tracing with <code>gdb</code> is
+rather hard on a coroutine library.</p>
+
+<p>But what about performance?</p>
+
+<p>According to <a href="http://zeromq.org/results:perf-howto">ØMQ</a>, their performance in
+terms of latency (which is the only one I have tested with duplex) for 100000
+1-byte messages is a mere 30.9 microseconds, a figure I was able to replicate
+locally. Jeff mentioned that I could look into performance with <code>libdpx</code>, and I
+said &ldquo;sure, why not?&rdquo;</p>
+
+<p>The tests are practically identical to the ØMQ ones - I have a receiver and a
+sender of messages. And what I got initially stunned me:
+{% highlight shell-session %}
+$ ./send_lat 127.0.0.1 9999 1 100000</p>
+
+<h1 id="lots-of-stdout-here:8e44ed532c74307615cde872e9d5796a">lots of stdout here</h1>
+
+<p>message size: 1 bytes
+message count: 100000
+avg latency: 6788597.849 nanoseconds
+{% endhighlight %}</p>
+
+<p>That&rsquo;s 6788.6 microseconds. Yikes!</p>
+
+<h3 id="save-the-output-for-debugging-only:8e44ed532c74307615cde872e9d5796a">save the output for debugging only</h3>
+
+<p>I went ahead today and created a <code>DEBUG_FUNC(...)</code> macro, which <code>#ifdef DEBUG</code>
+would actually execute anything inside the function, and if not, would delete
+anything there.</p>
+
+<p>So then I wrapped all my not-important <code>printf</code> statements with <code>DEBUG_FUNC</code>,
+and the errors I separated out into <code>fprintf(stderr, ...)</code>. And then what did
+I find?</p>
+
+<p>{% highlight shell-session %}
+$ ./send_lat 127.0.0.1 9999 1 100000
+message size: 1 bytes
+message count: 100000
+avg latency: 129588.328 nanoseconds
+{% endhighlight %}</p>
+
+<p>129.6 microseconds. A huge improvement. And because I didn&rsquo;t write to stdout at
+all.</p>
+
+<h3 id="writing-means-disk-i-o:8e44ed532c74307615cde872e9d5796a">writing means disk i/o</h3>
+
+<p>But this is particularly true for anything - if you write to anything, there is
+going to be overhead because of flushing the stream to disk or wherever it
+wants to go.</p>
+
+<p>Remember that advice about writing to files in C? You have to flush the stream
+before closing it, or changes aren&rsquo;t written to disk. It&rsquo;s the same thing with
+<code>stdout</code> - <code>stdout</code> is a file, after all.</p>
+
+<p>This is because files like <code>stdout</code> are line buffered by default - so anything
+will stay in the buffer until it hits a newline, at which point the program
+essentially pauses to force everything to the file.</p>
+
+<p>From what I know, there are three types of buffering:</p>
+
+<ol>
+<li>No buffering, so anything written will be flushed immediately to disk.</li>
+<li>Block buffering, so after a certain length or manual call it will flush.</li>
+<li>Line buffering, so after a <code>\n</code> it will flush.</li>
+</ol>
+
+<p>A note here that was made on <a href="http://stackoverflow.com/a/171662
+1/438175">Stack Overflow</a> is that <code>stderr</code> isn&rsquo;t buffered because it&rsquo;s standard error - so
+naturally it wants to get the error to you as quickly as possible, even if it
+means slowing down everything else.</p>
+
+<p>You can set any stream&rsquo;s buffering characteristics with <a href="http://www.cplusplus.com/reference/cstdio/setvbuf/"><code>setvbuf()</code></a> - either full buffering,
+line buffering, or no buffering. Practically all files are opened with
+full buffering (hence the advice to flush before you close), while files like
+<code>stdout</code> are line buffered, and <code>stderr</code> is not even buffered at all.</p>
+
+<p>And that flushing takes CPU cycles. It has to empty out the buffer by writing
+it to disk, an operation that is costly because it&rsquo;s disk i/o, and then it
+has to clear the buffer before it can resume execution.</p>
+
+<p>While SSDs speed up disk i/o by a noticeable margin, not everyone has SSDs. So
+just please don&rsquo;t <code>printf</code> in your library. It makes an impact.</p>
+
+<h3 id="how-should-i-handle-logging-then-in-a-high-performance-application:8e44ed532c74307615cde872e9d5796a">how should I handle logging then in a high performance application?</h3>
+
+<p>This is a difficult topic. Some of my suggestions in the past have been to
+write on a dedicated thread; that is, print whatever you need but only flush
+on a dedicated thread, so that way that thread is the slow one while the
+others can continue.</p>
+
+<p>But I guess I would mention that it really depends on what you&rsquo;re making.
+Sometimes, forwarding any output to a logging server might be better. Maybe
+block buffering instead of line buffering <code>stdout</code>. Write your own functions.
+I don&rsquo;t know.</p>
+
+<p>Some interesting ones have been making a channel across threads, and then
+sending log messages that are marked with your thread name &amp; time to another
+thread to be finally processed and outputted, where in a worker thread:</p>
+
+<p>{% highlight go %}
+mylog.Send(fmt.Sprintf(&ldquo;my logging message&rdquo;))
+{% endhighlight %}</p>
+
+<p>which sends it through a channel to the logging thread, which then:</p>
+
+<p>{% highlight go %}
+for log := range logChan {
+    fmt.Printf(&ldquo;%s %s: %s\n&rdquo;, log.Time, log.Threadname, log.Message)
+}
+{% endhighlight %}</p>
+
+<p>Or something like that. Again, I really guess it depends on what you want to
+do.</p>
+
+	  </div>
+	</div>
+  </div>
+</div>
+
+<div class="footer">
+  <div class="container">
+	<div class="row">
+	  <div class="ten columns offset-by-two">
+		<p class="footnote">Copyright: All rights reserved by <a href="mailto:me@robxu9.com">@Robert Xu</a>.
+		  
+		  Find me at
+
+		  
+		  <a href="https://github.com/robxu9" >GitHub</a>
+		  
+
+		  
+
+		  
+		  <a href="https://twitter.com/robxu9">Twitter</a>
+		  
+
+		  
+
+		  
+		</p>
+	  </div>
+	</div>
+  </div>
+</div>
+
+
+<script src="http://www.robxu9.com/js/jquery.min.js" type="text/javascript"></script>
+<script src="http://www.robxu9.com/js/jquery.timeago.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(function(){
+    $("time.timeago").timeago();
+  })
+  $("#menu").click(function(){
+    $(".brand").text("HOME");
+    $(".navbar ul li").removeClass("cate");
+    $(".navbar").toggle();
+  });
+  $(window).resize(function(){
+    if(window.innerWidth > 768) {
+      $(".navbar").removeAttr("style");
+    }
+  });
+</script>
+</body>
+</html>
+

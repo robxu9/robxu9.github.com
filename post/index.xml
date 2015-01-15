@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Robert Xu</title>
+    <link>http://www.robxu9.com/post/</link>
+    <description>Recent content in Posts on Robert Xu</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>me@robxu9.com (Robert Xu)</managingEditor>
+    <webMaster>me@robxu9.com (Robert Xu)</webMaster>
+    <copyright>Copyright (c) 2014-2015 Robert Xu. All Rights Reserved.</copyright>
+    <lastBuildDate>Wed, 14 Jan 2015 22:48:42 CST</lastBuildDate>
+    <atom:link href="http://www.robxu9.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>robxu9.com, take two</title>
+      <link>http://www.robxu9.com/2015/01/robxu9.com-take-two/</link>
+      <pubDate>Wed, 14 Jan 2015 22:48:42 CST</pubDate>
+      <author>me@robxu9.com (Robert Xu)</author>
+      <guid>http://www.robxu9.com/2015/01/robxu9.com-take-two/</guid>
+      <description>&lt;p&gt;I never had the time to really blog about things in length after I left
+DigitalOcean. I guess I felt like it was time consuming and such effort could
+better be spent sleeping or coding or something along the lines of that.&lt;/p&gt;
+
+&lt;p&gt;But then school came around and I was thrown into the chaos that is the fall
+semester of university, and I never had a chance to step back from all the
+craziness that followed and put my thoughts together.&lt;/p&gt;
+
+&lt;p&gt;And now here we are. It&amp;rsquo;s 2015, almost 6 months since my last blog post.
+I&amp;rsquo;ve resolved to take more time out to reflect on what&amp;rsquo;s been happening and
+gather my thoughts.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m therefore taking bets on how quickly this will fall apart. Minimum time
+after I finish writing this post.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>valgrind is important</title>
+      <link>http://www.robxu9.com/2014/08/valgrind-is-important/</link>
+      <pubDate>Tue, 05 Aug 2014 00:00:00 UT</pubDate>
+      <author>me@robxu9.com (Robert Xu)</author>
+      <guid>http://www.robxu9.com/2014/08/valgrind-is-important/</guid>
+      <description>
+
+&lt;p&gt;Most people have heard of debugging tools like &lt;code&gt;gdb&lt;/code&gt;. For the rest, it&amp;rsquo;s
+usually just continuous testing and catching problems with your eye. But
+sometimes it&amp;rsquo;s not that simple.&lt;/p&gt;
+
+&lt;p&gt;Take for example (and I&amp;rsquo;ve been using this example &lt;strong&gt;a lot&lt;/strong&gt;), &lt;code&gt;libdpx&lt;/code&gt;. I was
+trying to clean up the code for the past two days, but when I moved a simple
+statement that should work, everything essentially went to hell. You can see
+that commit &lt;a href=&#34;https://github.com/robxu9/duplex/commit/663bb6de4b52930d1a14
+ee86777f69eb1d2f9d99#diff-53207fdef530e854ec6cdb342eef1970R120&#34;&gt;here&lt;/a&gt;. Basically, the
+&lt;code&gt;alchanfree()&lt;/code&gt; method is commented because if I tried to &lt;code&gt;chanfree()&lt;/code&gt;,
+segfaults would be everywhere.&lt;/p&gt;
+
+&lt;p&gt;At first glance, this doesn&amp;rsquo;t look bad - we&amp;rsquo;re initialising a new channel, then
+sending the frame to the write frames method. Then we wait for something to
+come back. Because of cooperative threading, everything should work just
+dandily.&lt;/p&gt;
+
+&lt;p&gt;But when I uncommented the &lt;code&gt;alchanfree()&lt;/code&gt; method, stuff didn&amp;rsquo;t work. And I was
+utterly confused. I was wondering why all of a sudden, I was getting segfaults
+left and right.&lt;/p&gt;
+
+&lt;h4 id=&#34;enter-valgrind:8198804284f5f45e50df30e1088b1d71&#34;&gt;enter valgrind&lt;/h4&gt;
+
+&lt;p&gt;Valgrind is this tool that not many people have heard of for some reason, yet
+it is one of the most invaluable tools for memory checking that you could ever
+have. It basically acts as a middle man between your program and libc,
+catching &lt;code&gt;free/malloc/calloc/realloc&lt;/code&gt; calls and recording addresses, then
+making sure whatever calls you &amp;lsquo;&lt;code&gt;alloc&lt;/code&gt; are &lt;code&gt;free&lt;/code&gt;&amp;rsquo;d later. As a result, it can
+also detect reads and writes to &lt;code&gt;free&lt;/code&gt;&amp;rsquo;d pieces of memory, which would segfault
+under normal conditions.&lt;/p&gt;
+
+&lt;p&gt;But most people just ignore what &lt;code&gt;valgrind&lt;/code&gt; is saying. That&amp;rsquo;s bad. Don&amp;rsquo;t do that.&lt;/p&gt;
+
+&lt;p&gt;Some sample output:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;==802== Memcheck, a memory error detector
+==802== Copyright (C) 2002-2013, and GNU GPL&#39;d, by Julian Seward et al.
+==802== Using Valgrind-3.9.0 and LibVEX; rerun with -h for copyright info
+==802== Command: ./check_dpx
+==802== 
+==802== Syscall param timer_create(evp) points to uninitialised byte(s)
+==802==    at 0x385AC03E72: timer_create@@GLIBC_2.3.3 (timer_create.c:82)
+==802==    by 0x526E47B: srunner_run (check_run.c:407)
+==802==    by 0x40361A: main (check.c:499)
+==802==  Location 0xffefff750 is 0 bytes inside local_evp._sigev_un,
+==802==  declared at timer_create.c:57, in frame #0 of thread 1
+==802==  Uninitialised value was created by a stack allocation
+==802==    at 0x3859015185: _dl_runtime_resolve (dl-trampoline.S:46)
+==802== 
+==830== HEAP SUMMARY:
+==830==     in use at exit: 572,679 bytes in 96 blocks
+==830==   total heap usage: 339 allocs, 243 frees, 1,510,826 bytes allocated
+==830== 
+==830== 3 bytes in 1 blocks are definitely lost in loss record 5 of 83
+==830==    at 0x4A0645D: malloc (in /usr/lib64/valgrind/vgpreload_memcheck-amd64-linux.so)
+==830==    by 0x4C1A428: _dpx_frame_msgpack_from (frame.c:171)
+==830==    by 0x4C149DB: _dpx_duplex_conn_read_frames (conn.c:60)
+==830==    by 0x4E5948B: taskstart (task.c:71)
+==830==    by 0x38594479FF: ??? (in /usr/lib64/libc-2.18.so)
+==830== 
+==830== 72 bytes in 1 blocks are definitely lost in loss record 66 of 83
+==830==    at 0x4A0645D: malloc (in /usr/lib64/valgrind/vgpreload_memcheck-amd64-linux.so)
+==830==    by 0x4C174BD: dpx_frame_new (frame.c:27)
+==830==    by 0x402700: test_dpx_call (check.c:224)
+==830==    by 0x4029E6: test_dpx_rpc_call (check.c:279)
+==830==    by 0x526E87D: srunner_run (check_run.c:396)
+==830==    by 0x40361A: main (check.c:499)
+==830== 
+==830== 288 bytes in 1 blocks are possibly lost in loss record 72 of 83
+==830==    at 0x4A081D4: calloc (in /usr/lib64/valgrind/vgpreload_memcheck-amd64-linux.so)
+==830==    by 0x3859011C44: _dl_allocate_tls (dl-tls.c:296)
+==830==    by 0x3859808862: pthread_create@@GLIBC_2.2.5 (allocatestack.c:580)
+==830==    by 0x4C1BCD5: dpx_init (dpx.c:172)
+==830==    by 0x4028F1: test_dpx_rpc_call (check.c:263)
+==830==    by 0x526E87D: srunner_run (check_run.c:396)
+==830==    by 0x40361A: main (check.c:499)
+==830== 
+==830== LEAK SUMMARY:
+==830==    definitely lost: 75 bytes in 2 blocks
+==830==    indirectly lost: 0 bytes in 0 blocks
+==830==      possibly lost: 288 bytes in 1 blocks
+==830==    still reachable: 572,316 bytes in 93 blocks
+==830==         suppressed: 0 bytes in 0 blocks
+==830== Reachable blocks (those to which a pointer was found) are not shown.
+==830== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==830== 
+==830== For counts of detected and suppressed errors, rerun with: -v
+==830== ERROR SUMMARY: 7 errors from 4 contexts (suppressed: 2 from 2)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;All that output looks, frankly, terrifying at first. But it&amp;rsquo;s actually not that
+hard to interpret. It tells you how many blocks of memory it thinks are lost,
+and where they were allocated. That&amp;rsquo;s it!&lt;/p&gt;
+
+&lt;p&gt;How about output for invalid reads?&lt;/p&gt;
+
+&lt;p&gt;I don&amp;rsquo;t have those, because I rage&amp;hellip; obliterated them. Yes. That.&lt;/p&gt;
+
+&lt;p&gt;My problem was that something was trying to write to the channel after it was
+free&amp;rsquo;d. That has now been solved, thanks to valgrind outputting 8 pages of
+&amp;ldquo;invalid write of size 8, here (insert stacktrace), to a block that was free&amp;rsquo;d
+here (insert stacktrace)&amp;ldquo;.&lt;/p&gt;
+
+&lt;h4 id=&#34;valgrind-treats-you-like-you-don-t-know-what-you-re-doing:8198804284f5f45e50df30e1088b1d71&#34;&gt;valgrind treats you like you don&amp;rsquo;t know what you&amp;rsquo;re doing&lt;/h4&gt;
+
+&lt;p&gt;In my case, that&amp;rsquo;s probably true. Manual memory management sucks.&lt;/p&gt;
+
+&lt;p&gt;But it&amp;rsquo;s good, because there&amp;rsquo;s definitely way more actual errors detected than
+false positives. Case in point, here was my recycling bin after I printed out
+my valgrind output and went through all of them one by one:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://www.robxu9.com/media/2014-08-05-valgrind-is-important/2014-08-05 18.05.13
+.jpg&#34; alt=&#34;so much paper...&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;I feel old-fashioned because I do code reviews on paper, but hey, it&amp;rsquo;s easier
+for me. I can&amp;rsquo;t be the only one who agrees&amp;hellip; right?&lt;/p&gt;
+
+&lt;h4 id=&#34;so-what-are-you-trying-to-tell-me:8198804284f5f45e50df30e1088b1d71&#34;&gt;so what are you trying to tell me&lt;/h4&gt;
+
+&lt;p&gt;Valgrind your program. It&amp;rsquo;s good for detecting memory leaks and the likes of it
+, can tell you when you&amp;rsquo;re trying to murder poor memory fields you don&amp;rsquo;t have
+access to, and also other cool things. Really.&lt;/p&gt;
+
+&lt;p&gt;Here, I&amp;rsquo;ll get you started! You can run valgrind with
+&lt;code&gt;valgrind --leak-check=yes --read-var-info=yes --track-origins=yes ./[program]&lt;/code&gt;
+and receive your lovely output. By default, valgrind prints to stderr. Redirect
+it to stdout if you want to pipe it to &lt;code&gt;ansi2html&lt;/code&gt; or something similar to
+to print it out.&lt;/p&gt;
+
+&lt;h4 id=&#34;what-was-the-point-of-this-article:8198804284f5f45e50df30e1088b1d71&#34;&gt;what was the point of this article&lt;/h4&gt;
+
+&lt;p&gt;I don&amp;rsquo;t know, just that I had a problem, used Valgrind, solved said problem?&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>stdout is slow</title>
+      <link>http://www.robxu9.com/2014/08/stdout-is-slow/</link>
+      <pubDate>Fri, 01 Aug 2014 00:00:00 UT</pubDate>
+      <author>me@robxu9.com (Robert Xu)</author>
+      <guid>http://www.robxu9.com/2014/08/stdout-is-slow/</guid>
+      <description>
+
+&lt;p&gt;Reading or writing any sort of stream can be slow.  I cannot stress how much
+that is true.&lt;/p&gt;
+
+&lt;p&gt;It&amp;rsquo;s incredibly noticeable, especially when you have some sort of GUI program
+in debug mode and it prints out a load of stuff. Each printout, whether it&amp;rsquo;s
+piped somewhere else or goes to the console, can add time that matters to your
+program&amp;rsquo;s execution.&lt;/p&gt;
+
+&lt;h3 id=&#34;why-bring-it-up-now:8e44ed532c74307615cde872e9d5796a&#34;&gt;Why bring it up now?&lt;/h3&gt;
+
+&lt;p&gt;Take for example, &lt;code&gt;libdpx&lt;/code&gt;. I haven&amp;rsquo;t silenced any of the debug output; rather
+I use it to my advantage so that I can trace where things are going. I&amp;rsquo;ve
+caught several rather significant bugs this way, since tracing with &lt;code&gt;gdb&lt;/code&gt; is
+rather hard on a coroutine library.&lt;/p&gt;
+
+&lt;p&gt;But what about performance?&lt;/p&gt;
+
+&lt;p&gt;According to &lt;a href=&#34;http://zeromq.org/results:perf-howto&#34;&gt;ØMQ&lt;/a&gt;, their performance in
+terms of latency (which is the only one I have tested with duplex) for 100000
+1-byte messages is a mere 30.9 microseconds, a figure I was able to replicate
+locally. Jeff mentioned that I could look into performance with &lt;code&gt;libdpx&lt;/code&gt;, and I
+said &amp;ldquo;sure, why not?&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;The tests are practically identical to the ØMQ ones - I have a receiver and a
+sender of messages. And what I got initially stunned me:
+{% highlight shell-session %}
+$ ./send_lat 127.0.0.1 9999 1 100000&lt;/p&gt;
+
+&lt;h1 id=&#34;lots-of-stdout-here:8e44ed532c74307615cde872e9d5796a&#34;&gt;lots of stdout here&lt;/h1&gt;
+
+&lt;p&gt;message size: 1 bytes
+message count: 100000
+avg latency: 6788597.849 nanoseconds
+{% endhighlight %}&lt;/p&gt;
+
+&lt;p&gt;That&amp;rsquo;s 6788.6 microseconds. Yikes!&lt;/p&gt;
+
+&lt;h3 id=&#34;save-the-output-for-debugging-only:8e44ed532c74307615cde872e9d5796a&#34;&gt;save the output for debugging only&lt;/h3&gt;
+
+&lt;p&gt;I went ahead today and created a &lt;code&gt;DEBUG_FUNC(...)&lt;/code&gt; macro, which &lt;code&gt;#ifdef DEBUG&lt;/code&gt;
+would actually execute anything inside the function, and if not, would delete
+anything there.&lt;/p&gt;
+
+&lt;p&gt;So then I wrapped all my not-important &lt;code&gt;printf&lt;/code&gt; statements with &lt;code&gt;DEBUG_FUNC&lt;/code&gt;,
+and the errors I separated out into &lt;code&gt;fprintf(stderr, ...)&lt;/code&gt;. And then what did
+I find?&lt;/p&gt;
+
+&lt;p&gt;{% highlight shell-session %}
+$ ./send_lat 127.0.0.1 9999 1 100000
+message size: 1 bytes
+message count: 100000
+avg latency: 129588.328 nanoseconds
+{% endhighlight %}&lt;/p&gt;
+
+&lt;p&gt;129.6 microseconds. A huge improvement. And because I didn&amp;rsquo;t write to stdout at
+all.&lt;/p&gt;
+
+&lt;h3 id=&#34;writing-means-disk-i-o:8e44ed532c74307615cde872e9d5796a&#34;&gt;writing means disk i/o&lt;/h3&gt;
+
+&lt;p&gt;But this is particularly true for anything - if you write to anything, there is
+going to be overhead because of flushing the stream to disk or wherever it
+wants to go.&lt;/p&gt;
+
+&lt;p&gt;Remember that advice about writing to files in C? You have to flush the stream
+before closing it, or changes aren&amp;rsquo;t written to disk. It&amp;rsquo;s the same thing with
+&lt;code&gt;stdout&lt;/code&gt; - &lt;code&gt;stdout&lt;/code&gt; is a file, after all.&lt;/p&gt;
+
+&lt;p&gt;This is because files like &lt;code&gt;stdout&lt;/code&gt; are line buffered by default - so anything
+will stay in the buffer until it hits a newline, at which point the program
+essentially pauses to force everything to the file.&lt;/p&gt;
+
+&lt;p&gt;From what I know, there are three types of buffering:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;No buffering, so anything written will be flushed immediately to disk.&lt;/li&gt;
+&lt;li&gt;Block buffering, so after a certain length or manual call it will flush.&lt;/li&gt;
+&lt;li&gt;Line buffering, so after a &lt;code&gt;\n&lt;/code&gt; it will flush.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;A note here that was made on &lt;a href=&#34;http://stackoverflow.com/a/171662
+1/438175&#34;&gt;Stack Overflow&lt;/a&gt; is that &lt;code&gt;stderr&lt;/code&gt; isn&amp;rsquo;t buffered because it&amp;rsquo;s standard error - so
+naturally it wants to get the error to you as quickly as possible, even if it
+means slowing down everything else.&lt;/p&gt;
+
+&lt;p&gt;You can set any stream&amp;rsquo;s buffering characteristics with &lt;a href=&#34;http://www.cplusplus.com/reference/cstdio/setvbuf/&#34;&gt;&lt;code&gt;setvbuf()&lt;/code&gt;&lt;/a&gt; - either full buffering,
+line buffering, or no buffering. Practically all files are opened with
+full buffering (hence the advice to flush before you close), while files like
+&lt;code&gt;stdout&lt;/code&gt; are line buffered, and &lt;code&gt;stderr&lt;/code&gt; is not even buffered at all.&lt;/p&gt;
+
+&lt;p&gt;And that flushing takes CPU cycles. It has to empty out the buffer by writing
+it to disk, an operation that is costly because it&amp;rsquo;s disk i/o, and then it
+has to clear the buffer before it can resume execution.&lt;/p&gt;
+
+&lt;p&gt;While SSDs speed up disk i/o by a noticeable margin, not everyone has SSDs. So
+just please don&amp;rsquo;t &lt;code&gt;printf&lt;/code&gt; in your library. It makes an impact.&lt;/p&gt;
+
+&lt;h3 id=&#34;how-should-i-handle-logging-then-in-a-high-performance-application:8e44ed532c74307615cde872e9d5796a&#34;&gt;how should I handle logging then in a high performance application?&lt;/h3&gt;
+
+&lt;p&gt;This is a difficult topic. Some of my suggestions in the past have been to
+write on a dedicated thread; that is, print whatever you need but only flush
+on a dedicated thread, so that way that thread is the slow one while the
+others can continue.&lt;/p&gt;
+
+&lt;p&gt;But I guess I would mention that it really depends on what you&amp;rsquo;re making.
+Sometimes, forwarding any output to a logging server might be better. Maybe
+block buffering instead of line buffering &lt;code&gt;stdout&lt;/code&gt;. Write your own functions.
+I don&amp;rsquo;t know.&lt;/p&gt;
+
+&lt;p&gt;Some interesting ones have been making a channel across threads, and then
+sending log messages that are marked with your thread name &amp;amp; time to another
+thread to be finally processed and outputted, where in a worker thread:&lt;/p&gt;
+
+&lt;p&gt;{% highlight go %}
+mylog.Send(fmt.Sprintf(&amp;ldquo;my logging message&amp;rdquo;))
+{% endhighlight %}&lt;/p&gt;
+
+&lt;p&gt;which sends it through a channel to the logging thread, which then:&lt;/p&gt;
+
+&lt;p&gt;{% highlight go %}
+for log := range logChan {
+    fmt.Printf(&amp;ldquo;%s %s: %s\n&amp;rdquo;, log.Time, log.Threadname, log.Message)
+}
+{% endhighlight %}&lt;/p&gt;
+
+&lt;p&gt;Or something like that. Again, I really guess it depends on what you want to
+do.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>ctypes, Why?</title>
+      <link>http://www.robxu9.com/2014/07/ctypes-why/</link>
+      <pubDate>Wed, 30 Jul 2014 00:00:00 UT</pubDate>
+      <author>me@robxu9.com (Robert Xu)</author>
+      <guid>http://www.robxu9.com/2014/07/ctypes-why/</guid>
+      <description>
+
+&lt;p&gt;I don&amp;rsquo;t claim to be a particularly good Python programmer at all. I&amp;rsquo;m probably
+one of the&amp;hellip; less useful people to program Python - I much prefer Go (and to
+be rather honest, C).&lt;/p&gt;
+
+&lt;p&gt;But I think I&amp;rsquo;ve encountered the nastiest piece of library I&amp;rsquo;ve used with
+Python - &lt;code&gt;ctypes&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h4 id=&#34;what-is-ctypes:999b5b7440fa538dd5d40514f7485df6&#34;&gt;What is &lt;code&gt;ctypes&lt;/code&gt;?&lt;/h4&gt;
+
+&lt;p&gt;It&amp;rsquo;s kind of like the psuedo &lt;code&gt;C&lt;/code&gt; package for Go - it allows direct access to
+C functions and structures and all those nice things, and lets you use C
+libraries in your Python program.&lt;/p&gt;
+
+&lt;p&gt;I thought, &amp;ldquo;Well, this sounds nice! Let&amp;rsquo;s write Python bindings for &lt;code&gt;libdpx&lt;/code&gt;! It
+can&amp;rsquo;t be too hard!&amp;rdquo; I was wrong.&lt;/p&gt;
+
+&lt;h4 id=&#34;struggling-along:999b5b7440fa538dd5d40514f7485df6&#34;&gt;Struggling along&lt;/h4&gt;
+
+&lt;p&gt;I&amp;rsquo;ve learned two major annoyances:&lt;/p&gt;
+
+&lt;h5 id=&#34;calling-a-function-is-hard:999b5b7440fa538dd5d40514f7485df6&#34;&gt;Calling a function is hard.&lt;/h5&gt;
+
+&lt;p&gt;The documentation claims that that this is possible:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;from ctypes import *
+import atexit
+
+dpx = CDLL(&#39;libdpx.so&#39;)
+
+def cleanup():
+    dpx.dpx_cleanup()
+
+dpx.dpx_init()
+atexit.Register(cleanup)
+
+peer = dpx.dpx_peer_new()
+
+# do stuff with peer here
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And it&amp;rsquo;d be all nice and dandy, right? NOPE. Nowhere in the documentation does
+ctypes seem to know what to do when you get a pointer back unless you
+explicitly say it. It does say that return values would &amp;ldquo;assume to be int&amp;rdquo;. So
+technically doing the following:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;peer = c_void_p(dpx.dpx_peer_new())
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;should work, right? Because c_void_p takes an integer argument, which comes out
+of the function thanks to ctypes. And that integer argument is probably a
+pointer, given the C return value.&lt;/p&gt;
+
+&lt;p&gt;But nooo. &lt;em&gt;segfaults everywhere&lt;/em&gt;. I had to do this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;dpn = dpx.dpx_peer_new
+dpn.argtypes = []
+dpn.restype = c_void_p
+
+# now call it
+peer = dpn()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;For &lt;em&gt;every single function&lt;/em&gt;.&lt;/p&gt;
+
+&lt;h5 id=&#34;i-apparently-cannot-work-with-pointers-nicely-with-ctypes:999b5b7440fa538dd5d40514f7485df6&#34;&gt;I apparently cannot work with pointers nicely with ctypes.&lt;/h5&gt;
+
+&lt;p&gt;Because, well.. Python seems to suck at pointer support. It&amp;rsquo;s understandable,
+so I&amp;rsquo;m not sure what I was expecting, but it&amp;rsquo;s still annoying when I do the
+following:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;dfn = dpx.dpx_frame_new
+dfn.argtypes = [c_void_p]
+dfn.restype = POINTER(CFRAME)
+# POINTER(CFRAME) means the type is a pointer to a CFRAME
+# CFRAME was a class derived from &amp;quot;Structure&amp;quot; that mimics dpx_frame in dpx.h
+
+new_frame = dfn(None)
+
+new_frame.payloadSize = 10
+new_frame.payload = payload
+
+channel.send(new_frame)
+# Sending frame: 0 bytes...
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Only to realise that payloadSize that channel gets is size &lt;strong&gt;0&lt;/strong&gt;. Why?&lt;/p&gt;
+
+&lt;p&gt;It&amp;rsquo;s because the object &lt;code&gt;new_frame&lt;/code&gt; is a pointer object. It&amp;rsquo;s like any other
+Python object, so I was actually setting the attributes &amp;lsquo;payloadSize&amp;rsquo; and
+&amp;lsquo;payload&amp;rsquo; on the object itself.&lt;/p&gt;
+
+&lt;p&gt;So then, how to get to the actual object?&lt;/p&gt;
+
+&lt;p&gt;You can&amp;rsquo;t do &lt;code&gt;new_frame.contents&lt;/code&gt; like the docs say, because the docs also say
+that Python will make a copy of the object. So that&amp;rsquo;s useless.&lt;/p&gt;
+
+&lt;p&gt;Insted, I have to treat it like an array:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;actual_new_frame = new_frame[0]
+actual_new_frame.payloadSize = 10
+actual_new_frame.payload = payload
+
+channel.send(new_frame)
+# Sending frame: 10 bytes...
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;So those problems are solved, at least.&lt;/p&gt;
+
+&lt;h4 id=&#34;so-you-re-happy-now:999b5b7440fa538dd5d40514f7485df6&#34;&gt;So you&amp;rsquo;re happy now?&lt;/h4&gt;
+
+&lt;p&gt;Nope. See that cover image? Crashes everywhere.&lt;/p&gt;
+
+&lt;p&gt;The same code that worked for the most core test case is now failing for the
+next because &lt;code&gt;ctypes&lt;/code&gt; is passing invalid pointers (or I am).&lt;/p&gt;
+
+&lt;p&gt;I think I&amp;rsquo;m going to try my hand at making a Python extension instead. At least
+I can code that in C&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;EDIT&lt;/strong&gt;: I&amp;rsquo;ve legitimately failed. It&amp;rsquo;s segfaulting because I&amp;rsquo;m cleaning up
+structures prematurely. So therefore pointers that used to point to valid stuff
+no longer do.&lt;/p&gt;
+
+&lt;p&gt;I think I need to take shots.&lt;/p&gt;
+
+&lt;h4 id=&#34;where-is-your-code-so-i-can-laugh-at-it:999b5b7440fa538dd5d40514f7485df6&#34;&gt;Where is your code so I can laugh at it&lt;/h4&gt;
+
+&lt;p&gt;By all means, please do! #ctypestruggles&lt;/p&gt;
+
+&lt;p&gt;It&amp;rsquo;s living &lt;a href=&#34;https://github.com/robxu9/duplex/tree/dev_libtask_again&#34;&gt;in a branch of duplex right now&lt;/a&gt;. Feel free to check it out.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Hello Blog.</title>
+      <link>http://www.robxu9.com/2014/07/hello-blog./</link>
+      <pubDate>Mon, 28 Jul 2014 00:00:00 UT</pubDate>
+      <author>me@robxu9.com (Robert Xu)</author>
+      <guid>http://www.robxu9.com/2014/07/hello-blog./</guid>
+      <description>
+
+&lt;p&gt;Welp, I suppose it&amp;rsquo;s about time that I made an actual blog on my actual domain.
+Whee!&lt;/p&gt;
+
+&lt;p&gt;I made a list of projects I wanted to do in the future - kinda like my personal
+project collection. When I actually compiled the list, though, it started to
+become a bit unrealistic.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/robxu9/uitest&#34;&gt;uitest&lt;/a&gt; - UI testing via VNC connection&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/Minequest/gomq&#34;&gt;gomq&lt;/a&gt; - MineQuest, written in Go&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/robxu9/kahinah&#34;&gt;kahinah&lt;/a&gt; - OpenMandriva&amp;rsquo;s QA Bot, which
+needs a rewrite (codenamed &lt;em&gt;v4&lt;/em&gt;)&lt;/li&gt;
+&lt;li&gt;aye - a DO API client in Go (like tugboat)&lt;/li&gt;
+&lt;li&gt;gnome 3.12 updates for OpenMandriva, which are like half-finished now&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/robxu9/duplex&#34;&gt;duplex&lt;/a&gt; - message queue RPC but also
+streaming i/o and peering&lt;/li&gt;
+&lt;li&gt;a new live cd tool for OpenMandriva Lx (because livecd-creator is bleh)&lt;/li&gt;
+&lt;li&gt;zypper instead of urpmi for OpenMandriva Lx (which means I have to PR zypper
+with support for hdlists)&lt;/li&gt;
+&lt;li&gt;trying my hand at writing an automated RPM build system&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;It&amp;rsquo;s a lot. In reality, I&amp;rsquo;m only maintaining &lt;code&gt;kahinah&lt;/code&gt; and &lt;code&gt;duplex&lt;/code&gt;, and then
+splitting my time between gnome 3.12 updates and &lt;code&gt;uitest&lt;/code&gt;. The next to come
+would probably be &lt;code&gt;aye&lt;/code&gt;, &lt;code&gt;zypper&lt;/code&gt;, or &lt;code&gt;gomq&lt;/code&gt;&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;In a way, I feel like I&amp;rsquo;m the naughty child with my hand in the cookie jar
+trying to figure out which cookie to grab before mother comes back (read:
+life takes over everything again).&lt;/p&gt;
+
+&lt;p&gt;Eh. We&amp;rsquo;ll see, I guess.&lt;/p&gt;
+
+&lt;h3 id=&#34;code-snippet-of-today:97f6c50ee355e8ed2cdf4e3f738c409d&#34;&gt;Code snippet of today&lt;/h3&gt;
+
+&lt;p&gt;I finally got duplex as a shared library working, but that&amp;rsquo;s under a separate
+branch for now because I want to make sure it&amp;rsquo;s &lt;em&gt;perfect&lt;/em&gt;. So, I&amp;rsquo;m writing
+Python2 bindings!&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;from ctypes import *
+dpx = CDLL(&#39;libdpx.so&#39;)
+
+print dpx
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;^ That finally works. Thank god.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
