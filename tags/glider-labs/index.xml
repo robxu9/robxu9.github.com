@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Glider Labs on Robert Xu</title>
+    <link>http://www.robxu9.com/tags/glider-labs/</link>
+    <description>Recent content in Glider Labs on Robert Xu</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>me@robxu9.com (Robert Xu)</managingEditor>
+    <webMaster>me@robxu9.com (Robert Xu)</webMaster>
+    <copyright>© 2014-2015 Robert Xu. All Rights Reserved. Content not indicative of any addl party.</copyright>
+    <lastBuildDate>Sat, 17 Jan 2015 00:09:29 -0600</lastBuildDate>
+    <atom:link href="http://www.robxu9.com/tags/glider-labs/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>duplex in C, take two</title>
+      <link>http://www.robxu9.com/2015/01/duplex-in-c-take-two/</link>
+      <pubDate>Sat, 17 Jan 2015 00:09:29 -0600</pubDate>
+      <author>me@robxu9.com (Robert Xu)</author>
+      <guid>http://www.robxu9.com/2015/01/duplex-in-c-take-two/</guid>
+      <description>
+
+&lt;p&gt;I seem to be doing a bunch of rewrites of my older projects nowadays. But
+sometimes that&amp;rsquo;s necessary. It is for the case of duplex (and libduplex).&lt;/p&gt;
+
+&lt;h3 id=&#34;background:dbd361d9d83ece52b494a1b526aef755&#34;&gt;Background&lt;/h3&gt;
+
+&lt;p&gt;When I was working at DigitalOcean over the past summer, my main project was
+a communication framework called &lt;a href=&#34;https://github.com/progrium/duplex&#34;&gt;duplex&lt;/a&gt;.
+Duplex&amp;rsquo;s aim was to create a simple messaging framework that could potentially
+be used for RPC. The first version was prototyped in Go, and I created
+&lt;code&gt;libdpx&lt;/code&gt;, which was the first version in C.&lt;/p&gt;
+
+&lt;p&gt;Unfortunately, &lt;code&gt;libdpx&lt;/code&gt; had some major flaws - I didn&amp;rsquo;t use a proper build
+system, I used &lt;code&gt;libtask&lt;/code&gt; for coroutines (switching that out with &lt;code&gt;lthread&lt;/code&gt;,
+then switching back to &lt;code&gt;libtask&lt;/code&gt; after &lt;code&gt;lthread&lt;/code&gt; didn&amp;rsquo;t work with shared
+libraries), and in general I didn&amp;rsquo;t manage memory well. You could lose data
+along the way with the race conditions.&lt;/p&gt;
+
+&lt;p&gt;Jeff realised that a lot of the things we wanted to implement with duplex
+would be hard, because essentially we were creating a new protocol. So
+recently, he took to creating a second version in Go, but this time
+sitting on top of the SSH protocol.&lt;/p&gt;
+
+&lt;p&gt;The SSH protocol provides a bunch of the logic so that we don&amp;rsquo;t have to
+worry about it - authentication, security, and channel management. This
+was our way of wrapping it in a user friendly form.&lt;/p&gt;
+
+&lt;h3 id=&#34;libduplex:dbd361d9d83ece52b494a1b526aef755&#34;&gt;libduplex&lt;/h3&gt;
+
+&lt;p&gt;&lt;code&gt;libduplex&lt;/code&gt; is the second version of duplex in C. However, this time, I&amp;rsquo;m
+being extra careful to, essentially, not fuck up the threading. This time
+there are no lightweight coroutines or &lt;code&gt;libtask&lt;/code&gt;; instead, I directly call
+pthreads in order to manage calls. The API is still threadsafe, and I still
+run a thread dedicated to each ssh session (because libssh does not support
+multiple threads working on sessions, which is understandable given the
+complexity of the task - but it does have a non-blocking mode, and I rely
+on that). Currently you can bind to tcp and unix sockets, and if any other
+reliable protocol becomes available, I will gladly implement that.&lt;/p&gt;
+
+&lt;p&gt;The intent behind this is to make the Go version and C version be fully
+compatible. I will not &lt;code&gt;cgo&lt;/code&gt; these bindings this time, because that seems
+like a poor idea if they&amp;rsquo;re both going to be the same - the pure Go version
+would work better in Go. However, there is an interest in making a Python
+version for libduplex, which I will get around to after &lt;code&gt;libduplex&lt;/code&gt; is
+fully compatible with the already existing Go counterpart.&lt;/p&gt;
+
+&lt;h3 id=&#34;managing-time:dbd361d9d83ece52b494a1b526aef755&#34;&gt;Managing Time&lt;/h3&gt;
+
+&lt;p&gt;The last duplex suffered immensely from a lack of manpower - Jeff has his
+own projects and clients to focus on, and I have university which I have
+to concentrate on. However, I don&amp;rsquo;t intend to abandon this at all - if
+possible, I&amp;rsquo;d like this second version to become the main version of duplex.&lt;/p&gt;
+
+&lt;p&gt;We want to take duplex further, too. Not just for standard communication
+and RPC between applications, but further into plugin systems, APIs over
+the internet, and more.&lt;/p&gt;
+
+&lt;p&gt;So I definitely want to keep working on it despite university.&lt;/p&gt;
+
+&lt;p&gt;(You can make my life slightly easier by making pull requests.)&lt;/p&gt;
+
+&lt;h3 id=&#34;where-from-here:dbd361d9d83ece52b494a1b526aef755&#34;&gt;Where from here?&lt;/h3&gt;
+
+&lt;p&gt;Going from here remains to be seen. My immediate priorities are getting
+libduplex off the ground so that it can be at least used in a beta state.
+Maybe even declare it 1.0 if it gets to be good enough without any major
+flaws.&lt;/p&gt;
+
+&lt;p&gt;But I&amp;rsquo;m heading along for the ride and I definitely want to see what happens.&lt;/p&gt;
+
+&lt;h3 id=&#34;github:dbd361d9d83ece52b494a1b526aef755&#34;&gt;Github&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/robxu9/libduplex&#34;&gt;libduplex&lt;/a&gt; is licensed under the MIT
+license. See &lt;code&gt;HACKING&lt;/code&gt; for building instructions and more.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

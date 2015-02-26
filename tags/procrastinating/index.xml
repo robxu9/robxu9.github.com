@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Procrastinating on Robert Xu</title>
+    <link>http://www.robxu9.com/tags/procrastinating/</link>
+    <description>Recent content in Procrastinating on Robert Xu</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>me@robxu9.com (Robert Xu)</managingEditor>
+    <webMaster>me@robxu9.com (Robert Xu)</webMaster>
+    <copyright>© 2014-2015 Robert Xu. All Rights Reserved. Content not indicative of any addl party.</copyright>
+    <lastBuildDate>Wed, 25 Feb 2015 23:46:05 -0500</lastBuildDate>
+    <atom:link href="http://www.robxu9.com/tags/procrastinating/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>welp</title>
+      <link>http://www.robxu9.com/2015/02/welp/</link>
+      <pubDate>Wed, 25 Feb 2015 23:46:05 -0500</pubDate>
+      <author>me@robxu9.com (Robert Xu)</author>
+      <guid>http://www.robxu9.com/2015/02/welp/</guid>
+      <description>&lt;p&gt;That was quick.&lt;/p&gt;
+
+&lt;p&gt;What have I been up to? Things I&amp;rsquo;ve done lately include:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;studying for CSE 320, which is System Architecture. I feel like I&amp;rsquo;m slow on
+the uptake with this class, whatnot with muxes and ALUs&amp;hellip;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;working on CSE 306, which is implementing a simple &lt;code&gt;grep&lt;/code&gt; without libc. So
+just Linux system calls. Not bad, just time consuming. Also I gave up trying
+to make descriptive errors and just dumped &lt;code&gt;errno.h&lt;/code&gt; into a switch statement.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;I should probably do the Ethics project.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Beat Tales of Symphonia, Tales of Symphonia: Knights of Ratatosk, and started
+Tales of the Abyss, then realised that I actually have homework to do.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Had an Amazon interview. This was my first real interview in a &lt;strong&gt;LONG&lt;/strong&gt; time,
+and I&amp;rsquo;m not so certain I ace&amp;rsquo;d it. It was an experience, but it took my brain
+way too long to warm up and I think that cost me. I think I missed a Big-O
+notation and I definitely forgot about Kruskal&amp;rsquo;s algorithm. Shit.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Went to Boston for ECAASU 2015! Here&amp;rsquo;s a tip: don&amp;rsquo;t drive in Boston. The
+roads make no sense whatsoever (they&amp;rsquo;re like downtown Manhattan), and the
+random forks and roundabouts hurt my head.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;There&amp;rsquo;s more happening soon, but I gotta survive until at least Spring Break&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

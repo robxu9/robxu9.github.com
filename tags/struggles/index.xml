@@ -8,14 +8,34 @@
     <language>en-us</language>
     <managingEditor>me@robxu9.com (Robert Xu)</managingEditor>
     <webMaster>me@robxu9.com (Robert Xu)</webMaster>
-    <copyright>Copyright (c) 2014-2015 Robert Xu. All Rights Reserved.</copyright>
-    <lastBuildDate>Wed, 30 Jul 2014 00:00:00 UT</lastBuildDate>
+    <copyright>© 2014-2015 Robert Xu. All Rights Reserved. Content not indicative of any addl party.</copyright>
+    <lastBuildDate>Thu, 22 Jan 2015 17:54:17 -0500</lastBuildDate>
     <atom:link href="http://www.robxu9.com/tags/struggles/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>sophomore year, take two</title>
+      <link>http://www.robxu9.com/2015/01/sophomore-year-take-two/</link>
+      <pubDate>Thu, 22 Jan 2015 17:54:17 -0500</pubDate>
+      <author>me@robxu9.com (Robert Xu)</author>
+      <guid>http://www.robxu9.com/2015/01/sophomore-year-take-two/</guid>
+      <description>&lt;p&gt;Long story short:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;CSE 306: Operating Systems&lt;/li&gt;
+&lt;li&gt;CSE 312: Ethics&lt;/li&gt;
+&lt;li&gt;CSE 320: System Architecture&lt;/li&gt;
+&lt;li&gt;MEC 280: Pollution &amp;amp; Human Health&lt;/li&gt;
+&lt;li&gt;CCS 202: Film Genres&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I hope I survive.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>ctypes, Why?</title>
       <link>http://www.robxu9.com/2014/07/ctypes-why/</link>
-      <pubDate>Wed, 30 Jul 2014 00:00:00 UT</pubDate>
+      <pubDate>Wed, 30 Jul 2014 00:00:00 +0000</pubDate>
       <author>me@robxu9.com (Robert Xu)</author>
       <guid>http://www.robxu9.com/2014/07/ctypes-why/</guid>
       <description>

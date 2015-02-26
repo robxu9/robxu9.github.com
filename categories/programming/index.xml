@@ -8,14 +8,171 @@
     <language>en-us</language>
     <managingEditor>me@robxu9.com (Robert Xu)</managingEditor>
     <webMaster>me@robxu9.com (Robert Xu)</webMaster>
-    <copyright>Copyright (c) 2014-2015 Robert Xu. All Rights Reserved.</copyright>
-    <lastBuildDate>Tue, 05 Aug 2014 00:00:00 UT</lastBuildDate>
+    <copyright>© 2014-2015 Robert Xu. All Rights Reserved. Content not indicative of any addl party.</copyright>
+    <lastBuildDate>Tue, 20 Jan 2015 14:25:16 -0600</lastBuildDate>
     <atom:link href="http://www.robxu9.com/categories/programming/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>kahinah, take two</title>
+      <link>http://www.robxu9.com/2015/01/kahinah-take-two/</link>
+      <pubDate>Tue, 20 Jan 2015 14:25:16 -0600</pubDate>
+      <author>me@robxu9.com (Robert Xu)</author>
+      <guid>http://www.robxu9.com/2015/01/kahinah-take-two/</guid>
+      <description>
+
+&lt;p&gt;This one was the one that needed the obvious rewrite.&lt;/p&gt;
+
+&lt;h3 id=&#34;background:226c55525206653d6c71e0f5695b4e16&#34;&gt;Background&lt;/h3&gt;
+
+&lt;p&gt;Kahinah is an updates manager for the &lt;a href=&#34;http://openmandriva.org&#34;&gt;OpenMandriva&lt;/a&gt;
+Association&amp;rsquo;s distribution, OpenMandriva Lx. Its goal is to monitor builds that
+are produced from a build system (which is &lt;a href=&#34;https://abf.io&#34;&gt;abf.io&lt;/a&gt; right now),
+and create a karma system which testers can vote on the updates, and eventually
+accept them as working, or reject them as deficient.&lt;/p&gt;
+
+&lt;p&gt;This worked for the most part, but when it came time for a large number of
+builds (think a KDE SC 4 version update), Kahinah was overwhelmed, testers
+were crushed, and updates had a hard time going through.&lt;/p&gt;
+
+&lt;p&gt;Additionally, the system suffered from numerous bugs due to changes on abf.io,
+and it certainly didn&amp;rsquo;t help that I was using &lt;a href=&#34;http://beego.me&#34;&gt;beego&lt;/a&gt; and
+pulling many many dependencies, which shot build times up through the roof.&lt;/p&gt;
+
+&lt;h3 id=&#34;version-4:226c55525206653d6c71e0f5695b4e16&#34;&gt;Version&amp;hellip; 4?&lt;/h3&gt;
+
+&lt;p&gt;The first couple of versions were just getting it usable and bearable for the
+most part. This rewrite is entirely from scratch, with no existing code.&lt;/p&gt;
+
+&lt;p&gt;I finally provide a decent JSON API, and I plan to use JSON web tokens to
+provide authentication (thanks Matt for pointing that out). Updates are now
+more organized, and for the first time ever, I&amp;rsquo;m providing a new type called
+advisories.&lt;/p&gt;
+
+&lt;h3 id=&#34;what-are-advisories:226c55525206653d6c71e0f5695b4e16&#34;&gt;What are Advisories?&lt;/h3&gt;
+
+&lt;p&gt;Advisories are groups of updates. Instead of voting on one update, we create
+an advisory with the updates we want to contain in it. They can range from
+just one update to a group of them, and testers can test ALL of them at the
+same time.&lt;/p&gt;
+
+&lt;p&gt;This has two purposes - one, to force package maintainers to document more
+throughly for corporate customers (for example, putting bug references so
+that Kahinah can connect to Bugzilla and say, hey, here&amp;rsquo;s a possible solution
+that you can test), and two, to make large updates much more manageable for
+testers.&lt;/p&gt;
+
+&lt;p&gt;It also brings us in line with practically every distribution out there
+that has to keep track of updates (like Fedora&amp;rsquo;s bodhi).&lt;/p&gt;
+
+&lt;h3 id=&#34;what-else-has-changed:226c55525206653d6c71e0f5695b4e16&#34;&gt;What else has changed?&lt;/h3&gt;
+
+&lt;p&gt;The frontend is separate from the backend, and is written with
+&lt;a href=&#34;http://emberjs.com&#34;&gt;ember.js&lt;/a&gt;. It&amp;rsquo;s my first foray into ember.js, and I&amp;rsquo;m
+curious to see how it goes. The documentation is a bit random, especially since
+it looks like they&amp;rsquo;re migrating towards some ES6 standards, so it&amp;rsquo;ll be
+both a learning experience and a headache.&lt;/p&gt;
+
+&lt;h3 id=&#34;release-soon:226c55525206653d6c71e0f5695b4e16&#34;&gt;Release soon?&lt;/h3&gt;
+
+&lt;p&gt;When I get stuff working, maybe. I intend to deploy a beta version to
+replace the current Kahinah on jasper sometime at the end of this month
+or the beginning of next.&lt;/p&gt;
+
+&lt;h3 id=&#34;github:226c55525206653d6c71e0f5695b4e16&#34;&gt;Github&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/robxu9/kahinah/tree/dev_nobeego&#34;&gt;kahinah&lt;/a&gt; is licensed
+under the MIT license.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>duplex in C, take two</title>
+      <link>http://www.robxu9.com/2015/01/duplex-in-c-take-two/</link>
+      <pubDate>Sat, 17 Jan 2015 00:09:29 -0600</pubDate>
+      <author>me@robxu9.com (Robert Xu)</author>
+      <guid>http://www.robxu9.com/2015/01/duplex-in-c-take-two/</guid>
+      <description>
+
+&lt;p&gt;I seem to be doing a bunch of rewrites of my older projects nowadays. But
+sometimes that&amp;rsquo;s necessary. It is for the case of duplex (and libduplex).&lt;/p&gt;
+
+&lt;h3 id=&#34;background:dbd361d9d83ece52b494a1b526aef755&#34;&gt;Background&lt;/h3&gt;
+
+&lt;p&gt;When I was working at DigitalOcean over the past summer, my main project was
+a communication framework called &lt;a href=&#34;https://github.com/progrium/duplex&#34;&gt;duplex&lt;/a&gt;.
+Duplex&amp;rsquo;s aim was to create a simple messaging framework that could potentially
+be used for RPC. The first version was prototyped in Go, and I created
+&lt;code&gt;libdpx&lt;/code&gt;, which was the first version in C.&lt;/p&gt;
+
+&lt;p&gt;Unfortunately, &lt;code&gt;libdpx&lt;/code&gt; had some major flaws - I didn&amp;rsquo;t use a proper build
+system, I used &lt;code&gt;libtask&lt;/code&gt; for coroutines (switching that out with &lt;code&gt;lthread&lt;/code&gt;,
+then switching back to &lt;code&gt;libtask&lt;/code&gt; after &lt;code&gt;lthread&lt;/code&gt; didn&amp;rsquo;t work with shared
+libraries), and in general I didn&amp;rsquo;t manage memory well. You could lose data
+along the way with the race conditions.&lt;/p&gt;
+
+&lt;p&gt;Jeff realised that a lot of the things we wanted to implement with duplex
+would be hard, because essentially we were creating a new protocol. So
+recently, he took to creating a second version in Go, but this time
+sitting on top of the SSH protocol.&lt;/p&gt;
+
+&lt;p&gt;The SSH protocol provides a bunch of the logic so that we don&amp;rsquo;t have to
+worry about it - authentication, security, and channel management. This
+was our way of wrapping it in a user friendly form.&lt;/p&gt;
+
+&lt;h3 id=&#34;libduplex:dbd361d9d83ece52b494a1b526aef755&#34;&gt;libduplex&lt;/h3&gt;
+
+&lt;p&gt;&lt;code&gt;libduplex&lt;/code&gt; is the second version of duplex in C. However, this time, I&amp;rsquo;m
+being extra careful to, essentially, not fuck up the threading. This time
+there are no lightweight coroutines or &lt;code&gt;libtask&lt;/code&gt;; instead, I directly call
+pthreads in order to manage calls. The API is still threadsafe, and I still
+run a thread dedicated to each ssh session (because libssh does not support
+multiple threads working on sessions, which is understandable given the
+complexity of the task - but it does have a non-blocking mode, and I rely
+on that). Currently you can bind to tcp and unix sockets, and if any other
+reliable protocol becomes available, I will gladly implement that.&lt;/p&gt;
+
+&lt;p&gt;The intent behind this is to make the Go version and C version be fully
+compatible. I will not &lt;code&gt;cgo&lt;/code&gt; these bindings this time, because that seems
+like a poor idea if they&amp;rsquo;re both going to be the same - the pure Go version
+would work better in Go. However, there is an interest in making a Python
+version for libduplex, which I will get around to after &lt;code&gt;libduplex&lt;/code&gt; is
+fully compatible with the already existing Go counterpart.&lt;/p&gt;
+
+&lt;h3 id=&#34;managing-time:dbd361d9d83ece52b494a1b526aef755&#34;&gt;Managing Time&lt;/h3&gt;
+
+&lt;p&gt;The last duplex suffered immensely from a lack of manpower - Jeff has his
+own projects and clients to focus on, and I have university which I have
+to concentrate on. However, I don&amp;rsquo;t intend to abandon this at all - if
+possible, I&amp;rsquo;d like this second version to become the main version of duplex.&lt;/p&gt;
+
+&lt;p&gt;We want to take duplex further, too. Not just for standard communication
+and RPC between applications, but further into plugin systems, APIs over
+the internet, and more.&lt;/p&gt;
+
+&lt;p&gt;So I definitely want to keep working on it despite university.&lt;/p&gt;
+
+&lt;p&gt;(You can make my life slightly easier by making pull requests.)&lt;/p&gt;
+
+&lt;h3 id=&#34;where-from-here:dbd361d9d83ece52b494a1b526aef755&#34;&gt;Where from here?&lt;/h3&gt;
+
+&lt;p&gt;Going from here remains to be seen. My immediate priorities are getting
+libduplex off the ground so that it can be at least used in a beta state.
+Maybe even declare it 1.0 if it gets to be good enough without any major
+flaws.&lt;/p&gt;
+
+&lt;p&gt;But I&amp;rsquo;m heading along for the ride and I definitely want to see what happens.&lt;/p&gt;
+
+&lt;h3 id=&#34;github:dbd361d9d83ece52b494a1b526aef755&#34;&gt;Github&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/robxu9/libduplex&#34;&gt;libduplex&lt;/a&gt; is licensed under the MIT
+license. See &lt;code&gt;HACKING&lt;/code&gt; for building instructions and more.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>valgrind is important</title>
       <link>http://www.robxu9.com/2014/08/valgrind-is-important/</link>
-      <pubDate>Tue, 05 Aug 2014 00:00:00 UT</pubDate>
+      <pubDate>Tue, 05 Aug 2014 00:00:00 +0000</pubDate>
       <author>me@robxu9.com (Robert Xu)</author>
       <guid>http://www.robxu9.com/2014/08/valgrind-is-important/</guid>
       <description>
@@ -159,7 +316,7 @@ to print it out.&lt;/p&gt;
     <item>
       <title>stdout is slow</title>
       <link>http://www.robxu9.com/2014/08/stdout-is-slow/</link>
-      <pubDate>Fri, 01 Aug 2014 00:00:00 UT</pubDate>
+      <pubDate>Fri, 01 Aug 2014 00:00:00 +0000</pubDate>
       <author>me@robxu9.com (Robert Xu)</author>
       <guid>http://www.robxu9.com/2014/08/stdout-is-slow/</guid>
       <description>
@@ -296,7 +453,7 @@ do.&lt;/p&gt;
     <item>
       <title>ctypes, Why?</title>
       <link>http://www.robxu9.com/2014/07/ctypes-why/</link>
-      <pubDate>Wed, 30 Jul 2014 00:00:00 UT</pubDate>
+      <pubDate>Wed, 30 Jul 2014 00:00:00 +0000</pubDate>
       <author>me@robxu9.com (Robert Xu)</author>
       <guid>http://www.robxu9.com/2014/07/ctypes-why/</guid>
       <description>

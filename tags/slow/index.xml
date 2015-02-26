@@ -8,14 +8,14 @@
     <language>en-us</language>
     <managingEditor>me@robxu9.com (Robert Xu)</managingEditor>
     <webMaster>me@robxu9.com (Robert Xu)</webMaster>
-    <copyright>Copyright (c) 2014-2015 Robert Xu. All Rights Reserved.</copyright>
-    <lastBuildDate>Fri, 01 Aug 2014 00:00:00 UT</lastBuildDate>
+    <copyright>© 2014-2015 Robert Xu. All Rights Reserved. Content not indicative of any addl party.</copyright>
+    <lastBuildDate>Fri, 01 Aug 2014 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://www.robxu9.com/tags/slow/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>stdout is slow</title>
       <link>http://www.robxu9.com/2014/08/stdout-is-slow/</link>
-      <pubDate>Fri, 01 Aug 2014 00:00:00 UT</pubDate>
+      <pubDate>Fri, 01 Aug 2014 00:00:00 +0000</pubDate>
       <author>me@robxu9.com (Robert Xu)</author>
       <guid>http://www.robxu9.com/2014/08/stdout-is-slow/</guid>
       <description>
