@@ -3,8 +3,8 @@
 
   
   <meta charset="utf-8">
-  <title>kahinah, take two</title>
-  <meta name="description" content="kahinah, take two">
+  <title>cloudflare&#39;d</title>
+  <meta name="description" content="cloudflare&#39;d">
   <meta name="author" content="Robert Xu">
 
   
@@ -57,91 +57,63 @@
 	  <div id="post-title">
 		<p class="footnote">
 		  
-          <time class="">20 Jan 2015 ~ 500 words</time>
+          <time class="">02 Mar 2015 ~ 300 words</time>
 		  
 		  
 		  |
 		  
 		  
-		  tags:<a href="https://www.robxu9.com//tags/openmandriva">openmandriva</a> <a href="https://www.robxu9.com//tags/rpm">rpm</a> <a href="https://www.robxu9.com//tags/abf">abf</a> 
+		  tags:<a href="https://www.robxu9.com//tags/hush-stephen">hush stephen</a> <a href="https://www.robxu9.com//tags/i-know">i know</a> <a href="https://www.robxu9.com//tags/i-finally-got-around-to-this">i finally got around to this</a> 
 		  
 
 		  
-		  categories:<a href="https://www.robxu9.com//categories/programming">programming</a> 
+		  categories:<a href="https://www.robxu9.com//categories/musings">musings</a> 
 		  
 
 		  
 
 		</p>
-		<h5>kahinah, take two</h5>
-        <h6><small>another item in the long list of rewrites</small></h6>
+		<h5>cloudflare&#39;d</h5>
+        <h6><small>now serving more dns goodness</small></h6>
 	  </div>
 
 	  <div class="post">
-		
+		<p>My website was just cloudflare&rsquo;d today.</p>
 
-<p>This one was the one that needed the obvious rewrite.</p>
+<p>In a nutshell, this means that I&rsquo;ve switched nameservers (again), from
+DigitalOcean to CloudFlare. The main reason for that is because of
+CloudFlare&rsquo;s free https support, which I use in tandem with Github Pages.</p>
 
-<h3 id="background:226c55525206653d6c71e0f5695b4e16">Background</h3>
+<p>(Yes, no https on robxu9.com severely irked me.)</p>
 
-<p>Kahinah is an updates manager for the <a href="http://openmandriva.org">OpenMandriva</a>
-Association&rsquo;s distribution, OpenMandriva Lx. Its goal is to monitor builds that
-are produced from a build system (which is <a href="https://abf.io">abf.io</a> right now),
-and create a karma system which testers can vote on the updates, and eventually
-accept them as working, or reject them as deficient.</p>
+<p>Additionally, I&rsquo;ve been experimenting with new mail hosting lately, so
+I&rsquo;ve been switching mail providers like&hellip; every other week. Still self
+hosting in the end, but I just wanted to remark on a few things:</p>
 
-<p>This worked for the most part, but when it came time for a large number of
-builds (think a KDE SC 4 version update), Kahinah was overwhelmed, testers
-were crushed, and updates had a hard time going through.</p>
+<ul>
+<li><p><strong>Zentyal</strong>: I <em>really really really really really really</em> wanted to
+like you like Carly Rae Jepsen&rsquo;s new obsession. But I couldn&rsquo;t. You have a
+strange number of problems, your general configuration screen doesn&rsquo;t work
+(&ldquo;missing parameter: id&rdquo;???), and it was an overall mess. But your ability
+to mimic Exchange and also put together Mail, Contacts, and Calendar all
+in one with OpenChange and SoGo was really appealing. Unfortunately, errors
+aren&rsquo;t.</p></li>
 
-<p>Additionally, the system suffered from numerous bugs due to changes on abf.io,
-and it certainly didn&rsquo;t help that I was using <a href="http://beego.me">beego</a> and
-pulling many many dependencies, which shot build times up through the roof.</p>
+<li><p><strong>mailinabox.email</strong>: I mentioned that I wanted to use CloudFlare, right?
+Mail-in-a-Box is really insistent that you use its internal DNS, and if you
+don&rsquo;t, add 100000000 DNS records to CloudFlare instead. That&rsquo;s not really an
+issue, but then bind9 refused to resolve any DNS requests, and I gave up there.</p></li>
 
-<h3 id="version-4:226c55525206653d6c71e0f5695b4e16">Version&hellip; 4?</h3>
+<li><p><strong>yunohost</strong>: I really wish I had a picture of that meme right now. But this
+is what I&rsquo;m currently using now, after three weeks (Mail-in-a-Box is actually
+still up on my other VPS, but that&rsquo;s going down as soon as DNS propagates).</p></li>
+</ul>
 
-<p>The first couple of versions were just getting it usable and bearable for the
-most part. This rewrite is entirely from scratch, with no existing code.</p>
+<p>It&rsquo;s&hellip; nice to have a tiled welcome screen and something that seems to
+Just Work &trade; after so long. Although, I have to admit, Dovecot ran out of
+epoll handlers and that left me stumped, but a reboot solved that.</p>
 
-<p>I finally provide a decent JSON API, and I plan to use JSON web tokens to
-provide authentication (thanks Matt for pointing that out). Updates are now
-more organized, and for the first time ever, I&rsquo;m providing a new type called
-advisories.</p>
-
-<h3 id="what-are-advisories:226c55525206653d6c71e0f5695b4e16">What are Advisories?</h3>
-
-<p>Advisories are groups of updates. Instead of voting on one update, we create
-an advisory with the updates we want to contain in it. They can range from
-just one update to a group of them, and testers can test ALL of them at the
-same time.</p>
-
-<p>This has two purposes - one, to force package maintainers to document more
-throughly for corporate customers (for example, putting bug references so
-that Kahinah can connect to Bugzilla and say, hey, here&rsquo;s a possible solution
-that you can test), and two, to make large updates much more manageable for
-testers.</p>
-
-<p>It also brings us in line with practically every distribution out there
-that has to keep track of updates (like Fedora&rsquo;s bodhi).</p>
-
-<h3 id="what-else-has-changed:226c55525206653d6c71e0f5695b4e16">What else has changed?</h3>
-
-<p>The frontend is separate from the backend, and is written with
-<a href="http://emberjs.com">ember.js</a>. It&rsquo;s my first foray into ember.js, and I&rsquo;m
-curious to see how it goes. The documentation is a bit random, especially since
-it looks like they&rsquo;re migrating towards some ES6 standards, so it&rsquo;ll be
-both a learning experience and a headache.</p>
-
-<h3 id="release-soon:226c55525206653d6c71e0f5695b4e16">Release soon?</h3>
-
-<p>When I get stuff working, maybe. I intend to deploy a beta version to
-replace the current Kahinah on jasper sometime at the end of this month
-or the beginning of next.</p>
-
-<h3 id="github:226c55525206653d6c71e0f5695b4e16">Github</h3>
-
-<p><a href="https://github.com/robxu9/kahinah/tree/dev_nobeego">kahinah</a> is licensed
-under the MIT license.</p>
+<p>I should go study for CSE 320 now.</p>
 
 	  </div>
 
@@ -149,8 +121,8 @@ under the MIT license.</p>
         <div id="disqus_thread"></div>
         <script type="text/javascript">
         var disqus_shortname = 'robxu9';
-        var disqus_title = 'kahinah, take two';
-        var disqus_url = 'https:\/\/www.robxu9.com\/2015\/01\/kahinah-take-two\/';
+        var disqus_title = 'cloudflare\x27d';
+        var disqus_url = 'https:\/\/www.robxu9.com\/2015\/03\/cloudflared\/';
 
         (function() {
             

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>I Know on Robert Xu</title>
+    <link>https://www.robxu9.com/tags/i-know/</link>
+    <description>Recent content in I Know on Robert Xu</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>me@robxu9.com (Robert Xu)</managingEditor>
+    <webMaster>me@robxu9.com (Robert Xu)</webMaster>
+    <copyright>© 2014-2015 Robert Xu. All Rights Reserved. Content not indicative of any addl party.</copyright>
+    <lastBuildDate>Mon, 02 Mar 2015 22:11:30 -0500</lastBuildDate>
+    <atom:link href="https://www.robxu9.com/tags/i-know/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>cloudflare&#39;d</title>
+      <link>https://www.robxu9.com/2015/03/cloudflared/</link>
+      <pubDate>Mon, 02 Mar 2015 22:11:30 -0500</pubDate>
+      <author>me@robxu9.com (Robert Xu)</author>
+      <guid>https://www.robxu9.com/2015/03/cloudflared/</guid>
+      <description>&lt;p&gt;My website was just cloudflare&amp;rsquo;d today.&lt;/p&gt;
+
+&lt;p&gt;In a nutshell, this means that I&amp;rsquo;ve switched nameservers (again), from
+DigitalOcean to CloudFlare. The main reason for that is because of
+CloudFlare&amp;rsquo;s free https support, which I use in tandem with Github Pages.&lt;/p&gt;
+
+&lt;p&gt;(Yes, no https on robxu9.com severely irked me.)&lt;/p&gt;
+
+&lt;p&gt;Additionally, I&amp;rsquo;ve been experimenting with new mail hosting lately, so
+I&amp;rsquo;ve been switching mail providers like&amp;hellip; every other week. Still self
+hosting in the end, but I just wanted to remark on a few things:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Zentyal&lt;/strong&gt;: I &lt;em&gt;really really really really really really&lt;/em&gt; wanted to
+like you like Carly Rae Jepsen&amp;rsquo;s new obsession. But I couldn&amp;rsquo;t. You have a
+strange number of problems, your general configuration screen doesn&amp;rsquo;t work
+(&amp;ldquo;missing parameter: id&amp;rdquo;???), and it was an overall mess. But your ability
+to mimic Exchange and also put together Mail, Contacts, and Calendar all
+in one with OpenChange and SoGo was really appealing. Unfortunately, errors
+aren&amp;rsquo;t.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;mailinabox.email&lt;/strong&gt;: I mentioned that I wanted to use CloudFlare, right?
+Mail-in-a-Box is really insistent that you use its internal DNS, and if you
+don&amp;rsquo;t, add 100000000 DNS records to CloudFlare instead. That&amp;rsquo;s not really an
+issue, but then bind9 refused to resolve any DNS requests, and I gave up there.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;yunohost&lt;/strong&gt;: I really wish I had a picture of that meme right now. But this
+is what I&amp;rsquo;m currently using now, after three weeks (Mail-in-a-Box is actually
+still up on my other VPS, but that&amp;rsquo;s going down as soon as DNS propagates).&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;It&amp;rsquo;s&amp;hellip; nice to have a tiled welcome screen and something that seems to
+Just Work &amp;trade; after so long. Although, I have to admit, Dovecot ran out of
+epoll handlers and that left me stumped, but a reboot solved that.&lt;/p&gt;
+
+&lt;p&gt;I should go study for CSE 320 now.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

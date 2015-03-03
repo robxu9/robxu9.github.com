@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Programming on Robert Xu</title>
-    <link>http://www.robxu9.com/categories/programming/</link>
+    <link>https://www.robxu9.com/categories/programming/</link>
     <description>Recent content in Programming on Robert Xu</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -10,14 +10,14 @@
     <webMaster>me@robxu9.com (Robert Xu)</webMaster>
     <copyright>© 2014-2015 Robert Xu. All Rights Reserved. Content not indicative of any addl party.</copyright>
     <lastBuildDate>Tue, 20 Jan 2015 14:25:16 -0600</lastBuildDate>
-    <atom:link href="http://www.robxu9.com/categories/programming/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.robxu9.com/categories/programming/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>kahinah, take two</title>
-      <link>http://www.robxu9.com/2015/01/kahinah-take-two/</link>
+      <link>https://www.robxu9.com/2015/01/kahinah-take-two/</link>
       <pubDate>Tue, 20 Jan 2015 14:25:16 -0600</pubDate>
       <author>me@robxu9.com (Robert Xu)</author>
-      <guid>http://www.robxu9.com/2015/01/kahinah-take-two/</guid>
+      <guid>https://www.robxu9.com/2015/01/kahinah-take-two/</guid>
       <description>
 
 &lt;p&gt;This one was the one that needed the obvious rewrite.&lt;/p&gt;
@@ -87,10 +87,10 @@ under the MIT license.&lt;/p&gt;
     
     <item>
       <title>duplex in C, take two</title>
-      <link>http://www.robxu9.com/2015/01/duplex-in-c-take-two/</link>
+      <link>https://www.robxu9.com/2015/01/duplex-in-c-take-two/</link>
       <pubDate>Sat, 17 Jan 2015 00:09:29 -0600</pubDate>
       <author>me@robxu9.com (Robert Xu)</author>
-      <guid>http://www.robxu9.com/2015/01/duplex-in-c-take-two/</guid>
+      <guid>https://www.robxu9.com/2015/01/duplex-in-c-take-two/</guid>
       <description>
 
 &lt;p&gt;I seem to be doing a bunch of rewrites of my older projects nowadays. But
@@ -171,10 +171,10 @@ license. See &lt;code&gt;HACKING&lt;/code&gt; for building instructions and more
     
     <item>
       <title>valgrind is important</title>
-      <link>http://www.robxu9.com/2014/08/valgrind-is-important/</link>
+      <link>https://www.robxu9.com/2014/08/valgrind-is-important/</link>
       <pubDate>Tue, 05 Aug 2014 00:00:00 +0000</pubDate>
       <author>me@robxu9.com (Robert Xu)</author>
-      <guid>http://www.robxu9.com/2014/08/valgrind-is-important/</guid>
+      <guid>https://www.robxu9.com/2014/08/valgrind-is-important/</guid>
       <description>
 
 &lt;p&gt;Most people have heard of debugging tools like &lt;code&gt;gdb&lt;/code&gt;. For the rest, it&amp;rsquo;s
@@ -288,7 +288,7 @@ here (insert stacktrace)&amp;ldquo;.&lt;/p&gt;
 false positives. Case in point, here was my recycling bin after I printed out
 my valgrind output and went through all of them one by one:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://www.robxu9.com/media/2014-08-05-valgrind-is-important/2014-08-05 18.05.13
+&lt;p&gt;&lt;img src=&#34;https://www.robxu9.com/media/2014-08-05-valgrind-is-important/2014-08-05 18.05.13
 .jpg&#34; alt=&#34;so much paper...&#34; /&gt;
 &lt;/p&gt;
 
@@ -315,10 +315,10 @@ to print it out.&lt;/p&gt;
     
     <item>
       <title>stdout is slow</title>
-      <link>http://www.robxu9.com/2014/08/stdout-is-slow/</link>
+      <link>https://www.robxu9.com/2014/08/stdout-is-slow/</link>
       <pubDate>Fri, 01 Aug 2014 00:00:00 +0000</pubDate>
       <author>me@robxu9.com (Robert Xu)</author>
-      <guid>http://www.robxu9.com/2014/08/stdout-is-slow/</guid>
+      <guid>https://www.robxu9.com/2014/08/stdout-is-slow/</guid>
       <description>
 
 &lt;p&gt;Reading or writing any sort of stream can be slow.  I cannot stress how much
@@ -452,10 +452,10 @@ do.&lt;/p&gt;
     
     <item>
       <title>ctypes, Why?</title>
-      <link>http://www.robxu9.com/2014/07/ctypes-why/</link>
+      <link>https://www.robxu9.com/2014/07/ctypes-why/</link>
       <pubDate>Wed, 30 Jul 2014 00:00:00 +0000</pubDate>
       <author>me@robxu9.com (Robert Xu)</author>
-      <guid>http://www.robxu9.com/2014/07/ctypes-why/</guid>
+      <guid>https://www.robxu9.com/2014/07/ctypes-why/</guid>
       <description>
 
 &lt;p&gt;I don&amp;rsquo;t claim to be a particularly good Python programmer at all. I&amp;rsquo;m probably

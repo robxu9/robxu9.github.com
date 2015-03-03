@@ -2,22 +2,67 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Robert Xu</title>
-    <link>http://www.robxu9.com/post/</link>
+    <link>https://www.robxu9.com/post/</link>
     <description>Recent content in Posts on Robert Xu</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <managingEditor>me@robxu9.com (Robert Xu)</managingEditor>
     <webMaster>me@robxu9.com (Robert Xu)</webMaster>
     <copyright>© 2014-2015 Robert Xu. All Rights Reserved. Content not indicative of any addl party.</copyright>
-    <lastBuildDate>Wed, 25 Feb 2015 23:55:44 -0500</lastBuildDate>
-    <atom:link href="http://www.robxu9.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 02 Mar 2015 22:11:30 -0500</lastBuildDate>
+    <atom:link href="https://www.robxu9.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>cloudflare&#39;d</title>
+      <link>https://www.robxu9.com/2015/03/cloudflared/</link>
+      <pubDate>Mon, 02 Mar 2015 22:11:30 -0500</pubDate>
+      <author>me@robxu9.com (Robert Xu)</author>
+      <guid>https://www.robxu9.com/2015/03/cloudflared/</guid>
+      <description>&lt;p&gt;My website was just cloudflare&amp;rsquo;d today.&lt;/p&gt;
+
+&lt;p&gt;In a nutshell, this means that I&amp;rsquo;ve switched nameservers (again), from
+DigitalOcean to CloudFlare. The main reason for that is because of
+CloudFlare&amp;rsquo;s free https support, which I use in tandem with Github Pages.&lt;/p&gt;
+
+&lt;p&gt;(Yes, no https on robxu9.com severely irked me.)&lt;/p&gt;
+
+&lt;p&gt;Additionally, I&amp;rsquo;ve been experimenting with new mail hosting lately, so
+I&amp;rsquo;ve been switching mail providers like&amp;hellip; every other week. Still self
+hosting in the end, but I just wanted to remark on a few things:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Zentyal&lt;/strong&gt;: I &lt;em&gt;really really really really really really&lt;/em&gt; wanted to
+like you like Carly Rae Jepsen&amp;rsquo;s new obsession. But I couldn&amp;rsquo;t. You have a
+strange number of problems, your general configuration screen doesn&amp;rsquo;t work
+(&amp;ldquo;missing parameter: id&amp;rdquo;???), and it was an overall mess. But your ability
+to mimic Exchange and also put together Mail, Contacts, and Calendar all
+in one with OpenChange and SoGo was really appealing. Unfortunately, errors
+aren&amp;rsquo;t.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;mailinabox.email&lt;/strong&gt;: I mentioned that I wanted to use CloudFlare, right?
+Mail-in-a-Box is really insistent that you use its internal DNS, and if you
+don&amp;rsquo;t, add 100000000 DNS records to CloudFlare instead. That&amp;rsquo;s not really an
+issue, but then bind9 refused to resolve any DNS requests, and I gave up there.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;yunohost&lt;/strong&gt;: I really wish I had a picture of that meme right now. But this
+is what I&amp;rsquo;m currently using now, after three weeks (Mail-in-a-Box is actually
+still up on my other VPS, but that&amp;rsquo;s going down as soon as DNS propagates).&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;It&amp;rsquo;s&amp;hellip; nice to have a tiled welcome screen and something that seems to
+Just Work &amp;trade; after so long. Although, I have to admit, Dovecot ran out of
+epoll handlers and that left me stumped, but a reboot solved that.&lt;/p&gt;
+
+&lt;p&gt;I should go study for CSE 320 now.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>february music</title>
-      <link>http://www.robxu9.com/2015/02/february-music/</link>
+      <link>https://www.robxu9.com/2015/02/february-music/</link>
       <pubDate>Wed, 25 Feb 2015 23:55:44 -0500</pubDate>
       <author>me@robxu9.com (Robert Xu)</author>
-      <guid>http://www.robxu9.com/2015/02/february-music/</guid>
+      <guid>https://www.robxu9.com/2015/02/february-music/</guid>
       <description>&lt;p&gt;One of my more boring months. Other than the following, I&amp;rsquo;ve just been
 listening to BBC Radio 1, BBC Radio 2, Captial FM London, FRESH 102.7,
 or HOT 99.5&amp;hellip;&lt;/p&gt;
@@ -49,10 +94,10 @@ more remarkable at her success. You can truly appreciate it.&lt;/p&gt;&lt;/li&gt
     
     <item>
       <title>welp</title>
-      <link>http://www.robxu9.com/2015/02/welp/</link>
+      <link>https://www.robxu9.com/2015/02/welp/</link>
       <pubDate>Wed, 25 Feb 2015 23:46:05 -0500</pubDate>
       <author>me@robxu9.com (Robert Xu)</author>
-      <guid>http://www.robxu9.com/2015/02/welp/</guid>
+      <guid>https://www.robxu9.com/2015/02/welp/</guid>
       <description>&lt;p&gt;That was quick.&lt;/p&gt;
 
 &lt;p&gt;What have I been up to? Things I&amp;rsquo;ve done lately include:&lt;/p&gt;
@@ -86,10 +131,10 @@ random forks and roundabouts hurt my head.&lt;/p&gt;&lt;/li&gt;
     
     <item>
       <title>sophomore year, take two</title>
-      <link>http://www.robxu9.com/2015/01/sophomore-year-take-two/</link>
+      <link>https://www.robxu9.com/2015/01/sophomore-year-take-two/</link>
       <pubDate>Thu, 22 Jan 2015 17:54:17 -0500</pubDate>
       <author>me@robxu9.com (Robert Xu)</author>
-      <guid>http://www.robxu9.com/2015/01/sophomore-year-take-two/</guid>
+      <guid>https://www.robxu9.com/2015/01/sophomore-year-take-two/</guid>
       <description>&lt;p&gt;Long story short:&lt;/p&gt;
 
 &lt;ul&gt;
@@ -106,10 +151,10 @@ random forks and roundabouts hurt my head.&lt;/p&gt;&lt;/li&gt;
     
     <item>
       <title>kahinah, take two</title>
-      <link>http://www.robxu9.com/2015/01/kahinah-take-two/</link>
+      <link>https://www.robxu9.com/2015/01/kahinah-take-two/</link>
       <pubDate>Tue, 20 Jan 2015 14:25:16 -0600</pubDate>
       <author>me@robxu9.com (Robert Xu)</author>
-      <guid>http://www.robxu9.com/2015/01/kahinah-take-two/</guid>
+      <guid>https://www.robxu9.com/2015/01/kahinah-take-two/</guid>
       <description>
 
 &lt;p&gt;This one was the one that needed the obvious rewrite.&lt;/p&gt;
@@ -179,10 +224,10 @@ under the MIT license.&lt;/p&gt;
     
     <item>
       <title>january music</title>
-      <link>http://www.robxu9.com/2015/01/january-music/</link>
+      <link>https://www.robxu9.com/2015/01/january-music/</link>
       <pubDate>Sun, 18 Jan 2015 14:04:50 -0600</pubDate>
       <author>me@robxu9.com (Robert Xu)</author>
-      <guid>http://www.robxu9.com/2015/01/january-music/</guid>
+      <guid>https://www.robxu9.com/2015/01/january-music/</guid>
       <description>&lt;p&gt;I&amp;rsquo;ve been listening to a bunch of new things lately:&lt;/p&gt;
 
 &lt;ul&gt;
@@ -225,10 +270,10 @@ comments below!&lt;/p&gt;
     
     <item>
       <title>duplex in C, take two</title>
-      <link>http://www.robxu9.com/2015/01/duplex-in-c-take-two/</link>
+      <link>https://www.robxu9.com/2015/01/duplex-in-c-take-two/</link>
       <pubDate>Sat, 17 Jan 2015 00:09:29 -0600</pubDate>
       <author>me@robxu9.com (Robert Xu)</author>
-      <guid>http://www.robxu9.com/2015/01/duplex-in-c-take-two/</guid>
+      <guid>https://www.robxu9.com/2015/01/duplex-in-c-take-two/</guid>
       <description>
 
 &lt;p&gt;I seem to be doing a bunch of rewrites of my older projects nowadays. But
@@ -309,10 +354,10 @@ license. See &lt;code&gt;HACKING&lt;/code&gt; for building instructions and more
     
     <item>
       <title>robxu9.com, take two</title>
-      <link>http://www.robxu9.com/2015/01/robxu9.com-take-two/</link>
+      <link>https://www.robxu9.com/2015/01/robxu9.com-take-two/</link>
       <pubDate>Wed, 14 Jan 2015 22:48:42 -0600</pubDate>
       <author>me@robxu9.com (Robert Xu)</author>
-      <guid>http://www.robxu9.com/2015/01/robxu9.com-take-two/</guid>
+      <guid>https://www.robxu9.com/2015/01/robxu9.com-take-two/</guid>
       <description>&lt;p&gt;I never had the time to really blog about things in length after I left
 DigitalOcean. I guess I felt like it was time consuming and such effort could
 better be spent sleeping or coding or something along the lines of that.&lt;/p&gt;
@@ -332,10 +377,10 @@ after I finish writing this post.&lt;/p&gt;
     
     <item>
       <title>valgrind is important</title>
-      <link>http://www.robxu9.com/2014/08/valgrind-is-important/</link>
+      <link>https://www.robxu9.com/2014/08/valgrind-is-important/</link>
       <pubDate>Tue, 05 Aug 2014 00:00:00 +0000</pubDate>
       <author>me@robxu9.com (Robert Xu)</author>
-      <guid>http://www.robxu9.com/2014/08/valgrind-is-important/</guid>
+      <guid>https://www.robxu9.com/2014/08/valgrind-is-important/</guid>
       <description>
 
 &lt;p&gt;Most people have heard of debugging tools like &lt;code&gt;gdb&lt;/code&gt;. For the rest, it&amp;rsquo;s
@@ -449,7 +494,7 @@ here (insert stacktrace)&amp;ldquo;.&lt;/p&gt;
 false positives. Case in point, here was my recycling bin after I printed out
 my valgrind output and went through all of them one by one:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://www.robxu9.com/media/2014-08-05-valgrind-is-important/2014-08-05 18.05.13
+&lt;p&gt;&lt;img src=&#34;https://www.robxu9.com/media/2014-08-05-valgrind-is-important/2014-08-05 18.05.13
 .jpg&#34; alt=&#34;so much paper...&#34; /&gt;
 &lt;/p&gt;
 
@@ -476,10 +521,10 @@ to print it out.&lt;/p&gt;
     
     <item>
       <title>stdout is slow</title>
-      <link>http://www.robxu9.com/2014/08/stdout-is-slow/</link>
+      <link>https://www.robxu9.com/2014/08/stdout-is-slow/</link>
       <pubDate>Fri, 01 Aug 2014 00:00:00 +0000</pubDate>
       <author>me@robxu9.com (Robert Xu)</author>
-      <guid>http://www.robxu9.com/2014/08/stdout-is-slow/</guid>
+      <guid>https://www.robxu9.com/2014/08/stdout-is-slow/</guid>
       <description>
 
 &lt;p&gt;Reading or writing any sort of stream can be slow.  I cannot stress how much
@@ -613,10 +658,10 @@ do.&lt;/p&gt;
     
     <item>
       <title>ctypes, Why?</title>
-      <link>http://www.robxu9.com/2014/07/ctypes-why/</link>
+      <link>https://www.robxu9.com/2014/07/ctypes-why/</link>
       <pubDate>Wed, 30 Jul 2014 00:00:00 +0000</pubDate>
       <author>me@robxu9.com (Robert Xu)</author>
-      <guid>http://www.robxu9.com/2014/07/ctypes-why/</guid>
+      <guid>https://www.robxu9.com/2014/07/ctypes-why/</guid>
       <description>
 
 &lt;p&gt;I don&amp;rsquo;t claim to be a particularly good Python programmer at all. I&amp;rsquo;m probably
@@ -753,10 +798,10 @@ no longer do.&lt;/p&gt;
     
     <item>
       <title>Hello Blog.</title>
-      <link>http://www.robxu9.com/2014/07/hello-blog./</link>
+      <link>https://www.robxu9.com/2014/07/hello-blog./</link>
       <pubDate>Mon, 28 Jul 2014 00:00:00 +0000</pubDate>
       <author>me@robxu9.com (Robert Xu)</author>
-      <guid>http://www.robxu9.com/2014/07/hello-blog./</guid>
+      <guid>https://www.robxu9.com/2014/07/hello-blog./</guid>
       <description>
 
 &lt;p&gt;Welp, I suppose it&amp;rsquo;s about time that I made an actual blog on my actual domain.

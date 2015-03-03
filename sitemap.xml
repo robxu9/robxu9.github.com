@@ -2,68 +2,73 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://www.robxu9.com/</loc>
-    <lastmod>2015-02-25T23:55:44-05:00</lastmod>
+    <loc>https://www.robxu9.com/</loc>
+    <lastmod>2015-03-02T22:11:30-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.robxu9.com/2015/02/february-music/</loc>
+    <loc>https://www.robxu9.com/2015/03/cloudflared/</loc>
+    <lastmod>2015-03-02T22:11:30-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.robxu9.com/2015/02/february-music/</loc>
     <lastmod>2015-02-25T23:55:44-05:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.robxu9.com/2015/02/welp/</loc>
+    <loc>https://www.robxu9.com/2015/02/welp/</loc>
     <lastmod>2015-02-25T23:46:05-05:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.robxu9.com/2015/01/sophomore-year-take-two/</loc>
+    <loc>https://www.robxu9.com/2015/01/sophomore-year-take-two/</loc>
     <lastmod>2015-01-22T17:54:17-05:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.robxu9.com/2015/01/kahinah-take-two/</loc>
+    <loc>https://www.robxu9.com/2015/01/kahinah-take-two/</loc>
     <lastmod>2015-01-20T14:25:16-06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.robxu9.com/2015/01/january-music/</loc>
+    <loc>https://www.robxu9.com/2015/01/january-music/</loc>
     <lastmod>2015-01-18T14:04:50-06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.robxu9.com/2015/01/duplex-in-c-take-two/</loc>
+    <loc>https://www.robxu9.com/2015/01/duplex-in-c-take-two/</loc>
     <lastmod>2015-01-17T00:09:29-06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.robxu9.com/2015/01/robxu9.com-take-two/</loc>
+    <loc>https://www.robxu9.com/2015/01/robxu9.com-take-two/</loc>
     <lastmod>2015-01-14T22:48:42-06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.robxu9.com/2014/08/valgrind-is-important/</loc>
+    <loc>https://www.robxu9.com/2014/08/valgrind-is-important/</loc>
     <lastmod>2014-08-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.robxu9.com/2014/08/stdout-is-slow/</loc>
+    <loc>https://www.robxu9.com/2014/08/stdout-is-slow/</loc>
     <lastmod>2014-08-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.robxu9.com/2014/07/ctypes-why/</loc>
+    <loc>https://www.robxu9.com/2014/07/ctypes-why/</loc>
     <lastmod>2014-07-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.robxu9.com/2014/07/hello-blog./</loc>
+    <loc>https://www.robxu9.com/2014/07/hello-blog./</loc>
     <lastmod>2014-07-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.robxu9.com/about/</loc>
+    <loc>https://www.robxu9.com/about/</loc>
   </url>
   
 </urlset>

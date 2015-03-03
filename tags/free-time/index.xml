@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Free Time on Robert Xu</title>
-    <link>http://www.robxu9.com/tags/free-time/</link>
+    <link>https://www.robxu9.com/tags/free-time/</link>
     <description>Recent content in Free Time on Robert Xu</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -10,14 +10,14 @@
     <webMaster>me@robxu9.com (Robert Xu)</webMaster>
     <copyright>© 2014-2015 Robert Xu. All Rights Reserved. Content not indicative of any addl party.</copyright>
     <lastBuildDate>Wed, 14 Jan 2015 22:48:42 -0600</lastBuildDate>
-    <atom:link href="http://www.robxu9.com/tags/free-time/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.robxu9.com/tags/free-time/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>robxu9.com, take two</title>
-      <link>http://www.robxu9.com/2015/01/robxu9.com-take-two/</link>
+      <link>https://www.robxu9.com/2015/01/robxu9.com-take-two/</link>
       <pubDate>Wed, 14 Jan 2015 22:48:42 -0600</pubDate>
       <author>me@robxu9.com (Robert Xu)</author>
-      <guid>http://www.robxu9.com/2015/01/robxu9.com-take-two/</guid>
+      <guid>https://www.robxu9.com/2015/01/robxu9.com-take-two/</guid>
       <description>&lt;p&gt;I never had the time to really blog about things in length after I left
 DigitalOcean. I guess I felt like it was time consuming and such effort could
 better be spent sleeping or coding or something along the lines of that.&lt;/p&gt;
