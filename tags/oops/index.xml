@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Oops on Robert Xu</title>
+    <link>https://www.robxu9.com/tags/oops/</link>
+    <description>Recent content in Oops on Robert Xu</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>me@robxu9.com (Robert Xu)</managingEditor>
+    <webMaster>me@robxu9.com (Robert Xu)</webMaster>
+    <copyright>© 2014-2015 Robert Xu. All Rights Reserved. Content not indicative of any addl party.</copyright>
+    <lastBuildDate>Wed, 29 Apr 2015 16:27:43 -0400</lastBuildDate>
+    <atom:link href="https://www.robxu9.com/tags/oops/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>march/april music</title>
+      <link>https://www.robxu9.com/2015/04/march/april-music/</link>
+      <pubDate>Wed, 29 Apr 2015 16:27:43 -0400</pubDate>
+      <author>me@robxu9.com (Robert Xu)</author>
+      <guid>https://www.robxu9.com/2015/04/march/april-music/</guid>
+      <description>&lt;p&gt;I got Spotify Premium this month! So everything I&amp;rsquo;ve been listening to is
+in my Spotify playlist.&lt;/p&gt;
+
+&lt;p&gt;A criticism of Spotify here - your new client sucks. It takes up double
+the memory, meaning I can&amp;rsquo;t run it and use my Linux VM, I can&amp;rsquo;t Ctrl-F through
+my playlist anymore, and your playlist has started to remove tracks on its own.&lt;/p&gt;
+
+&lt;p&gt;Not cool. I don&amp;rsquo;t like tracks disappearing from my playlist because they&amp;rsquo;re
+either local files or unplayable on &lt;em&gt;this&lt;/em&gt; computer.&lt;/p&gt;
+
+&lt;p&gt;So I had to downgrade. (grumble grumble)&lt;/p&gt;
+
+&lt;p&gt;But yeah, here&amp;rsquo;s my Spotify playlist.&lt;/p&gt;
+
+&lt;iframe src=&#34;https://embed.spotify.com/?uri=spotify:user:robxu9:playlist:778rq3pUydczAVd7iPmNob&#34; width=&#34;300&#34; height=&#34;380&#34; frameborder=&#34;0&#34; allowtransparency=&#34;true&#34;&gt;&lt;/iframe&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

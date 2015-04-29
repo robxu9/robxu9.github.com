@@ -9,8 +9,77 @@
     <managingEditor>me@robxu9.com (Robert Xu)</managingEditor>
     <webMaster>me@robxu9.com (Robert Xu)</webMaster>
     <copyright>© 2014-2015 Robert Xu. All Rights Reserved. Content not indicative of any addl party.</copyright>
-    <lastBuildDate>Mon, 16 Mar 2015 20:28:53 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 29 Apr 2015 16:32:50 -0400</lastBuildDate>
     <atom:link href="https://www.robxu9.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>graduating early</title>
+      <link>https://www.robxu9.com/2015/04/graduating-early/</link>
+      <pubDate>Wed, 29 Apr 2015 16:32:50 -0400</pubDate>
+      <author>me@robxu9.com (Robert Xu)</author>
+      <guid>https://www.robxu9.com/2015/04/graduating-early/</guid>
+      <description>&lt;p&gt;It&amp;rsquo;s weird to think that only a few semesters ago, I was starting university.
+But as I went into my advisor last week and sat down and went over my
+coursework and transcript, I noticed that I didn&amp;rsquo;t know how many more classes
+I needed.&lt;/p&gt;
+
+&lt;p&gt;So we both sat down and analysed what I had left to take, and what I was
+planning to take. And we both came to the conclusion that I would be graduating
+&lt;strong&gt;one year early&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Most people can only dream of doing this, and especially in Computer Science,
+courses are rigirous enough to discourage people from taking too many classes
+at one time, lest they be burnt grade-wise. (&lt;em&gt;stares at cse320&lt;/em&gt;)&lt;/p&gt;
+
+&lt;p&gt;But for some reason, it worked out that I had 36 credits left to take - or 12
+classes. I&amp;rsquo;ve been doing 5 classes per semester, not wanting to stress myself
+out, but it looks like with 12 classes left, that&amp;rsquo;s about 2 semesters or 3
+semesters, depending on how it&amp;rsquo;s partitioned. (There is an option to do
+6-5-1, where the last credit is taken in the summer session and I graduate
+officially in August, even though I go to the May ceremony, but I&amp;rsquo;m opting
+to do the last credit before, so it&amp;rsquo;s 1-6-5.)&lt;/p&gt;
+
+&lt;p&gt;And especially since I&amp;rsquo;m out of state, an additional semester isn&amp;rsquo;t really
+worth it only for 4 credits money-wise.&lt;/p&gt;
+
+&lt;p&gt;I have a couple of options ahead of me. I guess I should start putting 2016
+instead of 2017 in my graduation date for job applications, and I guess I should
+look and see what I have in store for myself. Like, I want to get a degree for
+a MBA in the near future, so maybe I could work on the MBA and graduate in 2017,
+but it&amp;rsquo;s still all up in the air.&lt;/p&gt;
+
+&lt;p&gt;So many choices. So many decisions.&lt;/p&gt;
+
+&lt;p&gt;I should update my resume. I lost my resume document, except I still have the
+PDF, so I guess I have to recreate it&amp;hellip; again.&lt;/p&gt;
+
+&lt;p&gt;Sigh.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>march/april music</title>
+      <link>https://www.robxu9.com/2015/04/march/april-music/</link>
+      <pubDate>Wed, 29 Apr 2015 16:27:43 -0400</pubDate>
+      <author>me@robxu9.com (Robert Xu)</author>
+      <guid>https://www.robxu9.com/2015/04/march/april-music/</guid>
+      <description>&lt;p&gt;I got Spotify Premium this month! So everything I&amp;rsquo;ve been listening to is
+in my Spotify playlist.&lt;/p&gt;
+
+&lt;p&gt;A criticism of Spotify here - your new client sucks. It takes up double
+the memory, meaning I can&amp;rsquo;t run it and use my Linux VM, I can&amp;rsquo;t Ctrl-F through
+my playlist anymore, and your playlist has started to remove tracks on its own.&lt;/p&gt;
+
+&lt;p&gt;Not cool. I don&amp;rsquo;t like tracks disappearing from my playlist because they&amp;rsquo;re
+either local files or unplayable on &lt;em&gt;this&lt;/em&gt; computer.&lt;/p&gt;
+
+&lt;p&gt;So I had to downgrade. (grumble grumble)&lt;/p&gt;
+
+&lt;p&gt;But yeah, here&amp;rsquo;s my Spotify playlist.&lt;/p&gt;
+
+&lt;iframe src=&#34;https://embed.spotify.com/?uri=spotify:user:robxu9:playlist:778rq3pUydczAVd7iPmNob&#34; width=&#34;300&#34; height=&#34;380&#34; frameborder=&#34;0&#34; allowtransparency=&#34;true&#34;&gt;&lt;/iframe&gt;
+</description>
+    </item>
     
     <item>
       <title>and now for something completely different</title>
@@ -923,86 +992,6 @@ print dpx
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;^ That finally works. Thank god.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>https://www.robxu9.com/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>me@robxu9.com (Robert Xu)</author>
-      <guid>https://www.robxu9.com/about/</guid>
-      <description>
-
-&lt;h2 id=&#34;hey-i-m-robert:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Hey, I&amp;rsquo;m Robert.&lt;/h2&gt;
-
-&lt;p&gt;I&amp;rsquo;m a student, programmer, musician, and an avid newsreader. It&amp;rsquo;s a strange
-combination, but it seems to all pull together in ways that surprise even
-myself.&lt;/p&gt;
-
-&lt;p&gt;My website is just a small view into the random thoughts that flow across
-my mind. I blog (when I remember to) about things from student life, to
-programming in C, Go, and Java, some of the music I&amp;rsquo;ve liked lately (which
-also changes wildly), and sometimes my thoughts on the latest news.&lt;/p&gt;
-
-&lt;p&gt;You can find links to my Github and Twitter at the bottom of this page,
-as well as my email.&lt;/p&gt;
-
-&lt;h4 id=&#34;student-life:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Student Life&lt;/h4&gt;
-
-&lt;p&gt;Not much to say here. I&amp;rsquo;m a student. I can be incredibly busy (or incredibly
-lazy - they&amp;rsquo;re two sides of the same coin, right?). And clearly
-I&amp;rsquo;m expected to be studying as hard as I can, without any free time, and
-apply to the 1,000+ internships that are there so I can achieve success. /s&lt;/p&gt;
-
-&lt;p&gt;I do study quite a bit, but I do try to take the time to relax a bit. And so
-you&amp;rsquo;ll probably find me on IRC or some other social medium.&lt;/p&gt;
-
-&lt;p&gt;Of course, those unfinished internship applications&amp;hellip;&lt;/p&gt;
-
-&lt;h4 id=&#34;programming:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Programming&lt;/h4&gt;
-
-&lt;p&gt;I&amp;rsquo;m one of the few people who codes in C - and possibly enjoys it. Does that
-make me a masochist? One of my previous mentors thought so.&lt;/p&gt;
-
-&lt;p&gt;Besides C, the majority of my coding goes towards making small utilities to
-make my life easier, and coding in Go(lang). Go is an amazing language that
-I have grown to love, and compromises a good portion of my projects nowadays.
-At DigitalOcean and Glider Labs, I worked on many projects in Go.&lt;/p&gt;
-
-&lt;p&gt;Then there&amp;rsquo;s Java. Java is the language which I have used most in the academic
-world&amp;hellip; because it&amp;rsquo;s still on the curriculum. But I find it incredibly useful
-as a learning language.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;ve dabbled in Ruby and Rust. I feel that I&amp;rsquo;m not good enough to call myself
-competent by any means, but some people have challenged me on that.&lt;/p&gt;
-
-&lt;h4 id=&#34;musician:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Musician&lt;/h4&gt;
-
-&lt;p&gt;I play the Violin (and used to play the Piano), though I have to admit that
-lately I&amp;rsquo;ve not been practicing any instrument. It&amp;rsquo;s a shortage of time, but
-I want to come back to it sometime and hopefully not have forgotten like 10
-years of skills.&lt;/p&gt;
-
-&lt;p&gt;Someone asked me if I&amp;rsquo;ve ever done music via something like FL Studio. My
-answer to that lies in my grade in Computer Music, which ended up in a B-.
-(My last homework was done on a bus from New York to Washington, DC - you can
-imagine the headache I was dealing with and the resulting piece of shite).&lt;/p&gt;
-
-&lt;p&gt;I listen to music. Things like Google Play All Access and Spotify Premium are
-godsends to me. Additionally, I do buy albums of artists that I really really
-love. It feels a bit more&amp;hellip; personal, you know?&lt;/p&gt;
-
-&lt;p&gt;The type of music definitely changes. It can sway from dubstep to trance to
-pop to rock to heavy metal to trance again.&lt;/p&gt;
-
-&lt;h4 id=&#34;news:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;News&lt;/h4&gt;
-
-&lt;p&gt;If anyone walks in when I&amp;rsquo;m having a bit of spare time, they&amp;rsquo;ll be treated to
-a bizarre sight of me watching something like BBC News or Sky News. I enjoy
-keeping up with the news, and while a lot of it does not have that much of
-an impact on my daily life (unless I&amp;rsquo;m watching something like NBC4), I find
-it&amp;hellip; interesting.&lt;/p&gt;
 </description>
     </item>
     
