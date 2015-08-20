@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Wootton on Robert Xu</title>
+    <link>https://www.robxu9.com/tags/wootton/</link>
+    <description>Recent content in Wootton on Robert Xu</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>me@robxu9.com (Robert Xu)</managingEditor>
+    <webMaster>me@robxu9.com (Robert Xu)</webMaster>
+    <copyright>© 2014-2015 Robert Xu. All Rights Reserved. Content not indicative of any addl party.</copyright>
+    <lastBuildDate>Wed, 19 Aug 2015 21:00:30 -0400</lastBuildDate>
+    <atom:link href="https://www.robxu9.com/tags/wootton/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>a tribute to Dr. Doran</title>
+      <link>https://www.robxu9.com/2015/08/a-tribute-to-dr.-doran/</link>
+      <pubDate>Wed, 19 Aug 2015 21:00:30 -0400</pubDate>
+      <author>me@robxu9.com (Robert Xu)</author>
+      <guid>https://www.robxu9.com/2015/08/a-tribute-to-dr.-doran/</guid>
+      <description>&lt;p&gt;&lt;em&gt;(x-posted from my facebook)&lt;/em&gt;&lt;/p&gt;
+
+&lt;div id=&#34;fb-root&#34;&gt;&lt;/div&gt;&lt;script&gt;(function(d, s, id) {  var js, fjs = d.getElementsByTagName(s)[0];  if (d.getElementById(id)) return;  js = d.createElement(s); js.id = id;  js.src = &#34;//connect.facebook.net/en_GB/sdk.js#xfbml=1&amp;version=v2.3&#34;;  fjs.parentNode.insertBefore(js, fjs);}(document, &#39;script&#39;, &#39;facebook-jssdk&#39;));&lt;/script&gt;&lt;div class=&#34;fb-post&#34; data-href=&#34;https://www.facebook.com/robxu9/posts/10206975789854234&#34; data-width=&#34;500&#34;&gt;&lt;div class=&#34;fb-xfbml-parse-ignore&#34;&gt;&lt;blockquote cite=&#34;https://www.facebook.com/robxu9/posts/10206975789854234&#34;&gt;&lt;p&gt;On Wednesday, 19 August, around midday, many of us learned that our long time high school principal, Dr. Michael Doran,...&lt;/p&gt;Posted by &lt;a href=&#34;#&#34; role=&#34;button&#34;&gt;Robert Xu&lt;/a&gt; on&amp;nbsp;&lt;a href=&#34;https://www.facebook.com/robxu9/posts/10206975789854234&#34;&gt;Wednesday, 19 August 2015&lt;/a&gt;&lt;/blockquote&gt;&lt;/div&gt;&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
