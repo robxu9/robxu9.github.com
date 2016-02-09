@@ -8,9 +8,56 @@
     <language>en-us</language>
     <managingEditor>me@robxu9.com (Robert Xu)</managingEditor>
     <webMaster>me@robxu9.com (Robert Xu)</webMaster>
-    <copyright>© 2014-2015 Robert Xu. All Rights Reserved. Content not indicative of any addl party.</copyright>
-    <lastBuildDate>Sat, 12 Dec 2015 22:48:32 -0500</lastBuildDate>
+    <copyright>© 2014-2016 Robert Xu. All Rights Reserved. Content not indicative of any addl party.</copyright>
+    <lastBuildDate>Mon, 08 Feb 2016 19:49:28 -0500</lastBuildDate>
     <atom:link href="https://www.robxu9.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>do cleanups, not rewrites</title>
+      <link>https://www.robxu9.com/2016/02/do-cleanups-not-rewrites/</link>
+      <pubDate>Mon, 08 Feb 2016 19:49:28 -0500</pubDate>
+      <author>me@robxu9.com (Robert Xu)</author>
+      <guid>https://www.robxu9.com/2016/02/do-cleanups-not-rewrites/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve had an application that&amp;rsquo;s been going on for about 3 years now.
+&lt;a href=&#34;https://github.com/robxu9/kahinah&#34;&gt;Kahinah&lt;/a&gt; was built to manage package updates
+for &lt;a href=&#34;https://www.openmandriva.org/&#34;&gt;OpenMandriva Lx&lt;/a&gt;. I wrote it, did incremental
+updates to it, declared it a horrible mess and that I would rewrite it. Then never
+touched it for nearly two years.&lt;/p&gt;
+
+&lt;p&gt;The problem with rewrites is that you&amp;rsquo;re going into the mentality that you&amp;rsquo;re going
+to throw away all your code and restart from scratch; consequently, you can redo the
+whole structure of your app, make it all nice, neat, and everything looks nice. And
+then you start to structure your app in the &amp;ldquo;ideal&amp;rdquo; way such that you&amp;rsquo;ll never have
+to rewrite it again and it&amp;rsquo;ll be all perfect and modular and etc.&lt;/p&gt;
+
+&lt;p&gt;And then you lose motivation and stop working on it for a couple of years. That was
+essentially the state of Kahinah.&lt;/p&gt;
+
+&lt;p&gt;So that branch was pushed off to the side, and I took the old code, and now I&amp;rsquo;m doing
+a &amp;ldquo;cleanup&amp;rdquo;. The end goal is the same - still trying to revamp Kahinah so it&amp;rsquo;s no longer
+a mess, but this time it&amp;rsquo;s going much smoother, and I&amp;rsquo;m not losing motivation. Why?&lt;/p&gt;
+
+&lt;p&gt;I think it&amp;rsquo;s the way our mind approaches these problems. When you first start a project,
+you already have a good idea of how to structure it. When you rewrite a project, you&amp;rsquo;re
+forced to throw away that old structure and create a new one, but the mind keeps referring
+back to the old structure and functionality, at which point you have to think doubly hard
+and it gets too frustrating for most people there.&lt;/p&gt;
+
+&lt;p&gt;But cleanups means that you&amp;rsquo;re slowly ripping away old pieces and putting new ones in. It
+keeps the app working (more or less) so you have a tangeble view of how everything is
+changing, and you know it&amp;rsquo;s still working. It&amp;rsquo;s like if you have a building, and you did
+a systematic renovation by redoing the walls, then redoing the roof, the floors, the
+equipment inside, etc&amp;hellip; you can still be in the building whilst it&amp;rsquo;s happening and you get
+a full view of how it works!&lt;/p&gt;
+
+&lt;p&gt;So I think I&amp;rsquo;m much happier with the term cleanups than rewrites.&lt;/p&gt;
+
+&lt;p&gt;(It could be noted that the project I was working on before, duplex, underwent a rewrite
+and that never completed either, but that&amp;rsquo;s just because I didn&amp;rsquo;t have time to finish it.
+But I&amp;rsquo;m pretty sure that it applies more or less. It has a successor project under a new
+name, but that&amp;rsquo;s a new project entirely, so yeah.)&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>oh god what am I doing</title>
@@ -573,90 +620,6 @@ English.)&lt;/p&gt;&lt;/li&gt;
 
 &lt;p&gt;Song recomendations? Soundcloud things I should listen to? Let me know in the
 comments below!&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>duplex in C, take two</title>
-      <link>https://www.robxu9.com/2015/01/duplex-in-c-take-two/</link>
-      <pubDate>Sat, 17 Jan 2015 00:09:29 -0600</pubDate>
-      <author>me@robxu9.com (Robert Xu)</author>
-      <guid>https://www.robxu9.com/2015/01/duplex-in-c-take-two/</guid>
-      <description>
-
-&lt;p&gt;I seem to be doing a bunch of rewrites of my older projects nowadays. But
-sometimes that&amp;rsquo;s necessary. It is for the case of duplex (and libduplex).&lt;/p&gt;
-
-&lt;h3 id=&#34;background:dbd361d9d83ece52b494a1b526aef755&#34;&gt;Background&lt;/h3&gt;
-
-&lt;p&gt;When I was working at DigitalOcean over the past summer, my main project was
-a communication framework called &lt;a href=&#34;https://github.com/progrium/duplex&#34;&gt;duplex&lt;/a&gt;.
-Duplex&amp;rsquo;s aim was to create a simple messaging framework that could potentially
-be used for RPC. The first version was prototyped in Go, and I created
-&lt;code&gt;libdpx&lt;/code&gt;, which was the first version in C.&lt;/p&gt;
-
-&lt;p&gt;Unfortunately, &lt;code&gt;libdpx&lt;/code&gt; had some major flaws - I didn&amp;rsquo;t use a proper build
-system, I used &lt;code&gt;libtask&lt;/code&gt; for coroutines (switching that out with &lt;code&gt;lthread&lt;/code&gt;,
-then switching back to &lt;code&gt;libtask&lt;/code&gt; after &lt;code&gt;lthread&lt;/code&gt; didn&amp;rsquo;t work with shared
-libraries), and in general I didn&amp;rsquo;t manage memory well. You could lose data
-along the way with the race conditions.&lt;/p&gt;
-
-&lt;p&gt;Jeff realised that a lot of the things we wanted to implement with duplex
-would be hard, because essentially we were creating a new protocol. So
-recently, he took to creating a second version in Go, but this time
-sitting on top of the SSH protocol.&lt;/p&gt;
-
-&lt;p&gt;The SSH protocol provides a bunch of the logic so that we don&amp;rsquo;t have to
-worry about it - authentication, security, and channel management. This
-was our way of wrapping it in a user friendly form.&lt;/p&gt;
-
-&lt;h3 id=&#34;libduplex:dbd361d9d83ece52b494a1b526aef755&#34;&gt;libduplex&lt;/h3&gt;
-
-&lt;p&gt;&lt;code&gt;libduplex&lt;/code&gt; is the second version of duplex in C. However, this time, I&amp;rsquo;m
-being extra careful to, essentially, not fuck up the threading. This time
-there are no lightweight coroutines or &lt;code&gt;libtask&lt;/code&gt;; instead, I directly call
-pthreads in order to manage calls. The API is still threadsafe, and I still
-run a thread dedicated to each ssh session (because libssh does not support
-multiple threads working on sessions, which is understandable given the
-complexity of the task - but it does have a non-blocking mode, and I rely
-on that). Currently you can bind to tcp and unix sockets, and if any other
-reliable protocol becomes available, I will gladly implement that.&lt;/p&gt;
-
-&lt;p&gt;The intent behind this is to make the Go version and C version be fully
-compatible. I will not &lt;code&gt;cgo&lt;/code&gt; these bindings this time, because that seems
-like a poor idea if they&amp;rsquo;re both going to be the same - the pure Go version
-would work better in Go. However, there is an interest in making a Python
-version for libduplex, which I will get around to after &lt;code&gt;libduplex&lt;/code&gt; is
-fully compatible with the already existing Go counterpart.&lt;/p&gt;
-
-&lt;h3 id=&#34;managing-time:dbd361d9d83ece52b494a1b526aef755&#34;&gt;Managing Time&lt;/h3&gt;
-
-&lt;p&gt;The last duplex suffered immensely from a lack of manpower - Jeff has his
-own projects and clients to focus on, and I have university which I have
-to concentrate on. However, I don&amp;rsquo;t intend to abandon this at all - if
-possible, I&amp;rsquo;d like this second version to become the main version of duplex.&lt;/p&gt;
-
-&lt;p&gt;We want to take duplex further, too. Not just for standard communication
-and RPC between applications, but further into plugin systems, APIs over
-the internet, and more.&lt;/p&gt;
-
-&lt;p&gt;So I definitely want to keep working on it despite university.&lt;/p&gt;
-
-&lt;p&gt;(You can make my life slightly easier by making pull requests.)&lt;/p&gt;
-
-&lt;h3 id=&#34;where-from-here:dbd361d9d83ece52b494a1b526aef755&#34;&gt;Where from here?&lt;/h3&gt;
-
-&lt;p&gt;Going from here remains to be seen. My immediate priorities are getting
-libduplex off the ground so that it can be at least used in a beta state.
-Maybe even declare it 1.0 if it gets to be good enough without any major
-flaws.&lt;/p&gt;
-
-&lt;p&gt;But I&amp;rsquo;m heading along for the ride and I definitely want to see what happens.&lt;/p&gt;
-
-&lt;h3 id=&#34;github:dbd361d9d83ece52b494a1b526aef755&#34;&gt;Github&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/robxu9/libduplex&#34;&gt;libduplex&lt;/a&gt; is licensed under the MIT
-license. See &lt;code&gt;HACKING&lt;/code&gt; for building instructions and more.&lt;/p&gt;
 </description>
     </item>
     

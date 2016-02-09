@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cleanups on Robert Xu</title>
+    <link>https://www.robxu9.com/tags/cleanups/</link>
+    <description>Recent content in Cleanups on Robert Xu</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>me@robxu9.com (Robert Xu)</managingEditor>
+    <webMaster>me@robxu9.com (Robert Xu)</webMaster>
+    <copyright>© 2014-2016 Robert Xu. All Rights Reserved. Content not indicative of any addl party.</copyright>
+    <lastBuildDate>Mon, 08 Feb 2016 19:49:28 -0500</lastBuildDate>
+    <atom:link href="https://www.robxu9.com/tags/cleanups/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>do cleanups, not rewrites</title>
+      <link>https://www.robxu9.com/2016/02/do-cleanups-not-rewrites/</link>
+      <pubDate>Mon, 08 Feb 2016 19:49:28 -0500</pubDate>
+      <author>me@robxu9.com (Robert Xu)</author>
+      <guid>https://www.robxu9.com/2016/02/do-cleanups-not-rewrites/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve had an application that&amp;rsquo;s been going on for about 3 years now.
+&lt;a href=&#34;https://github.com/robxu9/kahinah&#34;&gt;Kahinah&lt;/a&gt; was built to manage package updates
+for &lt;a href=&#34;https://www.openmandriva.org/&#34;&gt;OpenMandriva Lx&lt;/a&gt;. I wrote it, did incremental
+updates to it, declared it a horrible mess and that I would rewrite it. Then never
+touched it for nearly two years.&lt;/p&gt;
+
+&lt;p&gt;The problem with rewrites is that you&amp;rsquo;re going into the mentality that you&amp;rsquo;re going
+to throw away all your code and restart from scratch; consequently, you can redo the
+whole structure of your app, make it all nice, neat, and everything looks nice. And
+then you start to structure your app in the &amp;ldquo;ideal&amp;rdquo; way such that you&amp;rsquo;ll never have
+to rewrite it again and it&amp;rsquo;ll be all perfect and modular and etc.&lt;/p&gt;
+
+&lt;p&gt;And then you lose motivation and stop working on it for a couple of years. That was
+essentially the state of Kahinah.&lt;/p&gt;
+
+&lt;p&gt;So that branch was pushed off to the side, and I took the old code, and now I&amp;rsquo;m doing
+a &amp;ldquo;cleanup&amp;rdquo;. The end goal is the same - still trying to revamp Kahinah so it&amp;rsquo;s no longer
+a mess, but this time it&amp;rsquo;s going much smoother, and I&amp;rsquo;m not losing motivation. Why?&lt;/p&gt;
+
+&lt;p&gt;I think it&amp;rsquo;s the way our mind approaches these problems. When you first start a project,
+you already have a good idea of how to structure it. When you rewrite a project, you&amp;rsquo;re
+forced to throw away that old structure and create a new one, but the mind keeps referring
+back to the old structure and functionality, at which point you have to think doubly hard
+and it gets too frustrating for most people there.&lt;/p&gt;
+
+&lt;p&gt;But cleanups means that you&amp;rsquo;re slowly ripping away old pieces and putting new ones in. It
+keeps the app working (more or less) so you have a tangeble view of how everything is
+changing, and you know it&amp;rsquo;s still working. It&amp;rsquo;s like if you have a building, and you did
+a systematic renovation by redoing the walls, then redoing the roof, the floors, the
+equipment inside, etc&amp;hellip; you can still be in the building whilst it&amp;rsquo;s happening and you get
+a full view of how it works!&lt;/p&gt;
+
+&lt;p&gt;So I think I&amp;rsquo;m much happier with the term cleanups than rewrites.&lt;/p&gt;
+
+&lt;p&gt;(It could be noted that the project I was working on before, duplex, underwent a rewrite
+and that never completed either, but that&amp;rsquo;s just because I didn&amp;rsquo;t have time to finish it.
+But I&amp;rsquo;m pretty sure that it applies more or less. It has a successor project under a new
+name, but that&amp;rsquo;s a new project entirely, so yeah.)&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
