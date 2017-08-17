@@ -71,15 +71,5 @@ What have I been up to? Things I&amp;rsquo;ve done lately include:
  working on CSE 306, which is implementing a simple grep without libc. So just Linux system calls. Not bad, just time consuming. Also I gave up trying to make descriptive errors and just dumped errno.</description>
     </item>
     
-    <item>
-      <title>robxu9.com, take two</title>
-      <link>https://www.robxu9.com/2015/01/robxu9.com-take-two/</link>
-      <pubDate>Wed, 14 Jan 2015 22:48:42 -0600</pubDate>
-      <author>me@robxu9.com (Robert Xu)</author>
-      <guid>https://www.robxu9.com/2015/01/robxu9.com-take-two/</guid>
-      <description>I never had the time to really blog about things in length after I left DigitalOcean. I guess I felt like it was time consuming and such effort could better be spent sleeping or coding or something along the lines of that.
-But then school came around and I was thrown into the chaos that is the fall semester of university, and I never had a chance to step back from all the craziness that followed and put my thoughts together.</description>
-    </item>
-    
   </channel>
 </rss>
