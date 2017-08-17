@@ -8,7 +8,7 @@
     <language>en-us</language>
     <managingEditor>me@robxu9.com (Robert Xu)</managingEditor>
     <webMaster>me@robxu9.com (Robert Xu)</webMaster>
-    <copyright>© 2014-2017 Robert Xu. All Rights Reserved. Content on this site is not indicative of any additional party - all of my views are my own and do not reflect anyone with a relation to me in any way, be it my employer, friends, family, or colleagues.</copyright>
+    <copyright>© 2014-{year} Robert Xu. All Rights Reserved. Content on this site is not indicative of any additional party - all of my views are my own and do not reflect anyone with a relation to me in any way, be it my employer, friends, family, or colleagues.</copyright>
     <lastBuildDate>Wed, 29 Apr 2015 16:32:50 -0400</lastBuildDate>
     
 	<atom:link href="https://www.robxu9.com/tags/but-still/index.xml" rel="self" type="application/rss+xml" />
