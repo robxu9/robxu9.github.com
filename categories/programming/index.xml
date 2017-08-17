@@ -45,16 +45,5 @@ It&amp;rsquo;s incredibly noticeable, especially when you have some sort of GUI 
 Why bring it up now? Take for example, libdpx.</description>
     </item>
     
-    <item>
-      <title>ctypes, Why?</title>
-      <link>https://www.robxu9.com/2014/07/ctypes-why/</link>
-      <pubDate>Wed, 30 Jul 2014 00:00:00 +0000</pubDate>
-      <author>me@robxu9.com (Robert Xu)</author>
-      <guid>https://www.robxu9.com/2014/07/ctypes-why/</guid>
-      <description>I don&amp;rsquo;t claim to be a particularly good Python programmer at all. I&amp;rsquo;m probably one of the&amp;hellip; less useful people to program Python - I much prefer Go (and to be rather honest, C).
-But I think I&amp;rsquo;ve encountered the nastiest piece of library I&amp;rsquo;ve used with Python - ctypes.
-What is ctypes? It&amp;rsquo;s kind of like the psuedo C package for Go - it allows direct access to C functions and structures and all those nice things, and lets you use C libraries in your Python program.</description>
-    </item>
-    
   </channel>
 </rss>
