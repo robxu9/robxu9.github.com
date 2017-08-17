@@ -79,6 +79,16 @@ But then school came around and I was thrown into the chaos that is the fall sem
     </item>
     
     <item>
+      <title>valgrind is important</title>
+      <link>https://www.robxu9.com/2014/08/valgrind-is-important/</link>
+      <pubDate>Tue, 05 Aug 2014 00:00:00 +0000</pubDate>
+      <author>me@robxu9.com (Robert Xu)</author>
+      <guid>https://www.robxu9.com/2014/08/valgrind-is-important/</guid>
+      <description>Most people have heard of debugging tools like gdb. For the rest, it&amp;rsquo;s usually just continuous testing and catching problems with your eye. But sometimes it&amp;rsquo;s not that simple.
+Take for example (and I&amp;rsquo;ve been using this example a lot), libdpx. I was trying to clean up the code for the past two days, but when I moved a simple statement that should work, everything essentially went to hell. You can see that commit here.</description>
+    </item>
+    
+    <item>
       <title>Hello Blog.</title>
       <link>https://www.robxu9.com/2014/07/hello-blog./</link>
       <pubDate>Mon, 28 Jul 2014 00:00:00 +0000</pubDate>
