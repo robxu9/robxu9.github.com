@@ -25,17 +25,6 @@ The problem with rewrites is that you&amp;rsquo;re going into the mentality that
     </item>
     
     <item>
-      <title>kahinah, take two</title>
-      <link>https://www.robxu9.com/2015/01/kahinah-take-two/</link>
-      <pubDate>Tue, 20 Jan 2015 14:25:16 -0600</pubDate>
-      <author>me@robxu9.com (Robert Xu)</author>
-      <guid>https://www.robxu9.com/2015/01/kahinah-take-two/</guid>
-      <description>This one was the one that needed the obvious rewrite.
-Background Kahinah is an updates manager for the OpenMandriva Association&amp;rsquo;s distribution, OpenMandriva Lx. Its goal is to monitor builds that are produced from a build system (which is abf.io right now), and create a karma system which testers can vote on the updates, and eventually accept them as working, or reject them as deficient.
-This worked for the most part, but when it came time for a large number of builds (think a KDE SC 4 version update), Kahinah was overwhelmed, testers were crushed, and updates had a hard time going through.</description>
-    </item>
-    
-    <item>
       <title>duplex in C, take two</title>
       <link>https://www.robxu9.com/2015/01/duplex-in-c-take-two/</link>
       <pubDate>Sat, 17 Jan 2015 00:09:29 -0600</pubDate>
