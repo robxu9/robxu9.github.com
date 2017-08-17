@@ -9,10 +9,19 @@
     <managingEditor>me@robxu9.com (Robert Xu)</managingEditor>
     <webMaster>me@robxu9.com (Robert Xu)</webMaster>
     <copyright>© 2014-2017 Robert Xu. All Rights Reserved. Content not indicative of any addl party.</copyright>
-    <lastBuildDate>Wed, 29 Apr 2015 16:27:43 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 17 Aug 2017 01:01:47 +0000</lastBuildDate>
     
 	<atom:link href="https://www.robxu9.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>2017</title>
+      <link>https://www.robxu9.com/tags/2017/</link>
+      <pubDate>Thu, 17 Aug 2017 01:01:47 +0000</pubDate>
+      <author>me@robxu9.com (Robert Xu)</author>
+      <guid>https://www.robxu9.com/tags/2017/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>A Bit Late for March</title>
@@ -168,6 +177,15 @@
     </item>
     
     <item>
+      <title>Hello World</title>
+      <link>https://www.robxu9.com/tags/hello-world/</link>
+      <pubDate>Thu, 17 Aug 2017 01:01:47 +0000</pubDate>
+      <author>me@robxu9.com (Robert Xu)</author>
+      <guid>https://www.robxu9.com/tags/hello-world/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>High School</title>
       <link>https://www.robxu9.com/tags/high-school/</link>
       <pubDate>Wed, 19 Aug 2015 21:00:30 -0400</pubDate>
@@ -209,6 +227,15 @@
       <pubDate>Mon, 08 Feb 2016 19:49:28 -0500</pubDate>
       <author>me@robxu9.com (Robert Xu)</author>
       <guid>https://www.robxu9.com/tags/i-learned-the-hard-way/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>I Swear Im Alive</title>
+      <link>https://www.robxu9.com/tags/i-swear-im-alive/</link>
+      <pubDate>Thu, 17 Aug 2017 01:01:47 +0000</pubDate>
+      <author>me@robxu9.com (Robert Xu)</author>
+      <guid>https://www.robxu9.com/tags/i-swear-im-alive/</guid>
       <description></description>
     </item>
     
