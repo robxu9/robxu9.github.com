@@ -112,6 +112,18 @@ Not cool. I don&amp;rsquo;t like tracks disappearing from my playlist because th
     </item>
     
     <item>
+      <title>welp</title>
+      <link>https://www.robxu9.com/2015/02/welp/</link>
+      <pubDate>Wed, 25 Feb 2015 23:46:05 -0500</pubDate>
+      <author>me@robxu9.com (Robert Xu)</author>
+      <guid>https://www.robxu9.com/2015/02/welp/</guid>
+      <description>That was quick.
+What have I been up to? Things I&amp;rsquo;ve done lately include:
+ studying for CSE 320, which is System Architecture. I feel like I&amp;rsquo;m slow on the uptake with this class, whatnot with muxes and ALUs&amp;hellip;
+ working on CSE 306, which is implementing a simple grep without libc. So just Linux system calls. Not bad, just time consuming. Also I gave up trying to make descriptive errors and just dumped errno.</description>
+    </item>
+    
+    <item>
       <title>sophomore year, take two</title>
       <link>https://www.robxu9.com/2015/01/sophomore-year-take-two/</link>
       <pubDate>Thu, 22 Jan 2015 17:54:17 -0500</pubDate>
