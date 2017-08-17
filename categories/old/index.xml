@@ -79,6 +79,16 @@ This worked for the most part, but when it came time for a large number of build
     </item>
     
     <item>
+      <title>duplex in C, take two</title>
+      <link>https://www.robxu9.com/2015/01/duplex-in-c-take-two/</link>
+      <pubDate>Sat, 17 Jan 2015 00:09:29 -0600</pubDate>
+      <author>me@robxu9.com (Robert Xu)</author>
+      <guid>https://www.robxu9.com/2015/01/duplex-in-c-take-two/</guid>
+      <description>I seem to be doing a bunch of rewrites of my older projects nowadays. But sometimes that&amp;rsquo;s necessary. It is for the case of duplex (and libduplex).
+Background When I was working at DigitalOcean over the past summer, my main project was a communication framework called duplex. Duplex&amp;rsquo;s aim was to create a simple messaging framework that could potentially be used for RPC. The first version was prototyped in Go, and I created libdpx, which was the first version in C.</description>
+    </item>
+    
+    <item>
       <title>robxu9.com, take two</title>
       <link>https://www.robxu9.com/2015/01/robxu9.com-take-two/</link>
       <pubDate>Wed, 14 Jan 2015 22:48:42 -0600</pubDate>
