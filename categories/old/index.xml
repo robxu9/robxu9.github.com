@@ -9,10 +9,20 @@
     <managingEditor>me@robxu9.com (Robert Xu)</managingEditor>
     <webMaster>me@robxu9.com (Robert Xu)</webMaster>
     <copyright>© 2014-2017 Robert Xu. All Rights Reserved. Content not indicative of any addl party.</copyright>
-    <lastBuildDate>Wed, 19 Aug 2015 21:00:30 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 08 Feb 2016 19:49:28 -0500</lastBuildDate>
     
 	<atom:link href="https://www.robxu9.com/categories/old/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>do cleanups, not rewrites</title>
+      <link>https://www.robxu9.com/2016/02/do-cleanups-not-rewrites/</link>
+      <pubDate>Mon, 08 Feb 2016 19:49:28 -0500</pubDate>
+      <author>me@robxu9.com (Robert Xu)</author>
+      <guid>https://www.robxu9.com/2016/02/do-cleanups-not-rewrites/</guid>
+      <description>I&amp;rsquo;ve had an application that&amp;rsquo;s been going on for about 3 years now. Kahinah was built to manage package updates for OpenMandriva Lx. I wrote it, did incremental updates to it, declared it a horrible mess and that I would rewrite it. Then never touched it for nearly two years.
+The problem with rewrites is that you&amp;rsquo;re going into the mentality that you&amp;rsquo;re going to throw away all your code and restart from scratch; consequently, you can redo the whole structure of your app, make it all nice, neat, and everything looks nice.</description>
+    </item>
     
     <item>
       <title>a tribute to Dr. Doran</title>
