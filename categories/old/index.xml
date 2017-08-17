@@ -9,10 +9,21 @@
     <managingEditor>me@robxu9.com (Robert Xu)</managingEditor>
     <webMaster>me@robxu9.com (Robert Xu)</webMaster>
     <copyright>© 2014-2017 Robert Xu. All Rights Reserved. Content not indicative of any addl party.</copyright>
-    <lastBuildDate>Mon, 28 Jul 2014 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 19 Aug 2015 21:00:30 -0400</lastBuildDate>
     
 	<atom:link href="https://www.robxu9.com/categories/old/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>a tribute to Dr. Doran</title>
+      <link>https://www.robxu9.com/2015/08/a-tribute-to-dr.-doran/</link>
+      <pubDate>Wed, 19 Aug 2015 21:00:30 -0400</pubDate>
+      <author>me@robxu9.com (Robert Xu)</author>
+      <guid>https://www.robxu9.com/2015/08/a-tribute-to-dr.-doran/</guid>
+      <description>(x-posted from my facebook)
+(function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = &#34;//connect.facebook.net/en_GB/sdk.js#xfbml=1&amp;version=v2.3&#34;; fjs.parentNode.insertBefore(js, fjs);}(document, &#39;script&#39;, &#39;facebook-jssdk&#39;));On Wednesday, 19 August, around midday, many of us learned that our long time high school principal, Dr. Michael Doran,...
+Posted by Robert Xu on&amp;nbsp;Wednesday, 19 August 2015 </description>
+    </item>
     
     <item>
       <title>Hello Blog.</title>
