@@ -8,9 +8,11 @@
     <language>en-us</language>
     <managingEditor>me@robxu9.com (Robert Xu)</managingEditor>
     <webMaster>me@robxu9.com (Robert Xu)</webMaster>
-    <copyright>© 2014-2016 Robert Xu. All Rights Reserved. Content not indicative of any addl party.</copyright>
+    <copyright>© 2014-2017 Robert Xu. All Rights Reserved. Content not indicative of any addl party.</copyright>
     <lastBuildDate>Sat, 12 Dec 2015 22:48:32 -0500</lastBuildDate>
-    <atom:link href="https://www.robxu9.com/categories/musings/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="https://www.robxu9.com/categories/musings/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>oh god what am I doing</title>
@@ -18,54 +20,9 @@
       <pubDate>Sat, 12 Dec 2015 22:48:32 -0500</pubDate>
       <author>me@robxu9.com (Robert Xu)</author>
       <guid>https://www.robxu9.com/2015/12/oh-god-what-am-i-doing/</guid>
-      <description>&lt;p&gt;Ah, December. The time of year where there&amp;rsquo;s a surprising lack of snow on the
-ground, finals are over surprisingly early, and time for pondering life has
-become plentiful. Which brings me to pondering life and my decisions.&lt;/p&gt;
-
-&lt;p&gt;What on earth am I doing? Where will I be after I graduate? What do I want to
-do?&lt;/p&gt;
-
-&lt;p&gt;My initial thought was to go and try to pursue a MBA, because that&amp;rsquo;s useful and
-all, but somewhere along the line I saw all the applications and became less
-enthusiastic. Then I thought about the possibility that I wouldn&amp;rsquo;t get into
-graduate school because I don&amp;rsquo;t have enough work experience, and lo and behold,
-I&amp;rsquo;m searching for jobs again.&lt;/p&gt;
-
-&lt;p&gt;(To Eric, my mentor at Amazon: you&amp;rsquo;re right, you win.)&lt;/p&gt;
-
-&lt;p&gt;But really, &lt;strong&gt;what am I doing?&lt;/strong&gt; I think the fact that I&amp;rsquo;m graduating early has
-me stuttering a bit, because that&amp;rsquo;s something big and not ordinary by any means.
-I was going to brush it off by saying I&amp;rsquo;d pad that year out with the MBA, but
-the fact that I&amp;rsquo;m stuttering on even that has made me realise that I really
-should stop and think, and not mindlessly toil through the semester.&lt;/p&gt;
-
-&lt;p&gt;My mum suggested that I should do a dual math major; I responded by pointing
-out that I&amp;rsquo;d still graduate a semester early because that only pads out
-how many credits by about 4-5 courses. So it doesn&amp;rsquo;t solve the lingering
-thoughts in my head.&lt;/p&gt;
-
-&lt;p&gt;I still haven&amp;rsquo;t answered the question, so I suppose I should do that first.
-I&amp;rsquo;m trying to complete my bachelor&amp;rsquo;s degree in Computer Science in an exemplary
-way. I don&amp;rsquo;t want to rush through it (though, I suppose in some aspects I
-already have), and I want good grades in CS, damnit!&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Where will I be after I graduate?&lt;/strong&gt; I don&amp;rsquo;t know. Amazon&amp;rsquo;s a possibility; but
-I never really had time to think about it this semester. (Note to self: do not
-take so many project courses at once.) Enrolling into graduate school is another
-possibility. I have to do a bunch of job applications, too.&lt;/p&gt;
-
-&lt;p&gt;Basically, all possibilities, but I&amp;rsquo;m not sure. &lt;em&gt;And that uncertainty is killing
-me.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Well, there&amp;rsquo;s only one way to find out, I suppose. Time to apply.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;What do I want to do?&lt;/strong&gt; Well, I want to program, of course. Whether I want to
-work at a startup, at a major company, work on my own projects, etc&amp;hellip; I&amp;rsquo;m not
-too sure right now. But hey, I guess it all builds up.&lt;/p&gt;
-
-&lt;p&gt;So the end of this blog post is still &amp;ldquo;what am I even doing&amp;rdquo;. In the end, though,
-I suppose that&amp;rsquo;s how it&amp;rsquo;ll always be.&lt;/p&gt;
-</description>
+      <description>Ah, December. The time of year where there&amp;rsquo;s a surprising lack of snow on the ground, finals are over surprisingly early, and time for pondering life has become plentiful. Which brings me to pondering life and my decisions.
+What on earth am I doing? Where will I be after I graduate? What do I want to do?
+My initial thought was to go and try to pursue a MBA, because that&amp;rsquo;s useful and all, but somewhere along the line I saw all the applications and became less enthusiastic.</description>
     </item>
     
     <item>
@@ -74,45 +31,9 @@ I suppose that&amp;rsquo;s how it&amp;rsquo;ll always be.&lt;/p&gt;
       <pubDate>Mon, 17 Aug 2015 03:17:07 -0400</pubDate>
       <author>me@robxu9.com (Robert Xu)</author>
       <guid>https://www.robxu9.com/2015/08/where-have-i-been-all-summer/</guid>
-      <description>&lt;p&gt;If you&amp;rsquo;re wondering why all the posts have suddenly appeared, the answer is
-that I&amp;rsquo;ve finally achieved peak boredom level that I need to write on my blog
-again.&lt;/p&gt;
-
-&lt;p&gt;That was quick. I just flew in from Seattle today.&lt;/p&gt;
-
-&lt;p&gt;So if it wasn&amp;rsquo;t obvious from the description, I just finished an internship
-this past week. I already find myself wishing I could be back at my internship
-with Amazon - it was amazing!&lt;/p&gt;
-
-&lt;p&gt;I worked with Fulfillment by Amazon on Global Selling - and what an experience!
-It gave me the insight into how to interact with business and develop solutions
-that make sense, are maintainable, and can provide long term reliability. I got
-a lot of good advice and criticism, and I would be lying if I said I didn&amp;rsquo;t
-want to work there again - I&amp;rsquo;d love to. (But I&amp;rsquo;m doing a MBA programme that
-will take next year&amp;rsquo;s summer away from me&amp;hellip; ARGH. HARD CHOICES)&lt;/p&gt;
-
-&lt;p&gt;Seattle itself was wonderful. I think the key thing here is that it&amp;rsquo;s not hot
-as hell the majority of the time, it&amp;rsquo;s a relaxing place, and it&amp;rsquo;s not humid.&lt;/p&gt;
-
-&lt;p&gt;Not humid.&lt;/p&gt;
-
-&lt;p&gt;Do you realise how strange that is, coming from the east coast? It&amp;rsquo;s
-mind-boggling. This past week was around the mid-60s and lower-70s - what great
-weather!&lt;/p&gt;
-
-&lt;p&gt;Aside from that, the general environment is great, the traffic is &lt;em&gt;loads&lt;/em&gt; better
-than the east coast (I-5 is bad? Hah. Haven&amp;rsquo;t seen I-95, huh?), and it&amp;rsquo;s such a
-nice place to be.&lt;/p&gt;
-
-&lt;p&gt;I had a bunch of cool roomies too, which made it even better. Made a lot of cool
-friends &amp;ndash; wonder if we&amp;rsquo;ll be able to keep in touch. It&amp;rsquo;d definitely be fun!&lt;/p&gt;
-
-&lt;p&gt;Overall, completely worth the experience. &lt;sup&gt;10&lt;/sup&gt;&amp;frasl;&lt;sub&gt;10&lt;/sub&gt; would do again, but &lt;sup&gt;5&lt;/sup&gt;&amp;frasl;&lt;sub&gt;10&lt;/sub&gt; maybe
-shouldn&amp;rsquo;t use ABODA. I think I might want to rent next time I go there. (But
-then again, all the interns were in one place&amp;hellip;)&lt;/p&gt;
-
-&lt;p&gt;tl;dr A+ would do again&lt;/p&gt;
-</description>
+      <description>If you&amp;rsquo;re wondering why all the posts have suddenly appeared, the answer is that I&amp;rsquo;ve finally achieved peak boredom level that I need to write on my blog again.
+That was quick. I just flew in from Seattle today.
+So if it wasn&amp;rsquo;t obvious from the description, I just finished an internship this past week. I already find myself wishing I could be back at my internship with Amazon - it was amazing!</description>
     </item>
     
     <item>
@@ -121,18 +42,9 @@ then again, all the interns were in one place&amp;hellip;)&lt;/p&gt;
       <pubDate>Mon, 17 Aug 2015 03:11:15 -0400</pubDate>
       <author>me@robxu9.com (Robert Xu)</author>
       <guid>https://www.robxu9.com/2015/08/new-domains/</guid>
-      <description>&lt;p&gt;So.&lt;/p&gt;
-
-&lt;p&gt;Over the past two months I have expanded my domain acquisitions. I now own
-&lt;strong&gt;rxu.io&lt;/strong&gt; and &lt;strong&gt;rxu.tech&lt;/strong&gt;, but I don&amp;rsquo;t exactly have too much of a clue with
-what to do with them. Yet.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;m thinking that I&amp;rsquo;ll be making &lt;strong&gt;rxu.io&lt;/strong&gt; my personal homepage site - some
-nice one page with links to all my profiles, resumes, this blog, etc; and
-&lt;strong&gt;rxu.tech&lt;/strong&gt; a listing of projects that I am or were involved with.&lt;/p&gt;
-
-&lt;p&gt;But I am completely open to other ideas.&lt;/p&gt;
-</description>
+      <description>So.
+Over the past two months I have expanded my domain acquisitions. I now own rxu.io and rxu.tech, but I don&amp;rsquo;t exactly have too much of a clue with what to do with them. Yet.
+I&amp;rsquo;m thinking that I&amp;rsquo;ll be making rxu.io my personal homepage site - some nice one page with links to all my profiles, resumes, this blog, etc; and rxu.tech a listing of projects that I am or were involved with.</description>
     </item>
     
     <item>
@@ -141,43 +53,10 @@ nice one page with links to all my profiles, resumes, this blog, etc; and
       <pubDate>Mon, 02 Mar 2015 22:11:30 -0500</pubDate>
       <author>me@robxu9.com (Robert Xu)</author>
       <guid>https://www.robxu9.com/2015/03/cloudflared/</guid>
-      <description>&lt;p&gt;My website was just cloudflare&amp;rsquo;d today.&lt;/p&gt;
-
-&lt;p&gt;In a nutshell, this means that I&amp;rsquo;ve switched nameservers (again), from
-DigitalOcean to CloudFlare. The main reason for that is because of
-CloudFlare&amp;rsquo;s free https support, which I use in tandem with Github Pages.&lt;/p&gt;
-
-&lt;p&gt;(Yes, no https on robxu9.com severely irked me.)&lt;/p&gt;
-
-&lt;p&gt;Additionally, I&amp;rsquo;ve been experimenting with new mail hosting lately, so
-I&amp;rsquo;ve been switching mail providers like&amp;hellip; every other week. Still self
-hosting in the end, but I just wanted to remark on a few things:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Zentyal&lt;/strong&gt;: I &lt;em&gt;really really really really really really&lt;/em&gt; wanted to
-like you like Carly Rae Jepsen&amp;rsquo;s new obsession. But I couldn&amp;rsquo;t. You have a
-strange number of problems, your general configuration screen doesn&amp;rsquo;t work
-(&amp;ldquo;missing parameter: id&amp;rdquo;???), and it was an overall mess. But your ability
-to mimic Exchange and also put together Mail, Contacts, and Calendar all
-in one with OpenChange and SoGo was really appealing. Unfortunately, errors
-aren&amp;rsquo;t.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;mailinabox.email&lt;/strong&gt;: I mentioned that I wanted to use CloudFlare, right?
-Mail-in-a-Box is really insistent that you use its internal DNS, and if you
-don&amp;rsquo;t, add 100000000 DNS records to CloudFlare instead. That&amp;rsquo;s not really an
-issue, but then bind9 refused to resolve any DNS requests, and I gave up there.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;yunohost&lt;/strong&gt;: I really wish I had a picture of that meme right now. But this
-is what I&amp;rsquo;m currently using now, after three weeks (Mail-in-a-Box is actually
-still up on my other VPS, but that&amp;rsquo;s going down as soon as DNS propagates).&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;It&amp;rsquo;s&amp;hellip; nice to have a tiled welcome screen and something that seems to
-Just Work &amp;trade; after so long. Although, I have to admit, Dovecot ran out of
-epoll handlers and that left me stumped, but a reboot solved that.&lt;/p&gt;
-
-&lt;p&gt;I should go study for CSE 320 now.&lt;/p&gt;
-</description>
+      <description>My website was just cloudflare&amp;rsquo;d today.
+In a nutshell, this means that I&amp;rsquo;ve switched nameservers (again), from DigitalOcean to CloudFlare. The main reason for that is because of CloudFlare&amp;rsquo;s free https support, which I use in tandem with Github Pages.
+(Yes, no https on robxu9.com severely irked me.)
+Additionally, I&amp;rsquo;ve been experimenting with new mail hosting lately, so I&amp;rsquo;ve been switching mail providers like&amp;hellip; every other week. Still self hosting in the end, but I just wanted to remark on a few things:</description>
     </item>
     
     <item>
@@ -186,35 +65,10 @@ epoll handlers and that left me stumped, but a reboot solved that.&lt;/p&gt;
       <pubDate>Wed, 25 Feb 2015 23:46:05 -0500</pubDate>
       <author>me@robxu9.com (Robert Xu)</author>
       <guid>https://www.robxu9.com/2015/02/welp/</guid>
-      <description>&lt;p&gt;That was quick.&lt;/p&gt;
-
-&lt;p&gt;What have I been up to? Things I&amp;rsquo;ve done lately include:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;studying for CSE 320, which is System Architecture. I feel like I&amp;rsquo;m slow on
-the uptake with this class, whatnot with muxes and ALUs&amp;hellip;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;working on CSE 306, which is implementing a simple &lt;code&gt;grep&lt;/code&gt; without libc. So
-just Linux system calls. Not bad, just time consuming. Also I gave up trying
-to make descriptive errors and just dumped &lt;code&gt;errno.h&lt;/code&gt; into a switch statement.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;I should probably do the Ethics project.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Beat Tales of Symphonia, Tales of Symphonia: Knights of Ratatosk, and started
-Tales of the Abyss, then realised that I actually have homework to do.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Had an Amazon interview. This was my first real interview in a &lt;strong&gt;LONG&lt;/strong&gt; time,
-and I&amp;rsquo;m not so certain I ace&amp;rsquo;d it. It was an experience, but it took my brain
-way too long to warm up and I think that cost me. I think I missed a Big-O
-notation and I definitely forgot about Kruskal&amp;rsquo;s algorithm. Shit.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Went to Boston for ECAASU 2015! Here&amp;rsquo;s a tip: don&amp;rsquo;t drive in Boston. The
-roads make no sense whatsoever (they&amp;rsquo;re like downtown Manhattan), and the
-random forks and roundabouts hurt my head.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;There&amp;rsquo;s more happening soon, but I gotta survive until at least Spring Break&amp;hellip;&lt;/p&gt;
-</description>
+      <description>That was quick.
+What have I been up to? Things I&amp;rsquo;ve done lately include:
+ studying for CSE 320, which is System Architecture. I feel like I&amp;rsquo;m slow on the uptake with this class, whatnot with muxes and ALUs&amp;hellip;
+ working on CSE 306, which is implementing a simple grep without libc. So just Linux system calls. Not bad, just time consuming. Also I gave up trying to make descriptive errors and just dumped errno.</description>
     </item>
     
     <item>
@@ -223,77 +77,8 @@ random forks and roundabouts hurt my head.&lt;/p&gt;&lt;/li&gt;
       <pubDate>Wed, 14 Jan 2015 22:48:42 -0600</pubDate>
       <author>me@robxu9.com (Robert Xu)</author>
       <guid>https://www.robxu9.com/2015/01/robxu9.com-take-two/</guid>
-      <description>&lt;p&gt;I never had the time to really blog about things in length after I left
-DigitalOcean. I guess I felt like it was time consuming and such effort could
-better be spent sleeping or coding or something along the lines of that.&lt;/p&gt;
-
-&lt;p&gt;But then school came around and I was thrown into the chaos that is the fall
-semester of university, and I never had a chance to step back from all the
-craziness that followed and put my thoughts together.&lt;/p&gt;
-
-&lt;p&gt;And now here we are. It&amp;rsquo;s 2015, almost 6 months since my last blog post.
-I&amp;rsquo;ve resolved to take more time out to reflect on what&amp;rsquo;s been happening and
-gather my thoughts.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;m therefore taking bets on how quickly this will fall apart. Minimum time
-after I finish writing this post.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Hello Blog.</title>
-      <link>https://www.robxu9.com/2014/07/hello-blog./</link>
-      <pubDate>Mon, 28 Jul 2014 00:00:00 +0000</pubDate>
-      <author>me@robxu9.com (Robert Xu)</author>
-      <guid>https://www.robxu9.com/2014/07/hello-blog./</guid>
-      <description>
-
-&lt;p&gt;Welp, I suppose it&amp;rsquo;s about time that I made an actual blog on my actual domain.
-Whee!&lt;/p&gt;
-
-&lt;p&gt;I made a list of projects I wanted to do in the future - kinda like my personal
-project collection. When I actually compiled the list, though, it started to
-become a bit unrealistic.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/robxu9/uitest&#34;&gt;uitest&lt;/a&gt; - UI testing via VNC connection&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/Minequest/gomq&#34;&gt;gomq&lt;/a&gt; - MineQuest, written in Go&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/robxu9/kahinah&#34;&gt;kahinah&lt;/a&gt; - OpenMandriva&amp;rsquo;s QA Bot, which
-needs a rewrite (codenamed &lt;em&gt;v4&lt;/em&gt;)&lt;/li&gt;
-&lt;li&gt;aye - a DO API client in Go (like tugboat)&lt;/li&gt;
-&lt;li&gt;gnome 3.12 updates for OpenMandriva, which are like half-finished now&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/robxu9/duplex&#34;&gt;duplex&lt;/a&gt; - message queue RPC but also
-streaming i/o and peering&lt;/li&gt;
-&lt;li&gt;a new live cd tool for OpenMandriva Lx (because livecd-creator is bleh)&lt;/li&gt;
-&lt;li&gt;zypper instead of urpmi for OpenMandriva Lx (which means I have to PR zypper
-with support for hdlists)&lt;/li&gt;
-&lt;li&gt;trying my hand at writing an automated RPM build system&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;It&amp;rsquo;s a lot. In reality, I&amp;rsquo;m only maintaining &lt;code&gt;kahinah&lt;/code&gt; and &lt;code&gt;duplex&lt;/code&gt;, and then
-splitting my time between gnome 3.12 updates and &lt;code&gt;uitest&lt;/code&gt;. The next to come
-would probably be &lt;code&gt;aye&lt;/code&gt;, &lt;code&gt;zypper&lt;/code&gt;, or &lt;code&gt;gomq&lt;/code&gt;&amp;hellip;&lt;/p&gt;
-
-&lt;p&gt;In a way, I feel like I&amp;rsquo;m the naughty child with my hand in the cookie jar
-trying to figure out which cookie to grab before mother comes back (read:
-life takes over everything again).&lt;/p&gt;
-
-&lt;p&gt;Eh. We&amp;rsquo;ll see, I guess.&lt;/p&gt;
-
-&lt;h3 id=&#34;code-snippet-of-today:97f6c50ee355e8ed2cdf4e3f738c409d&#34;&gt;Code snippet of today&lt;/h3&gt;
-
-&lt;p&gt;I finally got duplex as a shared library working, but that&amp;rsquo;s under a separate
-branch for now because I want to make sure it&amp;rsquo;s &lt;em&gt;perfect&lt;/em&gt;. So, I&amp;rsquo;m writing
-Python2 bindings!&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;from ctypes import *
-dpx = CDLL(&#39;libdpx.so&#39;)
-
-print dpx
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;^ That finally works. Thank god.&lt;/p&gt;
-</description>
+      <description>I never had the time to really blog about things in length after I left DigitalOcean. I guess I felt like it was time consuming and such effort could better be spent sleeping or coding or something along the lines of that.
+But then school came around and I was thrown into the chaos that is the fall semester of university, and I never had a chance to step back from all the craziness that followed and put my thoughts together.</description>
     </item>
     
   </channel>

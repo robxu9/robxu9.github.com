@@ -8,9 +8,11 @@
     <language>en-us</language>
     <managingEditor>me@robxu9.com (Robert Xu)</managingEditor>
     <webMaster>me@robxu9.com (Robert Xu)</webMaster>
-    <copyright>© 2014-2016 Robert Xu. All Rights Reserved. Content not indicative of any addl party.</copyright>
+    <copyright>© 2014-2017 Robert Xu. All Rights Reserved. Content not indicative of any addl party.</copyright>
     <lastBuildDate>Tue, 20 Jan 2015 14:25:16 -0600</lastBuildDate>
-    <atom:link href="https://www.robxu9.com/tags/openmandriva/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="https://www.robxu9.com/tags/openmandriva/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>kahinah, take two</title>
@@ -18,71 +20,9 @@
       <pubDate>Tue, 20 Jan 2015 14:25:16 -0600</pubDate>
       <author>me@robxu9.com (Robert Xu)</author>
       <guid>https://www.robxu9.com/2015/01/kahinah-take-two/</guid>
-      <description>
-
-&lt;p&gt;This one was the one that needed the obvious rewrite.&lt;/p&gt;
-
-&lt;h3 id=&#34;background:226c55525206653d6c71e0f5695b4e16&#34;&gt;Background&lt;/h3&gt;
-
-&lt;p&gt;Kahinah is an updates manager for the &lt;a href=&#34;http://openmandriva.org&#34;&gt;OpenMandriva&lt;/a&gt;
-Association&amp;rsquo;s distribution, OpenMandriva Lx. Its goal is to monitor builds that
-are produced from a build system (which is &lt;a href=&#34;https://abf.io&#34;&gt;abf.io&lt;/a&gt; right now),
-and create a karma system which testers can vote on the updates, and eventually
-accept them as working, or reject them as deficient.&lt;/p&gt;
-
-&lt;p&gt;This worked for the most part, but when it came time for a large number of
-builds (think a KDE SC 4 version update), Kahinah was overwhelmed, testers
-were crushed, and updates had a hard time going through.&lt;/p&gt;
-
-&lt;p&gt;Additionally, the system suffered from numerous bugs due to changes on abf.io,
-and it certainly didn&amp;rsquo;t help that I was using &lt;a href=&#34;http://beego.me&#34;&gt;beego&lt;/a&gt; and
-pulling many many dependencies, which shot build times up through the roof.&lt;/p&gt;
-
-&lt;h3 id=&#34;version-4:226c55525206653d6c71e0f5695b4e16&#34;&gt;Version&amp;hellip; 4?&lt;/h3&gt;
-
-&lt;p&gt;The first couple of versions were just getting it usable and bearable for the
-most part. This rewrite is entirely from scratch, with no existing code.&lt;/p&gt;
-
-&lt;p&gt;I finally provide a decent JSON API, and I plan to use JSON web tokens to
-provide authentication (thanks Matt for pointing that out). Updates are now
-more organized, and for the first time ever, I&amp;rsquo;m providing a new type called
-advisories.&lt;/p&gt;
-
-&lt;h3 id=&#34;what-are-advisories:226c55525206653d6c71e0f5695b4e16&#34;&gt;What are Advisories?&lt;/h3&gt;
-
-&lt;p&gt;Advisories are groups of updates. Instead of voting on one update, we create
-an advisory with the updates we want to contain in it. They can range from
-just one update to a group of them, and testers can test ALL of them at the
-same time.&lt;/p&gt;
-
-&lt;p&gt;This has two purposes - one, to force package maintainers to document more
-throughly for corporate customers (for example, putting bug references so
-that Kahinah can connect to Bugzilla and say, hey, here&amp;rsquo;s a possible solution
-that you can test), and two, to make large updates much more manageable for
-testers.&lt;/p&gt;
-
-&lt;p&gt;It also brings us in line with practically every distribution out there
-that has to keep track of updates (like Fedora&amp;rsquo;s bodhi).&lt;/p&gt;
-
-&lt;h3 id=&#34;what-else-has-changed:226c55525206653d6c71e0f5695b4e16&#34;&gt;What else has changed?&lt;/h3&gt;
-
-&lt;p&gt;The frontend is separate from the backend, and is written with
-&lt;a href=&#34;http://emberjs.com&#34;&gt;ember.js&lt;/a&gt;. It&amp;rsquo;s my first foray into ember.js, and I&amp;rsquo;m
-curious to see how it goes. The documentation is a bit random, especially since
-it looks like they&amp;rsquo;re migrating towards some ES6 standards, so it&amp;rsquo;ll be
-both a learning experience and a headache.&lt;/p&gt;
-
-&lt;h3 id=&#34;release-soon:226c55525206653d6c71e0f5695b4e16&#34;&gt;Release soon?&lt;/h3&gt;
-
-&lt;p&gt;When I get stuff working, maybe. I intend to deploy a beta version to
-replace the current Kahinah on jasper sometime at the end of this month
-or the beginning of next.&lt;/p&gt;
-
-&lt;h3 id=&#34;github:226c55525206653d6c71e0f5695b4e16&#34;&gt;Github&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/robxu9/kahinah/tree/dev_nobeego&#34;&gt;kahinah&lt;/a&gt; is licensed
-under the MIT license.&lt;/p&gt;
-</description>
+      <description>This one was the one that needed the obvious rewrite.
+Background Kahinah is an updates manager for the OpenMandriva Association&amp;rsquo;s distribution, OpenMandriva Lx. Its goal is to monitor builds that are produced from a build system (which is abf.io right now), and create a karma system which testers can vote on the updates, and eventually accept them as working, or reject them as deficient.
+This worked for the most part, but when it came time for a large number of builds (think a KDE SC 4 version update), Kahinah was overwhelmed, testers were crushed, and updates had a hard time going through.</description>
     </item>
     
   </channel>

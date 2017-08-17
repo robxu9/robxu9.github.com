@@ -8,9 +8,11 @@
     <language>en-us</language>
     <managingEditor>me@robxu9.com (Robert Xu)</managingEditor>
     <webMaster>me@robxu9.com (Robert Xu)</webMaster>
-    <copyright>© 2014-2016 Robert Xu. All Rights Reserved. Content not indicative of any addl party.</copyright>
+    <copyright>© 2014-2017 Robert Xu. All Rights Reserved. Content not indicative of any addl party.</copyright>
     <lastBuildDate>Mon, 08 Feb 2016 19:49:28 -0500</lastBuildDate>
-    <atom:link href="https://www.robxu9.com/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="https://www.robxu9.com/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>do cleanups, not rewrites</title>
@@ -18,45 +20,8 @@
       <pubDate>Mon, 08 Feb 2016 19:49:28 -0500</pubDate>
       <author>me@robxu9.com (Robert Xu)</author>
       <guid>https://www.robxu9.com/2016/02/do-cleanups-not-rewrites/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;ve had an application that&amp;rsquo;s been going on for about 3 years now.
-&lt;a href=&#34;https://github.com/robxu9/kahinah&#34;&gt;Kahinah&lt;/a&gt; was built to manage package updates
-for &lt;a href=&#34;https://www.openmandriva.org/&#34;&gt;OpenMandriva Lx&lt;/a&gt;. I wrote it, did incremental
-updates to it, declared it a horrible mess and that I would rewrite it. Then never
-touched it for nearly two years.&lt;/p&gt;
-
-&lt;p&gt;The problem with rewrites is that you&amp;rsquo;re going into the mentality that you&amp;rsquo;re going
-to throw away all your code and restart from scratch; consequently, you can redo the
-whole structure of your app, make it all nice, neat, and everything looks nice. And
-then you start to structure your app in the &amp;ldquo;ideal&amp;rdquo; way such that you&amp;rsquo;ll never have
-to rewrite it again and it&amp;rsquo;ll be all perfect and modular and etc.&lt;/p&gt;
-
-&lt;p&gt;And then you lose motivation and stop working on it for a couple of years. That was
-essentially the state of Kahinah.&lt;/p&gt;
-
-&lt;p&gt;So that branch was pushed off to the side, and I took the old code, and now I&amp;rsquo;m doing
-a &amp;ldquo;cleanup&amp;rdquo;. The end goal is the same - still trying to revamp Kahinah so it&amp;rsquo;s no longer
-a mess, but this time it&amp;rsquo;s going much smoother, and I&amp;rsquo;m not losing motivation. Why?&lt;/p&gt;
-
-&lt;p&gt;I think it&amp;rsquo;s the way our mind approaches these problems. When you first start a project,
-you already have a good idea of how to structure it. When you rewrite a project, you&amp;rsquo;re
-forced to throw away that old structure and create a new one, but the mind keeps referring
-back to the old structure and functionality, at which point you have to think doubly hard
-and it gets too frustrating for most people there.&lt;/p&gt;
-
-&lt;p&gt;But cleanups means that you&amp;rsquo;re slowly ripping away old pieces and putting new ones in. It
-keeps the app working (more or less) so you have a tangeble view of how everything is
-changing, and you know it&amp;rsquo;s still working. It&amp;rsquo;s like if you have a building, and you did
-a systematic renovation by redoing the walls, then redoing the roof, the floors, the
-equipment inside, etc&amp;hellip; you can still be in the building whilst it&amp;rsquo;s happening and you get
-a full view of how it works!&lt;/p&gt;
-
-&lt;p&gt;So I think I&amp;rsquo;m much happier with the term cleanups than rewrites.&lt;/p&gt;
-
-&lt;p&gt;(It could be noted that the project I was working on before, duplex, underwent a rewrite
-and that never completed either, but that&amp;rsquo;s just because I didn&amp;rsquo;t have time to finish it.
-But I&amp;rsquo;m pretty sure that it applies more or less. It has a successor project under a new
-name, but that&amp;rsquo;s a new project entirely, so yeah.)&lt;/p&gt;
-</description>
+      <description>I&amp;rsquo;ve had an application that&amp;rsquo;s been going on for about 3 years now. Kahinah was built to manage package updates for OpenMandriva Lx. I wrote it, did incremental updates to it, declared it a horrible mess and that I would rewrite it. Then never touched it for nearly two years.
+The problem with rewrites is that you&amp;rsquo;re going into the mentality that you&amp;rsquo;re going to throw away all your code and restart from scratch; consequently, you can redo the whole structure of your app, make it all nice, neat, and everything looks nice.</description>
     </item>
     
     <item>
@@ -65,54 +30,9 @@ name, but that&amp;rsquo;s a new project entirely, so yeah.)&lt;/p&gt;
       <pubDate>Sat, 12 Dec 2015 22:48:32 -0500</pubDate>
       <author>me@robxu9.com (Robert Xu)</author>
       <guid>https://www.robxu9.com/2015/12/oh-god-what-am-i-doing/</guid>
-      <description>&lt;p&gt;Ah, December. The time of year where there&amp;rsquo;s a surprising lack of snow on the
-ground, finals are over surprisingly early, and time for pondering life has
-become plentiful. Which brings me to pondering life and my decisions.&lt;/p&gt;
-
-&lt;p&gt;What on earth am I doing? Where will I be after I graduate? What do I want to
-do?&lt;/p&gt;
-
-&lt;p&gt;My initial thought was to go and try to pursue a MBA, because that&amp;rsquo;s useful and
-all, but somewhere along the line I saw all the applications and became less
-enthusiastic. Then I thought about the possibility that I wouldn&amp;rsquo;t get into
-graduate school because I don&amp;rsquo;t have enough work experience, and lo and behold,
-I&amp;rsquo;m searching for jobs again.&lt;/p&gt;
-
-&lt;p&gt;(To Eric, my mentor at Amazon: you&amp;rsquo;re right, you win.)&lt;/p&gt;
-
-&lt;p&gt;But really, &lt;strong&gt;what am I doing?&lt;/strong&gt; I think the fact that I&amp;rsquo;m graduating early has
-me stuttering a bit, because that&amp;rsquo;s something big and not ordinary by any means.
-I was going to brush it off by saying I&amp;rsquo;d pad that year out with the MBA, but
-the fact that I&amp;rsquo;m stuttering on even that has made me realise that I really
-should stop and think, and not mindlessly toil through the semester.&lt;/p&gt;
-
-&lt;p&gt;My mum suggested that I should do a dual math major; I responded by pointing
-out that I&amp;rsquo;d still graduate a semester early because that only pads out
-how many credits by about 4-5 courses. So it doesn&amp;rsquo;t solve the lingering
-thoughts in my head.&lt;/p&gt;
-
-&lt;p&gt;I still haven&amp;rsquo;t answered the question, so I suppose I should do that first.
-I&amp;rsquo;m trying to complete my bachelor&amp;rsquo;s degree in Computer Science in an exemplary
-way. I don&amp;rsquo;t want to rush through it (though, I suppose in some aspects I
-already have), and I want good grades in CS, damnit!&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Where will I be after I graduate?&lt;/strong&gt; I don&amp;rsquo;t know. Amazon&amp;rsquo;s a possibility; but
-I never really had time to think about it this semester. (Note to self: do not
-take so many project courses at once.) Enrolling into graduate school is another
-possibility. I have to do a bunch of job applications, too.&lt;/p&gt;
-
-&lt;p&gt;Basically, all possibilities, but I&amp;rsquo;m not sure. &lt;em&gt;And that uncertainty is killing
-me.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Well, there&amp;rsquo;s only one way to find out, I suppose. Time to apply.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;What do I want to do?&lt;/strong&gt; Well, I want to program, of course. Whether I want to
-work at a startup, at a major company, work on my own projects, etc&amp;hellip; I&amp;rsquo;m not
-too sure right now. But hey, I guess it all builds up.&lt;/p&gt;
-
-&lt;p&gt;So the end of this blog post is still &amp;ldquo;what am I even doing&amp;rdquo;. In the end, though,
-I suppose that&amp;rsquo;s how it&amp;rsquo;ll always be.&lt;/p&gt;
-</description>
+      <description>Ah, December. The time of year where there&amp;rsquo;s a surprising lack of snow on the ground, finals are over surprisingly early, and time for pondering life has become plentiful. Which brings me to pondering life and my decisions.
+What on earth am I doing? Where will I be after I graduate? What do I want to do?
+My initial thought was to go and try to pursue a MBA, because that&amp;rsquo;s useful and all, but somewhere along the line I saw all the applications and became less enthusiastic.</description>
     </item>
     
     <item>
@@ -121,10 +41,9 @@ I suppose that&amp;rsquo;s how it&amp;rsquo;ll always be.&lt;/p&gt;
       <pubDate>Wed, 19 Aug 2015 21:00:30 -0400</pubDate>
       <author>me@robxu9.com (Robert Xu)</author>
       <guid>https://www.robxu9.com/2015/08/a-tribute-to-dr.-doran/</guid>
-      <description>&lt;p&gt;&lt;em&gt;(x-posted from my facebook)&lt;/em&gt;&lt;/p&gt;
-
-&lt;div id=&#34;fb-root&#34;&gt;&lt;/div&gt;&lt;script&gt;(function(d, s, id) {  var js, fjs = d.getElementsByTagName(s)[0];  if (d.getElementById(id)) return;  js = d.createElement(s); js.id = id;  js.src = &#34;//connect.facebook.net/en_GB/sdk.js#xfbml=1&amp;version=v2.3&#34;;  fjs.parentNode.insertBefore(js, fjs);}(document, &#39;script&#39;, &#39;facebook-jssdk&#39;));&lt;/script&gt;&lt;div class=&#34;fb-post&#34; data-href=&#34;https://www.facebook.com/robxu9/posts/10206975789854234&#34; data-width=&#34;500&#34;&gt;&lt;div class=&#34;fb-xfbml-parse-ignore&#34;&gt;&lt;blockquote cite=&#34;https://www.facebook.com/robxu9/posts/10206975789854234&#34;&gt;&lt;p&gt;On Wednesday, 19 August, around midday, many of us learned that our long time high school principal, Dr. Michael Doran,...&lt;/p&gt;Posted by &lt;a href=&#34;#&#34; role=&#34;button&#34;&gt;Robert Xu&lt;/a&gt; on&amp;nbsp;&lt;a href=&#34;https://www.facebook.com/robxu9/posts/10206975789854234&#34;&gt;Wednesday, 19 August 2015&lt;/a&gt;&lt;/blockquote&gt;&lt;/div&gt;&lt;/div&gt;
-</description>
+      <description>(x-posted from my facebook)
+(function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = &#34;//connect.facebook.net/en_GB/sdk.js#xfbml=1&amp;version=v2.3&#34;; fjs.parentNode.insertBefore(js, fjs);}(document, &#39;script&#39;, &#39;facebook-jssdk&#39;));On Wednesday, 19 August, around midday, many of us learned that our long time high school principal, Dr. Michael Doran,...
+Posted by Robert Xu on&amp;nbsp;Wednesday, 19 August 2015 </description>
     </item>
     
     <item>
@@ -133,45 +52,9 @@ I suppose that&amp;rsquo;s how it&amp;rsquo;ll always be.&lt;/p&gt;
       <pubDate>Mon, 17 Aug 2015 03:17:07 -0400</pubDate>
       <author>me@robxu9.com (Robert Xu)</author>
       <guid>https://www.robxu9.com/2015/08/where-have-i-been-all-summer/</guid>
-      <description>&lt;p&gt;If you&amp;rsquo;re wondering why all the posts have suddenly appeared, the answer is
-that I&amp;rsquo;ve finally achieved peak boredom level that I need to write on my blog
-again.&lt;/p&gt;
-
-&lt;p&gt;That was quick. I just flew in from Seattle today.&lt;/p&gt;
-
-&lt;p&gt;So if it wasn&amp;rsquo;t obvious from the description, I just finished an internship
-this past week. I already find myself wishing I could be back at my internship
-with Amazon - it was amazing!&lt;/p&gt;
-
-&lt;p&gt;I worked with Fulfillment by Amazon on Global Selling - and what an experience!
-It gave me the insight into how to interact with business and develop solutions
-that make sense, are maintainable, and can provide long term reliability. I got
-a lot of good advice and criticism, and I would be lying if I said I didn&amp;rsquo;t
-want to work there again - I&amp;rsquo;d love to. (But I&amp;rsquo;m doing a MBA programme that
-will take next year&amp;rsquo;s summer away from me&amp;hellip; ARGH. HARD CHOICES)&lt;/p&gt;
-
-&lt;p&gt;Seattle itself was wonderful. I think the key thing here is that it&amp;rsquo;s not hot
-as hell the majority of the time, it&amp;rsquo;s a relaxing place, and it&amp;rsquo;s not humid.&lt;/p&gt;
-
-&lt;p&gt;Not humid.&lt;/p&gt;
-
-&lt;p&gt;Do you realise how strange that is, coming from the east coast? It&amp;rsquo;s
-mind-boggling. This past week was around the mid-60s and lower-70s - what great
-weather!&lt;/p&gt;
-
-&lt;p&gt;Aside from that, the general environment is great, the traffic is &lt;em&gt;loads&lt;/em&gt; better
-than the east coast (I-5 is bad? Hah. Haven&amp;rsquo;t seen I-95, huh?), and it&amp;rsquo;s such a
-nice place to be.&lt;/p&gt;
-
-&lt;p&gt;I had a bunch of cool roomies too, which made it even better. Made a lot of cool
-friends &amp;ndash; wonder if we&amp;rsquo;ll be able to keep in touch. It&amp;rsquo;d definitely be fun!&lt;/p&gt;
-
-&lt;p&gt;Overall, completely worth the experience. &lt;sup&gt;10&lt;/sup&gt;&amp;frasl;&lt;sub&gt;10&lt;/sub&gt; would do again, but &lt;sup&gt;5&lt;/sup&gt;&amp;frasl;&lt;sub&gt;10&lt;/sub&gt; maybe
-shouldn&amp;rsquo;t use ABODA. I think I might want to rent next time I go there. (But
-then again, all the interns were in one place&amp;hellip;)&lt;/p&gt;
-
-&lt;p&gt;tl;dr A+ would do again&lt;/p&gt;
-</description>
+      <description>If you&amp;rsquo;re wondering why all the posts have suddenly appeared, the answer is that I&amp;rsquo;ve finally achieved peak boredom level that I need to write on my blog again.
+That was quick. I just flew in from Seattle today.
+So if it wasn&amp;rsquo;t obvious from the description, I just finished an internship this past week. I already find myself wishing I could be back at my internship with Amazon - it was amazing!</description>
     </item>
     
     <item>
@@ -180,18 +63,9 @@ then again, all the interns were in one place&amp;hellip;)&lt;/p&gt;
       <pubDate>Mon, 17 Aug 2015 03:11:15 -0400</pubDate>
       <author>me@robxu9.com (Robert Xu)</author>
       <guid>https://www.robxu9.com/2015/08/new-domains/</guid>
-      <description>&lt;p&gt;So.&lt;/p&gt;
-
-&lt;p&gt;Over the past two months I have expanded my domain acquisitions. I now own
-&lt;strong&gt;rxu.io&lt;/strong&gt; and &lt;strong&gt;rxu.tech&lt;/strong&gt;, but I don&amp;rsquo;t exactly have too much of a clue with
-what to do with them. Yet.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;m thinking that I&amp;rsquo;ll be making &lt;strong&gt;rxu.io&lt;/strong&gt; my personal homepage site - some
-nice one page with links to all my profiles, resumes, this blog, etc; and
-&lt;strong&gt;rxu.tech&lt;/strong&gt; a listing of projects that I am or were involved with.&lt;/p&gt;
-
-&lt;p&gt;But I am completely open to other ideas.&lt;/p&gt;
-</description>
+      <description>So.
+Over the past two months I have expanded my domain acquisitions. I now own rxu.io and rxu.tech, but I don&amp;rsquo;t exactly have too much of a clue with what to do with them. Yet.
+I&amp;rsquo;m thinking that I&amp;rsquo;ll be making rxu.io my personal homepage site - some nice one page with links to all my profiles, resumes, this blog, etc; and rxu.tech a listing of projects that I am or were involved with.</description>
     </item>
     
     <item>
@@ -200,28 +74,9 @@ nice one page with links to all my profiles, resumes, this blog, etc; and
       <pubDate>Mon, 17 Aug 2015 02:05:01 -0400</pubDate>
       <author>me@robxu9.com (Robert Xu)</author>
       <guid>https://www.robxu9.com/2015/08/may-june-july-and-august-music/</guid>
-      <description>&lt;p&gt;long time no see, blog.&lt;/p&gt;
-
-&lt;p&gt;nothing new on the music front - I &lt;em&gt;did&lt;/em&gt; listen to a lot of BBC Radio 1 and
-Capital FM London, though. So most of my music from these past few months come
-from there.&lt;/p&gt;
-
-&lt;p&gt;Honestly, I think I was just really lazy to go and find really new and fresh music.
-That might have been because my apartment-mate for the summer, Theo, had a bunch of
-interesting music on him. Though a lot of it is rap.&lt;/p&gt;
-
-&lt;p&gt;For simplicity, I&amp;rsquo;ve just gone ahead and embedded Spotify playlists below.&lt;/p&gt;
-
-&lt;p&gt;Laziness prevails.&lt;/p&gt;
-
-&lt;iframe src=&#34;https://embed.spotify.com/?uri=spotify%3Auser%3Arobxu9%3Aplaylist%3A6mWZecZCQyrXzHjeTbfGg1&#34; width=&#34;300&#34; height=&#34;380&#34; frameborder=&#34;0&#34; allowtransparency=&#34;true&#34;&gt;&lt;/iframe&gt;
-
-&lt;iframe src=&#34;https://embed.spotify.com/?uri=spotify%3Auser%3Arobxu9%3Aplaylist%3A3UXFm2oHOgtMuzK9Az5O40&#34; width=&#34;300&#34; height=&#34;380&#34; frameborder=&#34;0&#34; allowtransparency=&#34;true&#34;&gt;&lt;/iframe&gt;
-
-&lt;iframe src=&#34;https://embed.spotify.com/?uri=spotify%3Auser%3Arobxu9%3Aplaylist%3A5csej2CXNrHwTwk28SZOQF&#34; width=&#34;300&#34; height=&#34;380&#34; frameborder=&#34;0&#34; allowtransparency=&#34;true&#34;&gt;&lt;/iframe&gt;
-
-&lt;iframe src=&#34;https://embed.spotify.com/?uri=spotify%3Auser%3Arobxu9%3Aplaylist%3A7grxukVhFdstKDRocEhGwD&#34; width=&#34;300&#34; height=&#34;380&#34; frameborder=&#34;0&#34; allowtransparency=&#34;true&#34;&gt;&lt;/iframe&gt;
-</description>
+      <description>long time no see, blog.
+nothing new on the music front - I did listen to a lot of BBC Radio 1 and Capital FM London, though. So most of my music from these past few months come from there.
+Honestly, I think I was just really lazy to go and find really new and fresh music. That might have been because my apartment-mate for the summer, Theo, had a bunch of interesting music on him.</description>
     </item>
     
     <item>
@@ -230,43 +85,8 @@ interesting music on him. Though a lot of it is rap.&lt;/p&gt;
       <pubDate>Wed, 29 Apr 2015 16:32:50 -0400</pubDate>
       <author>me@robxu9.com (Robert Xu)</author>
       <guid>https://www.robxu9.com/2015/04/graduating-early/</guid>
-      <description>&lt;p&gt;It&amp;rsquo;s weird to think that only a few semesters ago, I was starting university.
-But as I went into my advisor last week and sat down and went over my
-coursework and transcript, I noticed that I didn&amp;rsquo;t know how many more classes
-I needed.&lt;/p&gt;
-
-&lt;p&gt;So we both sat down and analysed what I had left to take, and what I was
-planning to take. And we both came to the conclusion that I would be graduating
-&lt;strong&gt;one year early&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;Most people can only dream of doing this, and especially in Computer Science,
-courses are rigirous enough to discourage people from taking too many classes
-at one time, lest they be burnt grade-wise. (&lt;em&gt;stares at cse320&lt;/em&gt;)&lt;/p&gt;
-
-&lt;p&gt;But for some reason, it worked out that I had 36 credits left to take - or 12
-classes. I&amp;rsquo;ve been doing 5 classes per semester, not wanting to stress myself
-out, but it looks like with 12 classes left, that&amp;rsquo;s about 2 semesters or 3
-semesters, depending on how it&amp;rsquo;s partitioned. (There is an option to do
-6-5-1, where the last credit is taken in the summer session and I graduate
-officially in August, even though I go to the May ceremony, but I&amp;rsquo;m opting
-to do the last credit before, so it&amp;rsquo;s 1-6-5.)&lt;/p&gt;
-
-&lt;p&gt;And especially since I&amp;rsquo;m out of state, an additional semester isn&amp;rsquo;t really
-worth it only for 4 classes money-wise.&lt;/p&gt;
-
-&lt;p&gt;I have a couple of options ahead of me. I guess I should start putting 2016
-instead of 2017 in my graduation date for job applications, and I guess I should
-look and see what I have in store for myself. Like, I want to get a degree for
-a MBA in the near future, so maybe I could work on the MBA and graduate in 2017,
-but it&amp;rsquo;s still all up in the air.&lt;/p&gt;
-
-&lt;p&gt;So many choices. So many decisions. I&amp;rsquo;m scared I&amp;rsquo;ll make the wrong one.&lt;/p&gt;
-
-&lt;p&gt;I should update my resume. I lost my resume document, except I still have the
-PDF, so I guess I have to recreate it&amp;hellip; again.&lt;/p&gt;
-
-&lt;p&gt;Sigh.&lt;/p&gt;
-</description>
+      <description>It&amp;rsquo;s weird to think that only a few semesters ago, I was starting university. But as I went into my advisor last week and sat down and went over my coursework and transcript, I noticed that I didn&amp;rsquo;t know how many more classes I needed.
+So we both sat down and analysed what I had left to take, and what I was planning to take. And we both came to the conclusion that I would be graduating one year early.</description>
     </item>
     
     <item>
@@ -275,22 +95,9 @@ PDF, so I guess I have to recreate it&amp;hellip; again.&lt;/p&gt;
       <pubDate>Wed, 29 Apr 2015 16:27:43 -0400</pubDate>
       <author>me@robxu9.com (Robert Xu)</author>
       <guid>https://www.robxu9.com/2015/04/march/april-music/</guid>
-      <description>&lt;p&gt;I got Spotify Premium this month! So everything I&amp;rsquo;ve been listening to is
-in my Spotify playlist.&lt;/p&gt;
-
-&lt;p&gt;A criticism of Spotify here - your new client sucks. It takes up double
-the memory, meaning I can&amp;rsquo;t run it and use my Linux VM, I can&amp;rsquo;t Ctrl-F through
-my playlist anymore, and your playlist has started to remove tracks on its own.&lt;/p&gt;
-
-&lt;p&gt;Not cool. I don&amp;rsquo;t like tracks disappearing from my playlist because they&amp;rsquo;re
-either local files or unplayable on &lt;em&gt;this&lt;/em&gt; computer.&lt;/p&gt;
-
-&lt;p&gt;So I had to downgrade. (grumble grumble)&lt;/p&gt;
-
-&lt;p&gt;But yeah, here&amp;rsquo;s my Spotify playlist.&lt;/p&gt;
-
-&lt;iframe src=&#34;https://embed.spotify.com/?uri=spotify:user:robxu9:playlist:778rq3pUydczAVd7iPmNob&#34; width=&#34;300&#34; height=&#34;380&#34; frameborder=&#34;0&#34; allowtransparency=&#34;true&#34;&gt;&lt;/iframe&gt;
-</description>
+      <description>I got Spotify Premium this month! So everything I&amp;rsquo;ve been listening to is in my Spotify playlist.
+A criticism of Spotify here - your new client sucks. It takes up double the memory, meaning I can&amp;rsquo;t run it and use my Linux VM, I can&amp;rsquo;t Ctrl-F through my playlist anymore, and your playlist has started to remove tracks on its own.
+Not cool. I don&amp;rsquo;t like tracks disappearing from my playlist because they&amp;rsquo;re either local files or unplayable on this computer.</description>
     </item>
     
     <item>
@@ -299,72 +106,8 @@ either local files or unplayable on &lt;em&gt;this&lt;/em&gt; computer.&lt;/p&gt
       <pubDate>Mon, 16 Mar 2015 20:28:53 -0400</pubDate>
       <author>me@robxu9.com (Robert Xu)</author>
       <guid>https://www.robxu9.com/2015/03/and-now-for-something-completely-different/</guid>
-      <description>
-
-&lt;p&gt;It&amp;rsquo;s spring break, and it&amp;rsquo;s nice to finally have a week to kind of relax and
-not worry about midterms as much (of course, I&amp;rsquo;m ignoring the fact that I have
-a midterm in CSE306/Operating Systems next week), but it also gives the chance
-to reflect and ask, &amp;ldquo;what the hell went wrong on Friday?&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;Friday was my CSE320/Computer Organization &amp;amp; Architecture midterm - a midterm
-that currently has a 43% average and what the professor called &amp;ldquo;dismal scores
-across the board&amp;rdquo;: so where did it all go wrong?&lt;/p&gt;
-
-&lt;p&gt;There&amp;rsquo;s been a lot of debate recently in our class about what lengths a teacher
-should go to help their students. I personally think that our professor is
-doing a fine job, despite my own past grievances against her. She&amp;rsquo;s been
-releasing practice problems, despite being under no obligation to do so; and
-they&amp;rsquo;ve been helpful. Having TAs help our class (even though our class
-should technically have no TAs) has also been a huge help.&lt;/p&gt;
-
-&lt;p&gt;But while I seem to be satisfied, there are others who are starting to actively
-rally the class against her teaching skills, despite the fact that it doesn&amp;rsquo;t
-seem like many other of her previous classes have had as much trouble. So is it
-just our class?&lt;/p&gt;
-
-&lt;h4 id=&#34;the-difficult-question-of-what-teachers-should-be-doing:80f5062d88d9dcfdb5f1da7e32750f76&#34;&gt;The difficult question of what teachers should be doing&lt;/h4&gt;
-
-&lt;p&gt;These teachers have a difficult job. Given a class of anywhere from 30 to 200
-students (and even more for general education classes, where lecture halls
-quickly fill to 500-1000 students), they have the insurmountable task of
-teaching every single one of those students the skills they need to move on
-to the next class. It&amp;rsquo;s sometimes an almost impossible task, regardless of the
-class size, and yet they still plow on every single semester and try their
-best.&lt;/p&gt;
-
-&lt;p&gt;Teachers are the best, simply for looking up in the face of all this pressure,
-giving it the middle finger, and then proceeding (most of the time) to smash
-expectations.&lt;/p&gt;
-
-&lt;p&gt;But what if it doesn&amp;rsquo;t work out? Teachers have readily gone out of their way
-to provide extra material in the form of practice problems, review sessions,
-lab sessions, better homework software, and more - and they&amp;rsquo;re not exactly
-paid to do that, either. They could easily tell you that the textbook was
-required for the course, so read the textbook and figure it out on your own
-and stop by office hours.&lt;/p&gt;
-
-&lt;p&gt;Instead, they go out of their way to do a whole lot more whenever possible,
-and make sure that learning centres are open for other students to help as
-well. Basically, all avenues as open as possible.&lt;/p&gt;
-
-&lt;h4 id=&#34;the-moment-the-students-begin-to-expect-extra-as-normal:80f5062d88d9dcfdb5f1da7e32750f76&#34;&gt;The moment the students begin to expect extra as &amp;ldquo;normal&amp;rdquo;&lt;/h4&gt;
-
-&lt;p&gt;Eventually, the extra material seems to get mixed up as normal material.
-Then what?&lt;/p&gt;
-
-&lt;p&gt;That&amp;rsquo;s where the debate is - do teachers have an obligation to continue
-doing these extra things for their classes if they&amp;rsquo;ve done it in the
-past, or can they simply say no if it turns out to be untenable? Does it fall
-to the students to make the extra material?&lt;/p&gt;
-
-&lt;p&gt;(sidenote: I will say it does fall to the student to take advantage of office
-hours at the very minimum and study the normal material.)&lt;/p&gt;
-
-&lt;p&gt;There&amp;rsquo;s no ending to this blog post, because I can&amp;rsquo;t answer this question.
-Maybe someone else can. Or can&amp;rsquo;t.&lt;/p&gt;
-
-&lt;p&gt;Continue the discussion - comment below, or @robxu9 on Twitter.&lt;/p&gt;
-</description>
+      <description>It&amp;rsquo;s spring break, and it&amp;rsquo;s nice to finally have a week to kind of relax and not worry about midterms as much (of course, I&amp;rsquo;m ignoring the fact that I have a midterm in CSE306/Operating Systems next week), but it also gives the chance to reflect and ask, &amp;ldquo;what the hell went wrong on Friday?&amp;rdquo;
+Friday was my CSE320/Computer Organization &amp;amp; Architecture midterm - a midterm that currently has a 43% average and what the professor called &amp;ldquo;dismal scores across the board&amp;rdquo;: so where did it all go wrong?</description>
     </item>
     
     <item>
@@ -373,43 +116,10 @@ Maybe someone else can. Or can&amp;rsquo;t.&lt;/p&gt;
       <pubDate>Mon, 02 Mar 2015 22:11:30 -0500</pubDate>
       <author>me@robxu9.com (Robert Xu)</author>
       <guid>https://www.robxu9.com/2015/03/cloudflared/</guid>
-      <description>&lt;p&gt;My website was just cloudflare&amp;rsquo;d today.&lt;/p&gt;
-
-&lt;p&gt;In a nutshell, this means that I&amp;rsquo;ve switched nameservers (again), from
-DigitalOcean to CloudFlare. The main reason for that is because of
-CloudFlare&amp;rsquo;s free https support, which I use in tandem with Github Pages.&lt;/p&gt;
-
-&lt;p&gt;(Yes, no https on robxu9.com severely irked me.)&lt;/p&gt;
-
-&lt;p&gt;Additionally, I&amp;rsquo;ve been experimenting with new mail hosting lately, so
-I&amp;rsquo;ve been switching mail providers like&amp;hellip; every other week. Still self
-hosting in the end, but I just wanted to remark on a few things:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;Zentyal&lt;/strong&gt;: I &lt;em&gt;really really really really really really&lt;/em&gt; wanted to
-like you like Carly Rae Jepsen&amp;rsquo;s new obsession. But I couldn&amp;rsquo;t. You have a
-strange number of problems, your general configuration screen doesn&amp;rsquo;t work
-(&amp;ldquo;missing parameter: id&amp;rdquo;???), and it was an overall mess. But your ability
-to mimic Exchange and also put together Mail, Contacts, and Calendar all
-in one with OpenChange and SoGo was really appealing. Unfortunately, errors
-aren&amp;rsquo;t.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;mailinabox.email&lt;/strong&gt;: I mentioned that I wanted to use CloudFlare, right?
-Mail-in-a-Box is really insistent that you use its internal DNS, and if you
-don&amp;rsquo;t, add 100000000 DNS records to CloudFlare instead. That&amp;rsquo;s not really an
-issue, but then bind9 refused to resolve any DNS requests, and I gave up there.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;yunohost&lt;/strong&gt;: I really wish I had a picture of that meme right now. But this
-is what I&amp;rsquo;m currently using now, after three weeks (Mail-in-a-Box is actually
-still up on my other VPS, but that&amp;rsquo;s going down as soon as DNS propagates).&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;It&amp;rsquo;s&amp;hellip; nice to have a tiled welcome screen and something that seems to
-Just Work &amp;trade; after so long. Although, I have to admit, Dovecot ran out of
-epoll handlers and that left me stumped, but a reboot solved that.&lt;/p&gt;
-
-&lt;p&gt;I should go study for CSE 320 now.&lt;/p&gt;
-</description>
+      <description>My website was just cloudflare&amp;rsquo;d today.
+In a nutshell, this means that I&amp;rsquo;ve switched nameservers (again), from DigitalOcean to CloudFlare. The main reason for that is because of CloudFlare&amp;rsquo;s free https support, which I use in tandem with Github Pages.
+(Yes, no https on robxu9.com severely irked me.)
+Additionally, I&amp;rsquo;ve been experimenting with new mail hosting lately, so I&amp;rsquo;ve been switching mail providers like&amp;hellip; every other week. Still self hosting in the end, but I just wanted to remark on a few things:</description>
     </item>
     
     <item>
@@ -418,33 +128,9 @@ epoll handlers and that left me stumped, but a reboot solved that.&lt;/p&gt;
       <pubDate>Wed, 25 Feb 2015 23:55:44 -0500</pubDate>
       <author>me@robxu9.com (Robert Xu)</author>
       <guid>https://www.robxu9.com/2015/02/february-music/</guid>
-      <description>&lt;p&gt;One of my more boring months. Other than the following, I&amp;rsquo;ve just been
-listening to BBC Radio 1, BBC Radio 2, Captial FM London, FRESH 102.7,
-or HOT 99.5&amp;hellip;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;em&gt;The Script&lt;/em&gt; - a still amazing band, with their song &amp;ldquo;Man on a Wire&amp;rdquo;.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;em&gt;BoA&lt;/em&gt; - because I can&amp;rsquo;t have a normal playlist without some J-Pop or
-K-Pop - although, the K-Pop is relatively recent, and I still prefer J-Pop.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;em&gt;OneRepublic&lt;/em&gt; - I can&amp;rsquo;t believe I didn&amp;rsquo;t know what &amp;ldquo;I Lived&amp;rdquo; was until
-now, even though it&amp;rsquo;s been playing literally everywhere.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;em&gt;David Guetta&lt;/em&gt; - From his album &lt;em&gt;Listen (Deluxe)&lt;/em&gt;, which I haven&amp;rsquo;t heard
-really played on any radio station at all recently. But &amp;ldquo;Dangerous&amp;rdquo; and
-&amp;ldquo;What I Did For Love&amp;rdquo; are really nice songs, even though &amp;ldquo;What I Did For Love&amp;rdquo;
-was &amp;ldquo;very gospel&amp;rsquo;y&amp;rdquo;, according to my friend (I like it, though!).&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;em&gt;Sia&lt;/em&gt; - &amp;ldquo;Elastic Heart&amp;rdquo; and &amp;ldquo;Bang My Head&amp;rdquo; are two amazing songs - sure, it&amp;rsquo;s
-a bit hard to understand her through her Australia accent, but you can&amp;rsquo;t deny
-that her voice is amazing. And then when you realise that she doesn&amp;rsquo;t show her
-face at any performance and that it&amp;rsquo;s all her voice, it just makes it all the
-more remarkable at her success. You can truly appreciate it.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;So yeah. Boring tracks. Recommendations? Let me know below!&lt;/p&gt;
-</description>
+      <description>One of my more boring months. Other than the following, I&amp;rsquo;ve just been listening to BBC Radio 1, BBC Radio 2, Captial FM London, FRESH 102.7, or HOT 99.5&amp;hellip;
+ The Script - a still amazing band, with their song &amp;ldquo;Man on a Wire&amp;rdquo;.
+ BoA - because I can&amp;rsquo;t have a normal playlist without some J-Pop or K-Pop - although, the K-Pop is relatively recent, and I still prefer J-Pop.</description>
     </item>
     
     <item>
@@ -453,35 +139,10 @@ more remarkable at her success. You can truly appreciate it.&lt;/p&gt;&lt;/li&gt
       <pubDate>Wed, 25 Feb 2015 23:46:05 -0500</pubDate>
       <author>me@robxu9.com (Robert Xu)</author>
       <guid>https://www.robxu9.com/2015/02/welp/</guid>
-      <description>&lt;p&gt;That was quick.&lt;/p&gt;
-
-&lt;p&gt;What have I been up to? Things I&amp;rsquo;ve done lately include:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;studying for CSE 320, which is System Architecture. I feel like I&amp;rsquo;m slow on
-the uptake with this class, whatnot with muxes and ALUs&amp;hellip;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;working on CSE 306, which is implementing a simple &lt;code&gt;grep&lt;/code&gt; without libc. So
-just Linux system calls. Not bad, just time consuming. Also I gave up trying
-to make descriptive errors and just dumped &lt;code&gt;errno.h&lt;/code&gt; into a switch statement.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;I should probably do the Ethics project.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Beat Tales of Symphonia, Tales of Symphonia: Knights of Ratatosk, and started
-Tales of the Abyss, then realised that I actually have homework to do.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Had an Amazon interview. This was my first real interview in a &lt;strong&gt;LONG&lt;/strong&gt; time,
-and I&amp;rsquo;m not so certain I ace&amp;rsquo;d it. It was an experience, but it took my brain
-way too long to warm up and I think that cost me. I think I missed a Big-O
-notation and I definitely forgot about Kruskal&amp;rsquo;s algorithm. Shit.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Went to Boston for ECAASU 2015! Here&amp;rsquo;s a tip: don&amp;rsquo;t drive in Boston. The
-roads make no sense whatsoever (they&amp;rsquo;re like downtown Manhattan), and the
-random forks and roundabouts hurt my head.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;There&amp;rsquo;s more happening soon, but I gotta survive until at least Spring Break&amp;hellip;&lt;/p&gt;
-</description>
+      <description>That was quick.
+What have I been up to? Things I&amp;rsquo;ve done lately include:
+ studying for CSE 320, which is System Architecture. I feel like I&amp;rsquo;m slow on the uptake with this class, whatnot with muxes and ALUs&amp;hellip;
+ working on CSE 306, which is implementing a simple grep without libc. So just Linux system calls. Not bad, just time consuming. Also I gave up trying to make descriptive errors and just dumped errno.</description>
     </item>
     
     <item>
@@ -490,18 +151,8 @@ random forks and roundabouts hurt my head.&lt;/p&gt;&lt;/li&gt;
       <pubDate>Thu, 22 Jan 2015 17:54:17 -0500</pubDate>
       <author>me@robxu9.com (Robert Xu)</author>
       <guid>https://www.robxu9.com/2015/01/sophomore-year-take-two/</guid>
-      <description>&lt;p&gt;Long story short:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;CSE 306: Operating Systems&lt;/li&gt;
-&lt;li&gt;CSE 312: Ethics&lt;/li&gt;
-&lt;li&gt;CSE 320: System Architecture&lt;/li&gt;
-&lt;li&gt;MEC 280: Pollution &amp;amp; Human Health&lt;/li&gt;
-&lt;li&gt;CCS 202: Film Genres&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;I hope I survive.&lt;/p&gt;
-</description>
+      <description>Long story short:
+ CSE 306: Operating Systems CSE 312: Ethics CSE 320: System Architecture MEC 280: Pollution &amp;amp; Human Health CCS 202: Film Genres  I hope I survive.</description>
     </item>
     
     <item>
@@ -510,71 +161,9 @@ random forks and roundabouts hurt my head.&lt;/p&gt;&lt;/li&gt;
       <pubDate>Tue, 20 Jan 2015 14:25:16 -0600</pubDate>
       <author>me@robxu9.com (Robert Xu)</author>
       <guid>https://www.robxu9.com/2015/01/kahinah-take-two/</guid>
-      <description>
-
-&lt;p&gt;This one was the one that needed the obvious rewrite.&lt;/p&gt;
-
-&lt;h3 id=&#34;background:226c55525206653d6c71e0f5695b4e16&#34;&gt;Background&lt;/h3&gt;
-
-&lt;p&gt;Kahinah is an updates manager for the &lt;a href=&#34;http://openmandriva.org&#34;&gt;OpenMandriva&lt;/a&gt;
-Association&amp;rsquo;s distribution, OpenMandriva Lx. Its goal is to monitor builds that
-are produced from a build system (which is &lt;a href=&#34;https://abf.io&#34;&gt;abf.io&lt;/a&gt; right now),
-and create a karma system which testers can vote on the updates, and eventually
-accept them as working, or reject them as deficient.&lt;/p&gt;
-
-&lt;p&gt;This worked for the most part, but when it came time for a large number of
-builds (think a KDE SC 4 version update), Kahinah was overwhelmed, testers
-were crushed, and updates had a hard time going through.&lt;/p&gt;
-
-&lt;p&gt;Additionally, the system suffered from numerous bugs due to changes on abf.io,
-and it certainly didn&amp;rsquo;t help that I was using &lt;a href=&#34;http://beego.me&#34;&gt;beego&lt;/a&gt; and
-pulling many many dependencies, which shot build times up through the roof.&lt;/p&gt;
-
-&lt;h3 id=&#34;version-4:226c55525206653d6c71e0f5695b4e16&#34;&gt;Version&amp;hellip; 4?&lt;/h3&gt;
-
-&lt;p&gt;The first couple of versions were just getting it usable and bearable for the
-most part. This rewrite is entirely from scratch, with no existing code.&lt;/p&gt;
-
-&lt;p&gt;I finally provide a decent JSON API, and I plan to use JSON web tokens to
-provide authentication (thanks Matt for pointing that out). Updates are now
-more organized, and for the first time ever, I&amp;rsquo;m providing a new type called
-advisories.&lt;/p&gt;
-
-&lt;h3 id=&#34;what-are-advisories:226c55525206653d6c71e0f5695b4e16&#34;&gt;What are Advisories?&lt;/h3&gt;
-
-&lt;p&gt;Advisories are groups of updates. Instead of voting on one update, we create
-an advisory with the updates we want to contain in it. They can range from
-just one update to a group of them, and testers can test ALL of them at the
-same time.&lt;/p&gt;
-
-&lt;p&gt;This has two purposes - one, to force package maintainers to document more
-throughly for corporate customers (for example, putting bug references so
-that Kahinah can connect to Bugzilla and say, hey, here&amp;rsquo;s a possible solution
-that you can test), and two, to make large updates much more manageable for
-testers.&lt;/p&gt;
-
-&lt;p&gt;It also brings us in line with practically every distribution out there
-that has to keep track of updates (like Fedora&amp;rsquo;s bodhi).&lt;/p&gt;
-
-&lt;h3 id=&#34;what-else-has-changed:226c55525206653d6c71e0f5695b4e16&#34;&gt;What else has changed?&lt;/h3&gt;
-
-&lt;p&gt;The frontend is separate from the backend, and is written with
-&lt;a href=&#34;http://emberjs.com&#34;&gt;ember.js&lt;/a&gt;. It&amp;rsquo;s my first foray into ember.js, and I&amp;rsquo;m
-curious to see how it goes. The documentation is a bit random, especially since
-it looks like they&amp;rsquo;re migrating towards some ES6 standards, so it&amp;rsquo;ll be
-both a learning experience and a headache.&lt;/p&gt;
-
-&lt;h3 id=&#34;release-soon:226c55525206653d6c71e0f5695b4e16&#34;&gt;Release soon?&lt;/h3&gt;
-
-&lt;p&gt;When I get stuff working, maybe. I intend to deploy a beta version to
-replace the current Kahinah on jasper sometime at the end of this month
-or the beginning of next.&lt;/p&gt;
-
-&lt;h3 id=&#34;github:226c55525206653d6c71e0f5695b4e16&#34;&gt;Github&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/robxu9/kahinah/tree/dev_nobeego&#34;&gt;kahinah&lt;/a&gt; is licensed
-under the MIT license.&lt;/p&gt;
-</description>
+      <description>This one was the one that needed the obvious rewrite.
+Background Kahinah is an updates manager for the OpenMandriva Association&amp;rsquo;s distribution, OpenMandriva Lx. Its goal is to monitor builds that are produced from a build system (which is abf.io right now), and create a karma system which testers can vote on the updates, and eventually accept them as working, or reject them as deficient.
+This worked for the most part, but when it came time for a large number of builds (think a KDE SC 4 version update), Kahinah was overwhelmed, testers were crushed, and updates had a hard time going through.</description>
     </item>
     
     <item>
@@ -583,44 +172,82 @@ under the MIT license.&lt;/p&gt;
       <pubDate>Sun, 18 Jan 2015 14:04:50 -0600</pubDate>
       <author>me@robxu9.com (Robert Xu)</author>
       <guid>https://www.robxu9.com/2015/01/january-music/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;ve been listening to a bunch of new things lately:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;em&gt;PVRIS&lt;/em&gt; - a relatively new band that I discovered via BBC radio one.
-they have really great songs, especially &amp;ldquo;My House&amp;rdquo; and &amp;ldquo;St. Patrick&amp;rdquo;.
-It feels a bit like Paramore, although the sound is much more edgy.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;em&gt;30 Seconds To Mars&lt;/em&gt; - I&amp;rsquo;ve been listening to them for a while now actually,
-but I haven&amp;rsquo;t gotten tired of their songs yet. &amp;ldquo;Kings and Queens&amp;rdquo; and &amp;ldquo;This is
-War&amp;rdquo; top my playlist for January.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;em&gt;Paramore&lt;/em&gt; - Still on my playlist. But just &amp;ldquo;Part II&amp;rdquo;, now.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;em&gt;Calvin Harris feat. Ellie Goulding&lt;/em&gt; - &amp;ldquo;Outside&amp;rdquo; is the newest of the Calvin
-Harris and Ellie Goulding combos, with a more negative light on relationships
-in the lyrics. I wonder if that had anything to do with both of their breakups?
-Nevertheless, an enjoyable song.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;em&gt;Fall Out Boy&lt;/em&gt; - &amp;ldquo;Centuries&amp;rdquo;, which is becoming the most overplayed song on
-every single radio station in the New York area. Can&amp;rsquo;t deny it&amp;rsquo;s catchy, but
-it&amp;rsquo;s getting tiring.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;em&gt;Ayumi Hamasaki&lt;/em&gt; - This is because I recently played through Tales of Xillia
-and Tales of Xilla 2, both of which are outstanding games (though I enjoyed
-Xillia 2 more because it actually made me cry). &amp;ldquo;progress&amp;rdquo; and &amp;ldquo;Song 4 u&amp;rdquo; are
-the opening songs of both of those games respectively, and I like the way
-especially in &amp;ldquo;progress&amp;rdquo; that the instrumentals were played. Screw the lyrics,
-the force in that sound!&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;em&gt;BUMP OF CHICKEN&lt;/em&gt; - I also played Tales of the Abyss recently (though not as
-recently as Tales of Xillia (2)), and since I had Hamasaki&amp;rsquo;s songs on my phone,
-I thought, why not? Let&amp;rsquo;s add &amp;ldquo;カルマ&amp;rdquo; to that, too. (That&amp;rsquo;s &amp;ldquo;KARMA&amp;rdquo; in
-English.)&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Song recomendations? Soundcloud things I should listen to? Let me know in the
-comments below!&lt;/p&gt;
-</description>
+      <description>I&amp;rsquo;ve been listening to a bunch of new things lately:
+ PVRIS - a relatively new band that I discovered via BBC radio one. they have really great songs, especially &amp;ldquo;My House&amp;rdquo; and &amp;ldquo;St. Patrick&amp;rdquo;. It feels a bit like Paramore, although the sound is much more edgy.
+ 30 Seconds To Mars - I&amp;rsquo;ve been listening to them for a while now actually, but I haven&amp;rsquo;t gotten tired of their songs yet.</description>
+    </item>
+    
+    <item>
+      <title>duplex in C, take two</title>
+      <link>https://www.robxu9.com/2015/01/duplex-in-c-take-two/</link>
+      <pubDate>Sat, 17 Jan 2015 00:09:29 -0600</pubDate>
+      <author>me@robxu9.com (Robert Xu)</author>
+      <guid>https://www.robxu9.com/2015/01/duplex-in-c-take-two/</guid>
+      <description>I seem to be doing a bunch of rewrites of my older projects nowadays. But sometimes that&amp;rsquo;s necessary. It is for the case of duplex (and libduplex).
+Background When I was working at DigitalOcean over the past summer, my main project was a communication framework called duplex. Duplex&amp;rsquo;s aim was to create a simple messaging framework that could potentially be used for RPC. The first version was prototyped in Go, and I created libdpx, which was the first version in C.</description>
+    </item>
+    
+    <item>
+      <title>robxu9.com, take two</title>
+      <link>https://www.robxu9.com/2015/01/robxu9.com-take-two/</link>
+      <pubDate>Wed, 14 Jan 2015 22:48:42 -0600</pubDate>
+      <author>me@robxu9.com (Robert Xu)</author>
+      <guid>https://www.robxu9.com/2015/01/robxu9.com-take-two/</guid>
+      <description>I never had the time to really blog about things in length after I left DigitalOcean. I guess I felt like it was time consuming and such effort could better be spent sleeping or coding or something along the lines of that.
+But then school came around and I was thrown into the chaos that is the fall semester of university, and I never had a chance to step back from all the craziness that followed and put my thoughts together.</description>
+    </item>
+    
+    <item>
+      <title>valgrind is important</title>
+      <link>https://www.robxu9.com/2014/08/valgrind-is-important/</link>
+      <pubDate>Tue, 05 Aug 2014 00:00:00 +0000</pubDate>
+      <author>me@robxu9.com (Robert Xu)</author>
+      <guid>https://www.robxu9.com/2014/08/valgrind-is-important/</guid>
+      <description>Most people have heard of debugging tools like gdb. For the rest, it&amp;rsquo;s usually just continuous testing and catching problems with your eye. But sometimes it&amp;rsquo;s not that simple.
+Take for example (and I&amp;rsquo;ve been using this example a lot), libdpx. I was trying to clean up the code for the past two days, but when I moved a simple statement that should work, everything essentially went to hell. You can see that commit here.</description>
+    </item>
+    
+    <item>
+      <title>stdout is slow</title>
+      <link>https://www.robxu9.com/2014/08/stdout-is-slow/</link>
+      <pubDate>Fri, 01 Aug 2014 00:00:00 +0000</pubDate>
+      <author>me@robxu9.com (Robert Xu)</author>
+      <guid>https://www.robxu9.com/2014/08/stdout-is-slow/</guid>
+      <description>Reading or writing any sort of stream can be slow. I cannot stress how much that is true.
+It&amp;rsquo;s incredibly noticeable, especially when you have some sort of GUI program in debug mode and it prints out a load of stuff. Each printout, whether it&amp;rsquo;s piped somewhere else or goes to the console, can add time that matters to your program&amp;rsquo;s execution.
+Why bring it up now? Take for example, libdpx.</description>
+    </item>
+    
+    <item>
+      <title>ctypes, Why?</title>
+      <link>https://www.robxu9.com/2014/07/ctypes-why/</link>
+      <pubDate>Wed, 30 Jul 2014 00:00:00 +0000</pubDate>
+      <author>me@robxu9.com (Robert Xu)</author>
+      <guid>https://www.robxu9.com/2014/07/ctypes-why/</guid>
+      <description>I don&amp;rsquo;t claim to be a particularly good Python programmer at all. I&amp;rsquo;m probably one of the&amp;hellip; less useful people to program Python - I much prefer Go (and to be rather honest, C).
+But I think I&amp;rsquo;ve encountered the nastiest piece of library I&amp;rsquo;ve used with Python - ctypes.
+What is ctypes? It&amp;rsquo;s kind of like the psuedo C package for Go - it allows direct access to C functions and structures and all those nice things, and lets you use C libraries in your Python program.</description>
+    </item>
+    
+    <item>
+      <title>Hello Blog.</title>
+      <link>https://www.robxu9.com/2014/07/hello-blog./</link>
+      <pubDate>Mon, 28 Jul 2014 00:00:00 +0000</pubDate>
+      <author>me@robxu9.com (Robert Xu)</author>
+      <guid>https://www.robxu9.com/2014/07/hello-blog./</guid>
+      <description>Welp, I suppose it&amp;rsquo;s about time that I made an actual blog on my actual domain. Whee!
+I made a list of projects I wanted to do in the future - kinda like my personal project collection. When I actually compiled the list, though, it started to become a bit unrealistic.
+ uitest - UI testing via VNC connection gomq - MineQuest, written in Go kahinah - OpenMandriva&amp;rsquo;s QA Bot, which needs a rewrite (codenamed v4) aye - a DO API client in Go (like tugboat) gnome 3.</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://www.robxu9.com/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>me@robxu9.com (Robert Xu)</author>
+      <guid>https://www.robxu9.com/about/</guid>
+      <description>Hey, I&amp;rsquo;m Robert. I&amp;rsquo;m a student, programmer, musician, and an avid newsreader. It&amp;rsquo;s a strange combination, but it seems to all pull together in ways that surprise even myself.
+My website is just a small view into the random thoughts that flow across my mind. I blog (when I remember to) about things from student life, to programming in C, Go, and Java, some of the music I&amp;rsquo;ve liked lately (which also changes wildly), and sometimes my thoughts on the latest news.</description>
     </item>
     
   </channel>

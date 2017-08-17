@@ -8,9 +8,11 @@
     <language>en-us</language>
     <managingEditor>me@robxu9.com (Robert Xu)</managingEditor>
     <webMaster>me@robxu9.com (Robert Xu)</webMaster>
-    <copyright>© 2014-2016 Robert Xu. All Rights Reserved. Content not indicative of any addl party.</copyright>
+    <copyright>© 2014-2017 Robert Xu. All Rights Reserved. Content not indicative of any addl party.</copyright>
     <lastBuildDate>Mon, 17 Aug 2015 03:17:07 -0400</lastBuildDate>
-    <atom:link href="https://www.robxu9.com/tags/summer/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="https://www.robxu9.com/tags/summer/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>where have I been all summer?</title>
@@ -18,45 +20,9 @@
       <pubDate>Mon, 17 Aug 2015 03:17:07 -0400</pubDate>
       <author>me@robxu9.com (Robert Xu)</author>
       <guid>https://www.robxu9.com/2015/08/where-have-i-been-all-summer/</guid>
-      <description>&lt;p&gt;If you&amp;rsquo;re wondering why all the posts have suddenly appeared, the answer is
-that I&amp;rsquo;ve finally achieved peak boredom level that I need to write on my blog
-again.&lt;/p&gt;
-
-&lt;p&gt;That was quick. I just flew in from Seattle today.&lt;/p&gt;
-
-&lt;p&gt;So if it wasn&amp;rsquo;t obvious from the description, I just finished an internship
-this past week. I already find myself wishing I could be back at my internship
-with Amazon - it was amazing!&lt;/p&gt;
-
-&lt;p&gt;I worked with Fulfillment by Amazon on Global Selling - and what an experience!
-It gave me the insight into how to interact with business and develop solutions
-that make sense, are maintainable, and can provide long term reliability. I got
-a lot of good advice and criticism, and I would be lying if I said I didn&amp;rsquo;t
-want to work there again - I&amp;rsquo;d love to. (But I&amp;rsquo;m doing a MBA programme that
-will take next year&amp;rsquo;s summer away from me&amp;hellip; ARGH. HARD CHOICES)&lt;/p&gt;
-
-&lt;p&gt;Seattle itself was wonderful. I think the key thing here is that it&amp;rsquo;s not hot
-as hell the majority of the time, it&amp;rsquo;s a relaxing place, and it&amp;rsquo;s not humid.&lt;/p&gt;
-
-&lt;p&gt;Not humid.&lt;/p&gt;
-
-&lt;p&gt;Do you realise how strange that is, coming from the east coast? It&amp;rsquo;s
-mind-boggling. This past week was around the mid-60s and lower-70s - what great
-weather!&lt;/p&gt;
-
-&lt;p&gt;Aside from that, the general environment is great, the traffic is &lt;em&gt;loads&lt;/em&gt; better
-than the east coast (I-5 is bad? Hah. Haven&amp;rsquo;t seen I-95, huh?), and it&amp;rsquo;s such a
-nice place to be.&lt;/p&gt;
-
-&lt;p&gt;I had a bunch of cool roomies too, which made it even better. Made a lot of cool
-friends &amp;ndash; wonder if we&amp;rsquo;ll be able to keep in touch. It&amp;rsquo;d definitely be fun!&lt;/p&gt;
-
-&lt;p&gt;Overall, completely worth the experience. &lt;sup&gt;10&lt;/sup&gt;&amp;frasl;&lt;sub&gt;10&lt;/sub&gt; would do again, but &lt;sup&gt;5&lt;/sup&gt;&amp;frasl;&lt;sub&gt;10&lt;/sub&gt; maybe
-shouldn&amp;rsquo;t use ABODA. I think I might want to rent next time I go there. (But
-then again, all the interns were in one place&amp;hellip;)&lt;/p&gt;
-
-&lt;p&gt;tl;dr A+ would do again&lt;/p&gt;
-</description>
+      <description>If you&amp;rsquo;re wondering why all the posts have suddenly appeared, the answer is that I&amp;rsquo;ve finally achieved peak boredom level that I need to write on my blog again.
+That was quick. I just flew in from Seattle today.
+So if it wasn&amp;rsquo;t obvious from the description, I just finished an internship this past week. I already find myself wishing I could be back at my internship with Amazon - it was amazing!</description>
     </item>
     
   </channel>

@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  
-  <url>
-    <loc>https://www.robxu9.com/</loc>
-    <lastmod>2016-02-08T19:49:28-05:00</lastmod>
-    <priority>0</priority>
-  </url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
     <loc>https://www.robxu9.com/2016/02/do-cleanups-not-rewrites/</loc>
@@ -113,7 +108,414 @@
   </url>
   
   <url>
+    <loc>https://www.robxu9.com/tags/a-bit-late-for-march/</loc>
+    <lastmod>2015-04-29T16:27:43-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.robxu9.com/tags/abf/</loc>
+    <lastmod>2015-01-20T14:25:16-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://www.robxu9.com/about/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.robxu9.com/tags/amazon/</loc>
+    <lastmod>2015-08-17T03:17:07-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.robxu9.com/tags/and-what-to-put-on-them/</loc>
+    <lastmod>2015-08-17T03:11:15-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.robxu9.com/tags/argh/</loc>
+    <lastmod>2015-08-17T03:11:15-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.robxu9.com/tags/but-still/</loc>
+    <lastmod>2015-04-29T16:32:50-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.robxu9.com/tags/c/</loc>
+    <lastmod>2015-01-17T00:09:29-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.robxu9.com/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.robxu9.com/tags/cleanups/</loc>
+    <lastmod>2016-02-08T19:49:28-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.robxu9.com/tags/cse/</loc>
+    <lastmod>2015-03-16T20:28:53-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.robxu9.com/tags/cse320/</loc>
+    <lastmod>2015-03-16T20:28:53-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.robxu9.com/tags/disk-i/o/</loc>
+    <lastmod>2014-08-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.robxu9.com/tags/domains/</loc>
+    <lastmod>2015-08-17T03:11:15-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.robxu9.com/tags/dr.-doran/</loc>
+    <lastmod>2015-08-19T21:00:30-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.robxu9.com/tags/duplex/</loc>
+    <lastmod>2016-02-08T19:49:28-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.robxu9.com/tags/extra-vs-normal-material/</loc>
+    <lastmod>2015-03-16T20:28:53-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.robxu9.com/tags/free-time/</loc>
+    <lastmod>2015-01-14T22:48:42-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.robxu9.com/tags/glider-labs/</loc>
+    <lastmod>2015-01-17T00:09:29-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.robxu9.com/tags/high-school/</loc>
+    <lastmod>2015-08-19T21:00:30-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.robxu9.com/tags/hush-stephen/</loc>
+    <lastmod>2015-03-02T22:11:30-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.robxu9.com/tags/i-finally-got-around-to-this/</loc>
+    <lastmod>2015-03-02T22:11:30-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.robxu9.com/tags/i-know/</loc>
+    <lastmod>2015-03-02T22:11:30-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.robxu9.com/tags/i-learned-the-hard-way/</loc>
+    <lastmod>2016-02-08T19:49:28-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.robxu9.com/tags/internship/</loc>
+    <lastmod>2015-08-17T03:17:07-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.robxu9.com/tags/its-february-already/</loc>
+    <lastmod>2015-02-25T23:46:05-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.robxu9.com/tags/its-weird/</loc>
+    <lastmod>2015-04-29T16:32:50-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.robxu9.com/tags/j-pop/</loc>
+    <lastmod>2015-01-18T14:04:50-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.robxu9.com/tags/kahinah/</loc>
+    <lastmod>2016-02-08T19:49:28-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.robxu9.com/tags/late-night/</loc>
+    <lastmod>2015-01-14T22:48:42-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.robxu9.com/tags/mainstream-edm/</loc>
+    <lastmod>2015-08-17T02:05:01-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.robxu9.com/tags/memcheck/</loc>
+    <lastmod>2014-08-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.robxu9.com/categories/music/</loc>
+    <lastmod>2015-08-17T02:05:01-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.robxu9.com/categories/musings/</loc>
+    <lastmod>2015-12-12T22:48:32-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.robxu9.com/tags/nothing-interesting/</loc>
+    <lastmod>2015-08-17T02:05:01-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.robxu9.com/categories/old/</loc>
+    <lastmod>2014-07-28T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.robxu9.com/tags/oops/</loc>
+    <lastmod>2015-04-29T16:27:43-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.robxu9.com/tags/openmandriva/</loc>
+    <lastmod>2015-01-20T14:25:16-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.robxu9.com/tags/pondering-life/</loc>
+    <lastmod>2015-12-12T22:48:32-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.robxu9.com/tags/pop/</loc>
+    <lastmod>2015-08-17T02:05:01-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.robxu9.com/post/</loc>
+    <lastmod>2016-02-08T19:49:28-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.robxu9.com/tags/procrastinating/</loc>
+    <lastmod>2015-02-25T23:46:05-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.robxu9.com/categories/programming/</loc>
+    <lastmod>2016-02-08T19:49:28-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.robxu9.com/tags/python/</loc>
+    <lastmod>2014-07-30T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.robxu9.com/tags/rewrites/</loc>
+    <lastmod>2016-02-08T19:49:28-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.robxu9.com/</loc>
+    <lastmod>2016-02-08T19:49:28-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.robxu9.com/tags/rock/</loc>
+    <lastmod>2015-01-18T14:04:50-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.robxu9.com/tags/rpm/</loc>
+    <lastmod>2015-01-20T14:25:16-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.robxu9.com/tags/rxu.io/</loc>
+    <lastmod>2015-08-17T03:11:15-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.robxu9.com/tags/rxu.tech/</loc>
+    <lastmod>2015-08-17T03:11:15-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.robxu9.com/tags/scared-ish/</loc>
+    <lastmod>2015-04-29T16:32:50-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.robxu9.com/categories/school/</loc>
+    <lastmod>2015-08-19T21:00:30-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.robxu9.com/tags/seattle/</loc>
+    <lastmod>2015-08-17T03:17:07-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.robxu9.com/tags/slow/</loc>
+    <lastmod>2014-08-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.robxu9.com/tags/stdout/</loc>
+    <lastmod>2014-08-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.robxu9.com/tags/streams/</loc>
+    <lastmod>2014-08-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.robxu9.com/tags/struggles/</loc>
+    <lastmod>2015-01-22T17:54:17-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.robxu9.com/tags/summer/</loc>
+    <lastmod>2015-08-17T03:17:07-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.robxu9.com/tags/</loc>
+    <lastmod>2015-04-29T16:27:43-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.robxu9.com/tags/the-monies/</loc>
+    <lastmod>2015-08-17T03:11:15-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.robxu9.com/tags/tiredness/</loc>
+    <lastmod>2015-01-14T22:48:42-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.robxu9.com/tags/ugh/</loc>
+    <lastmod>2015-08-17T02:05:01-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.robxu9.com/tags/university/</loc>
+    <lastmod>2015-12-12T22:48:32-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.robxu9.com/tags/valgrind/</loc>
+    <lastmod>2014-08-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.robxu9.com/tags/well/</loc>
+    <lastmod>2015-04-29T16:32:50-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.robxu9.com/tags/whohoo/</loc>
+    <lastmod>2015-08-17T03:17:07-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.robxu9.com/tags/why-am-i-doing-this/</loc>
+    <lastmod>2015-08-17T03:11:15-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.robxu9.com/tags/wootton/</loc>
+    <lastmod>2015-08-19T21:00:30-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.robxu9.com/tags/yikes/</loc>
+    <lastmod>2015-02-25T23:46:05-05:00</lastmod>
+    <priority>0</priority>
   </url>
   
 </urlset>

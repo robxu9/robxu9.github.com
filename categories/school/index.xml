@@ -8,9 +8,11 @@
     <language>en-us</language>
     <managingEditor>me@robxu9.com (Robert Xu)</managingEditor>
     <webMaster>me@robxu9.com (Robert Xu)</webMaster>
-    <copyright>© 2014-2016 Robert Xu. All Rights Reserved. Content not indicative of any addl party.</copyright>
+    <copyright>© 2014-2017 Robert Xu. All Rights Reserved. Content not indicative of any addl party.</copyright>
     <lastBuildDate>Wed, 19 Aug 2015 21:00:30 -0400</lastBuildDate>
-    <atom:link href="https://www.robxu9.com/categories/school/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="https://www.robxu9.com/categories/school/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>a tribute to Dr. Doran</title>
@@ -18,10 +20,9 @@
       <pubDate>Wed, 19 Aug 2015 21:00:30 -0400</pubDate>
       <author>me@robxu9.com (Robert Xu)</author>
       <guid>https://www.robxu9.com/2015/08/a-tribute-to-dr.-doran/</guid>
-      <description>&lt;p&gt;&lt;em&gt;(x-posted from my facebook)&lt;/em&gt;&lt;/p&gt;
-
-&lt;div id=&#34;fb-root&#34;&gt;&lt;/div&gt;&lt;script&gt;(function(d, s, id) {  var js, fjs = d.getElementsByTagName(s)[0];  if (d.getElementById(id)) return;  js = d.createElement(s); js.id = id;  js.src = &#34;//connect.facebook.net/en_GB/sdk.js#xfbml=1&amp;version=v2.3&#34;;  fjs.parentNode.insertBefore(js, fjs);}(document, &#39;script&#39;, &#39;facebook-jssdk&#39;));&lt;/script&gt;&lt;div class=&#34;fb-post&#34; data-href=&#34;https://www.facebook.com/robxu9/posts/10206975789854234&#34; data-width=&#34;500&#34;&gt;&lt;div class=&#34;fb-xfbml-parse-ignore&#34;&gt;&lt;blockquote cite=&#34;https://www.facebook.com/robxu9/posts/10206975789854234&#34;&gt;&lt;p&gt;On Wednesday, 19 August, around midday, many of us learned that our long time high school principal, Dr. Michael Doran,...&lt;/p&gt;Posted by &lt;a href=&#34;#&#34; role=&#34;button&#34;&gt;Robert Xu&lt;/a&gt; on&amp;nbsp;&lt;a href=&#34;https://www.facebook.com/robxu9/posts/10206975789854234&#34;&gt;Wednesday, 19 August 2015&lt;/a&gt;&lt;/blockquote&gt;&lt;/div&gt;&lt;/div&gt;
-</description>
+      <description>(x-posted from my facebook)
+(function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = &#34;//connect.facebook.net/en_GB/sdk.js#xfbml=1&amp;version=v2.3&#34;; fjs.parentNode.insertBefore(js, fjs);}(document, &#39;script&#39;, &#39;facebook-jssdk&#39;));On Wednesday, 19 August, around midday, many of us learned that our long time high school principal, Dr. Michael Doran,...
+Posted by Robert Xu on&amp;nbsp;Wednesday, 19 August 2015 </description>
     </item>
     
     <item>
@@ -30,43 +31,8 @@
       <pubDate>Wed, 29 Apr 2015 16:32:50 -0400</pubDate>
       <author>me@robxu9.com (Robert Xu)</author>
       <guid>https://www.robxu9.com/2015/04/graduating-early/</guid>
-      <description>&lt;p&gt;It&amp;rsquo;s weird to think that only a few semesters ago, I was starting university.
-But as I went into my advisor last week and sat down and went over my
-coursework and transcript, I noticed that I didn&amp;rsquo;t know how many more classes
-I needed.&lt;/p&gt;
-
-&lt;p&gt;So we both sat down and analysed what I had left to take, and what I was
-planning to take. And we both came to the conclusion that I would be graduating
-&lt;strong&gt;one year early&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;Most people can only dream of doing this, and especially in Computer Science,
-courses are rigirous enough to discourage people from taking too many classes
-at one time, lest they be burnt grade-wise. (&lt;em&gt;stares at cse320&lt;/em&gt;)&lt;/p&gt;
-
-&lt;p&gt;But for some reason, it worked out that I had 36 credits left to take - or 12
-classes. I&amp;rsquo;ve been doing 5 classes per semester, not wanting to stress myself
-out, but it looks like with 12 classes left, that&amp;rsquo;s about 2 semesters or 3
-semesters, depending on how it&amp;rsquo;s partitioned. (There is an option to do
-6-5-1, where the last credit is taken in the summer session and I graduate
-officially in August, even though I go to the May ceremony, but I&amp;rsquo;m opting
-to do the last credit before, so it&amp;rsquo;s 1-6-5.)&lt;/p&gt;
-
-&lt;p&gt;And especially since I&amp;rsquo;m out of state, an additional semester isn&amp;rsquo;t really
-worth it only for 4 classes money-wise.&lt;/p&gt;
-
-&lt;p&gt;I have a couple of options ahead of me. I guess I should start putting 2016
-instead of 2017 in my graduation date for job applications, and I guess I should
-look and see what I have in store for myself. Like, I want to get a degree for
-a MBA in the near future, so maybe I could work on the MBA and graduate in 2017,
-but it&amp;rsquo;s still all up in the air.&lt;/p&gt;
-
-&lt;p&gt;So many choices. So many decisions. I&amp;rsquo;m scared I&amp;rsquo;ll make the wrong one.&lt;/p&gt;
-
-&lt;p&gt;I should update my resume. I lost my resume document, except I still have the
-PDF, so I guess I have to recreate it&amp;hellip; again.&lt;/p&gt;
-
-&lt;p&gt;Sigh.&lt;/p&gt;
-</description>
+      <description>It&amp;rsquo;s weird to think that only a few semesters ago, I was starting university. But as I went into my advisor last week and sat down and went over my coursework and transcript, I noticed that I didn&amp;rsquo;t know how many more classes I needed.
+So we both sat down and analysed what I had left to take, and what I was planning to take. And we both came to the conclusion that I would be graduating one year early.</description>
     </item>
     
     <item>
@@ -75,72 +41,8 @@ PDF, so I guess I have to recreate it&amp;hellip; again.&lt;/p&gt;
       <pubDate>Mon, 16 Mar 2015 20:28:53 -0400</pubDate>
       <author>me@robxu9.com (Robert Xu)</author>
       <guid>https://www.robxu9.com/2015/03/and-now-for-something-completely-different/</guid>
-      <description>
-
-&lt;p&gt;It&amp;rsquo;s spring break, and it&amp;rsquo;s nice to finally have a week to kind of relax and
-not worry about midterms as much (of course, I&amp;rsquo;m ignoring the fact that I have
-a midterm in CSE306/Operating Systems next week), but it also gives the chance
-to reflect and ask, &amp;ldquo;what the hell went wrong on Friday?&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;Friday was my CSE320/Computer Organization &amp;amp; Architecture midterm - a midterm
-that currently has a 43% average and what the professor called &amp;ldquo;dismal scores
-across the board&amp;rdquo;: so where did it all go wrong?&lt;/p&gt;
-
-&lt;p&gt;There&amp;rsquo;s been a lot of debate recently in our class about what lengths a teacher
-should go to help their students. I personally think that our professor is
-doing a fine job, despite my own past grievances against her. She&amp;rsquo;s been
-releasing practice problems, despite being under no obligation to do so; and
-they&amp;rsquo;ve been helpful. Having TAs help our class (even though our class
-should technically have no TAs) has also been a huge help.&lt;/p&gt;
-
-&lt;p&gt;But while I seem to be satisfied, there are others who are starting to actively
-rally the class against her teaching skills, despite the fact that it doesn&amp;rsquo;t
-seem like many other of her previous classes have had as much trouble. So is it
-just our class?&lt;/p&gt;
-
-&lt;h4 id=&#34;the-difficult-question-of-what-teachers-should-be-doing:80f5062d88d9dcfdb5f1da7e32750f76&#34;&gt;The difficult question of what teachers should be doing&lt;/h4&gt;
-
-&lt;p&gt;These teachers have a difficult job. Given a class of anywhere from 30 to 200
-students (and even more for general education classes, where lecture halls
-quickly fill to 500-1000 students), they have the insurmountable task of
-teaching every single one of those students the skills they need to move on
-to the next class. It&amp;rsquo;s sometimes an almost impossible task, regardless of the
-class size, and yet they still plow on every single semester and try their
-best.&lt;/p&gt;
-
-&lt;p&gt;Teachers are the best, simply for looking up in the face of all this pressure,
-giving it the middle finger, and then proceeding (most of the time) to smash
-expectations.&lt;/p&gt;
-
-&lt;p&gt;But what if it doesn&amp;rsquo;t work out? Teachers have readily gone out of their way
-to provide extra material in the form of practice problems, review sessions,
-lab sessions, better homework software, and more - and they&amp;rsquo;re not exactly
-paid to do that, either. They could easily tell you that the textbook was
-required for the course, so read the textbook and figure it out on your own
-and stop by office hours.&lt;/p&gt;
-
-&lt;p&gt;Instead, they go out of their way to do a whole lot more whenever possible,
-and make sure that learning centres are open for other students to help as
-well. Basically, all avenues as open as possible.&lt;/p&gt;
-
-&lt;h4 id=&#34;the-moment-the-students-begin-to-expect-extra-as-normal:80f5062d88d9dcfdb5f1da7e32750f76&#34;&gt;The moment the students begin to expect extra as &amp;ldquo;normal&amp;rdquo;&lt;/h4&gt;
-
-&lt;p&gt;Eventually, the extra material seems to get mixed up as normal material.
-Then what?&lt;/p&gt;
-
-&lt;p&gt;That&amp;rsquo;s where the debate is - do teachers have an obligation to continue
-doing these extra things for their classes if they&amp;rsquo;ve done it in the
-past, or can they simply say no if it turns out to be untenable? Does it fall
-to the students to make the extra material?&lt;/p&gt;
-
-&lt;p&gt;(sidenote: I will say it does fall to the student to take advantage of office
-hours at the very minimum and study the normal material.)&lt;/p&gt;
-
-&lt;p&gt;There&amp;rsquo;s no ending to this blog post, because I can&amp;rsquo;t answer this question.
-Maybe someone else can. Or can&amp;rsquo;t.&lt;/p&gt;
-
-&lt;p&gt;Continue the discussion - comment below, or @robxu9 on Twitter.&lt;/p&gt;
-</description>
+      <description>It&amp;rsquo;s spring break, and it&amp;rsquo;s nice to finally have a week to kind of relax and not worry about midterms as much (of course, I&amp;rsquo;m ignoring the fact that I have a midterm in CSE306/Operating Systems next week), but it also gives the chance to reflect and ask, &amp;ldquo;what the hell went wrong on Friday?&amp;rdquo;
+Friday was my CSE320/Computer Organization &amp;amp; Architecture midterm - a midterm that currently has a 43% average and what the professor called &amp;ldquo;dismal scores across the board&amp;rdquo;: so where did it all go wrong?</description>
     </item>
     
     <item>
@@ -149,18 +51,8 @@ Maybe someone else can. Or can&amp;rsquo;t.&lt;/p&gt;
       <pubDate>Thu, 22 Jan 2015 17:54:17 -0500</pubDate>
       <author>me@robxu9.com (Robert Xu)</author>
       <guid>https://www.robxu9.com/2015/01/sophomore-year-take-two/</guid>
-      <description>&lt;p&gt;Long story short:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;CSE 306: Operating Systems&lt;/li&gt;
-&lt;li&gt;CSE 312: Ethics&lt;/li&gt;
-&lt;li&gt;CSE 320: System Architecture&lt;/li&gt;
-&lt;li&gt;MEC 280: Pollution &amp;amp; Human Health&lt;/li&gt;
-&lt;li&gt;CCS 202: Film Genres&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;I hope I survive.&lt;/p&gt;
-</description>
+      <description>Long story short:
+ CSE 306: Operating Systems CSE 312: Ethics CSE 320: System Architecture MEC 280: Pollution &amp;amp; Human Health CCS 202: Film Genres  I hope I survive.</description>
     </item>
     
   </channel>

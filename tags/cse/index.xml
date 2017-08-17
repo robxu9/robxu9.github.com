@@ -8,9 +8,11 @@
     <language>en-us</language>
     <managingEditor>me@robxu9.com (Robert Xu)</managingEditor>
     <webMaster>me@robxu9.com (Robert Xu)</webMaster>
-    <copyright>© 2014-2016 Robert Xu. All Rights Reserved. Content not indicative of any addl party.</copyright>
+    <copyright>© 2014-2017 Robert Xu. All Rights Reserved. Content not indicative of any addl party.</copyright>
     <lastBuildDate>Mon, 16 Mar 2015 20:28:53 -0400</lastBuildDate>
-    <atom:link href="https://www.robxu9.com/tags/cse/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="https://www.robxu9.com/tags/cse/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>and now for something completely different</title>
@@ -18,72 +20,8 @@
       <pubDate>Mon, 16 Mar 2015 20:28:53 -0400</pubDate>
       <author>me@robxu9.com (Robert Xu)</author>
       <guid>https://www.robxu9.com/2015/03/and-now-for-something-completely-different/</guid>
-      <description>
-
-&lt;p&gt;It&amp;rsquo;s spring break, and it&amp;rsquo;s nice to finally have a week to kind of relax and
-not worry about midterms as much (of course, I&amp;rsquo;m ignoring the fact that I have
-a midterm in CSE306/Operating Systems next week), but it also gives the chance
-to reflect and ask, &amp;ldquo;what the hell went wrong on Friday?&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;Friday was my CSE320/Computer Organization &amp;amp; Architecture midterm - a midterm
-that currently has a 43% average and what the professor called &amp;ldquo;dismal scores
-across the board&amp;rdquo;: so where did it all go wrong?&lt;/p&gt;
-
-&lt;p&gt;There&amp;rsquo;s been a lot of debate recently in our class about what lengths a teacher
-should go to help their students. I personally think that our professor is
-doing a fine job, despite my own past grievances against her. She&amp;rsquo;s been
-releasing practice problems, despite being under no obligation to do so; and
-they&amp;rsquo;ve been helpful. Having TAs help our class (even though our class
-should technically have no TAs) has also been a huge help.&lt;/p&gt;
-
-&lt;p&gt;But while I seem to be satisfied, there are others who are starting to actively
-rally the class against her teaching skills, despite the fact that it doesn&amp;rsquo;t
-seem like many other of her previous classes have had as much trouble. So is it
-just our class?&lt;/p&gt;
-
-&lt;h4 id=&#34;the-difficult-question-of-what-teachers-should-be-doing:80f5062d88d9dcfdb5f1da7e32750f76&#34;&gt;The difficult question of what teachers should be doing&lt;/h4&gt;
-
-&lt;p&gt;These teachers have a difficult job. Given a class of anywhere from 30 to 200
-students (and even more for general education classes, where lecture halls
-quickly fill to 500-1000 students), they have the insurmountable task of
-teaching every single one of those students the skills they need to move on
-to the next class. It&amp;rsquo;s sometimes an almost impossible task, regardless of the
-class size, and yet they still plow on every single semester and try their
-best.&lt;/p&gt;
-
-&lt;p&gt;Teachers are the best, simply for looking up in the face of all this pressure,
-giving it the middle finger, and then proceeding (most of the time) to smash
-expectations.&lt;/p&gt;
-
-&lt;p&gt;But what if it doesn&amp;rsquo;t work out? Teachers have readily gone out of their way
-to provide extra material in the form of practice problems, review sessions,
-lab sessions, better homework software, and more - and they&amp;rsquo;re not exactly
-paid to do that, either. They could easily tell you that the textbook was
-required for the course, so read the textbook and figure it out on your own
-and stop by office hours.&lt;/p&gt;
-
-&lt;p&gt;Instead, they go out of their way to do a whole lot more whenever possible,
-and make sure that learning centres are open for other students to help as
-well. Basically, all avenues as open as possible.&lt;/p&gt;
-
-&lt;h4 id=&#34;the-moment-the-students-begin-to-expect-extra-as-normal:80f5062d88d9dcfdb5f1da7e32750f76&#34;&gt;The moment the students begin to expect extra as &amp;ldquo;normal&amp;rdquo;&lt;/h4&gt;
-
-&lt;p&gt;Eventually, the extra material seems to get mixed up as normal material.
-Then what?&lt;/p&gt;
-
-&lt;p&gt;That&amp;rsquo;s where the debate is - do teachers have an obligation to continue
-doing these extra things for their classes if they&amp;rsquo;ve done it in the
-past, or can they simply say no if it turns out to be untenable? Does it fall
-to the students to make the extra material?&lt;/p&gt;
-
-&lt;p&gt;(sidenote: I will say it does fall to the student to take advantage of office
-hours at the very minimum and study the normal material.)&lt;/p&gt;
-
-&lt;p&gt;There&amp;rsquo;s no ending to this blog post, because I can&amp;rsquo;t answer this question.
-Maybe someone else can. Or can&amp;rsquo;t.&lt;/p&gt;
-
-&lt;p&gt;Continue the discussion - comment below, or @robxu9 on Twitter.&lt;/p&gt;
-</description>
+      <description>It&amp;rsquo;s spring break, and it&amp;rsquo;s nice to finally have a week to kind of relax and not worry about midterms as much (of course, I&amp;rsquo;m ignoring the fact that I have a midterm in CSE306/Operating Systems next week), but it also gives the chance to reflect and ask, &amp;ldquo;what the hell went wrong on Friday?&amp;rdquo;
+Friday was my CSE320/Computer Organization &amp;amp; Architecture midterm - a midterm that currently has a 43% average and what the professor called &amp;ldquo;dismal scores across the board&amp;rdquo;: so where did it all go wrong?</description>
     </item>
     
   </channel>

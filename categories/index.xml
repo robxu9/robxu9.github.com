@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Robert Xu</title>
+    <link>https://www.robxu9.com/categories/</link>
+    <description>Recent content in Categories on Robert Xu</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>me@robxu9.com (Robert Xu)</managingEditor>
+    <webMaster>me@robxu9.com (Robert Xu)</webMaster>
+    <copyright>© 2014-2017 Robert Xu. All Rights Reserved. Content not indicative of any addl party.</copyright>
+    
+	<atom:link href="https://www.robxu9.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Music</title>
+      <link>https://www.robxu9.com/categories/music/</link>
+      <pubDate>Mon, 17 Aug 2015 02:05:01 -0400</pubDate>
+      <author>me@robxu9.com (Robert Xu)</author>
+      <guid>https://www.robxu9.com/categories/music/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Musings</title>
+      <link>https://www.robxu9.com/categories/musings/</link>
+      <pubDate>Sat, 12 Dec 2015 22:48:32 -0500</pubDate>
+      <author>me@robxu9.com (Robert Xu)</author>
+      <guid>https://www.robxu9.com/categories/musings/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Old</title>
+      <link>https://www.robxu9.com/categories/old/</link>
+      <pubDate>Mon, 28 Jul 2014 00:00:00 +0000</pubDate>
+      <author>me@robxu9.com (Robert Xu)</author>
+      <guid>https://www.robxu9.com/categories/old/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Programming</title>
+      <link>https://www.robxu9.com/categories/programming/</link>
+      <pubDate>Mon, 08 Feb 2016 19:49:28 -0500</pubDate>
+      <author>me@robxu9.com (Robert Xu)</author>
+      <guid>https://www.robxu9.com/categories/programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>School</title>
+      <link>https://www.robxu9.com/categories/school/</link>
+      <pubDate>Wed, 19 Aug 2015 21:00:30 -0400</pubDate>
+      <author>me@robxu9.com (Robert Xu)</author>
+      <guid>https://www.robxu9.com/categories/school/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

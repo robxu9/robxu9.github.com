@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Old on Robert Xu</title>
+    <link>https://www.robxu9.com/categories/old/</link>
+    <description>Recent content in Old on Robert Xu</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <managingEditor>me@robxu9.com (Robert Xu)</managingEditor>
+    <webMaster>me@robxu9.com (Robert Xu)</webMaster>
+    <copyright>© 2014-2017 Robert Xu. All Rights Reserved. Content not indicative of any addl party.</copyright>
+    <lastBuildDate>Mon, 28 Jul 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.robxu9.com/categories/old/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hello Blog.</title>
+      <link>https://www.robxu9.com/2014/07/hello-blog./</link>
+      <pubDate>Mon, 28 Jul 2014 00:00:00 +0000</pubDate>
+      <author>me@robxu9.com (Robert Xu)</author>
+      <guid>https://www.robxu9.com/2014/07/hello-blog./</guid>
+      <description>Welp, I suppose it&amp;rsquo;s about time that I made an actual blog on my actual domain. Whee!
+I made a list of projects I wanted to do in the future - kinda like my personal project collection. When I actually compiled the list, though, it started to become a bit unrealistic.
+ uitest - UI testing via VNC connection gomq - MineQuest, written in Go kahinah - OpenMandriva&amp;rsquo;s QA Bot, which needs a rewrite (codenamed v4) aye - a DO API client in Go (like tugboat) gnome 3.</description>
+    </item>
+    
+  </channel>
+</rss>

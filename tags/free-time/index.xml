@@ -8,9 +8,11 @@
     <language>en-us</language>
     <managingEditor>me@robxu9.com (Robert Xu)</managingEditor>
     <webMaster>me@robxu9.com (Robert Xu)</webMaster>
-    <copyright>© 2014-2016 Robert Xu. All Rights Reserved. Content not indicative of any addl party.</copyright>
+    <copyright>© 2014-2017 Robert Xu. All Rights Reserved. Content not indicative of any addl party.</copyright>
     <lastBuildDate>Wed, 14 Jan 2015 22:48:42 -0600</lastBuildDate>
-    <atom:link href="https://www.robxu9.com/tags/free-time/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="https://www.robxu9.com/tags/free-time/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>robxu9.com, take two</title>
@@ -18,21 +20,8 @@
       <pubDate>Wed, 14 Jan 2015 22:48:42 -0600</pubDate>
       <author>me@robxu9.com (Robert Xu)</author>
       <guid>https://www.robxu9.com/2015/01/robxu9.com-take-two/</guid>
-      <description>&lt;p&gt;I never had the time to really blog about things in length after I left
-DigitalOcean. I guess I felt like it was time consuming and such effort could
-better be spent sleeping or coding or something along the lines of that.&lt;/p&gt;
-
-&lt;p&gt;But then school came around and I was thrown into the chaos that is the fall
-semester of university, and I never had a chance to step back from all the
-craziness that followed and put my thoughts together.&lt;/p&gt;
-
-&lt;p&gt;And now here we are. It&amp;rsquo;s 2015, almost 6 months since my last blog post.
-I&amp;rsquo;ve resolved to take more time out to reflect on what&amp;rsquo;s been happening and
-gather my thoughts.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;m therefore taking bets on how quickly this will fall apart. Minimum time
-after I finish writing this post.&lt;/p&gt;
-</description>
+      <description>I never had the time to really blog about things in length after I left DigitalOcean. I guess I felt like it was time consuming and such effort could better be spent sleeping or coding or something along the lines of that.
+But then school came around and I was thrown into the chaos that is the fall semester of university, and I never had a chance to step back from all the craziness that followed and put my thoughts together.</description>
     </item>
     
   </channel>
