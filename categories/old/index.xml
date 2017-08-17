@@ -131,6 +131,17 @@ Take for example (and I&amp;rsquo;ve been using this example a lot), libdpx. I w
     </item>
     
     <item>
+      <title>stdout is slow</title>
+      <link>https://www.robxu9.com/2014/08/stdout-is-slow/</link>
+      <pubDate>Fri, 01 Aug 2014 00:00:00 +0000</pubDate>
+      <author>me@robxu9.com (Robert Xu)</author>
+      <guid>https://www.robxu9.com/2014/08/stdout-is-slow/</guid>
+      <description>Reading or writing any sort of stream can be slow. I cannot stress how much that is true.
+It&amp;rsquo;s incredibly noticeable, especially when you have some sort of GUI program in debug mode and it prints out a load of stuff. Each printout, whether it&amp;rsquo;s piped somewhere else or goes to the console, can add time that matters to your program&amp;rsquo;s execution.
+Why bring it up now? Take for example, libdpx.</description>
+    </item>
+    
+    <item>
       <title>ctypes, Why?</title>
       <link>https://www.robxu9.com/2014/07/ctypes-why/</link>
       <pubDate>Wed, 30 Jul 2014 00:00:00 +0000</pubDate>
