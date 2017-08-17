@@ -92,7 +92,7 @@ body {
 	font-family: verdana,arial,helvetica,sans-serif;
 	color:#888;
 	font-size:x-small;
-	margin-bottom:0;
+	margin-bottom: 1em;
 }
 
 .footnote a {
@@ -205,9 +205,9 @@ body {
 	font-size:18px;
 }
 
-.post-title{
+.post-title {
 		margin-top: 0;
-		margin-bottom: 2em;
+		margin-bottom: 0;
 }
 
 .post-title h1 {
@@ -217,7 +217,6 @@ body {
 	margin-top: 0;
 	margin-bottom: 0;
 }
-
 
 @media screen and (max-width:767px){
 	.desktop {
