@@ -42,15 +42,19 @@ body {
 .posts-name {
 	text-transform: capitalize;
 	font-weight: bold;
-	padding-left: 1em;
 	margin-top: 1em;
 	font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 0 1em;
+}
+
+.post-content > .posts-name {
+    padding: 0;
 }
 
 .posts {
 	font-family: verdana,arial,helvetica,sans-serif;
+    padding: 0;
 	list-style-type:none;
-	padding-left: 1em;
 }
 
 .posts li p{
@@ -149,7 +153,6 @@ body {
 	font-family: proxima-nova,"Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
 	color:#484848;
 	letter-spacing:normal;
-	padding-left: .5em;
 }
 
 .post h1,h2,h3,h4,h5,h6 {
@@ -160,7 +163,7 @@ body {
 .post-content {
 	z-index:9;
 	overflow:auto;
-	padding:0;
+	padding:0 1em;
 	padding-bottom:3em;
 	font-size:16px;
 	line-height:1.4;
@@ -206,6 +209,7 @@ body {
 }
 
 .post-title {
+        padding: 0 1em;
 		margin-top: 0;
 		margin-bottom: 0;
 }
